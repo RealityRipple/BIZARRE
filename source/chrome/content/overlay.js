@@ -536,6 +536,7 @@ function ImageZoomOverlay() {
 
         pImage.zoomFactor = pImage.zoomFactor * factor;
         pImage.autoFitBefore = 0;
+        pImage.style.marginTop="";
         // Zoom the width style if it exists
         if (pImage.style.width) {
           var origWidth = getDimInt(pImage.style.width);
@@ -546,7 +547,14 @@ function ImageZoomOverlay() {
         if (pImage.style.height) {
           var origHeight = getDimInt(pImage.style.height);
           pImage.style.height = (origHeight * factor) + getDimUnit(pImage.style.height);
-
+        }
+        
+        pImage.style.maxWidth = "none";
+        pImage.style.maxHeight = "none";
+        if(pImage.y < 0 || pImage.offsetTop < 0) {
+          pImage.style.marginTop="0";
+        } else {
+          pImage.style.marginTop="";
         }
       }
     }
@@ -721,6 +729,7 @@ function ImageZoomOverlay() {
     }
 
     function pZoomAbs() {
+	  pImage.style.marginTop = "";
       // only set the width style if it was originally set
       if (pImage.originalWidth) {
         pImage.style.width = (pImage.originalWidth * (pImage.zoomFactor / 100)) + pImage.originalWidthUnit;
@@ -732,6 +741,14 @@ function ImageZoomOverlay() {
         pImage.style.height = (pImage.originalHeight * (pImage.zoomFactor / 100)) + pImage.originalHeightUnit;
       } else {
         pImage.style.height = "";
+      }
+      
+      pImage.style.maxWidth = "none";
+      pImage.style.maxHeight = "none";
+      if (pImage.y < 0 || pImage.offsetTop < 0) {
+        pImage.style.marginTop="0";
+      } else {
+        pImage.style.marginTop="";
       }
     }
 
