@@ -2,6 +2,7 @@
 /* ***** BEGIN LICENSE BLOCK *****
        
     Copyright (c) 2004-2010  Jason Adams <imagezoom@yellowgorilla.net>
+    Pale Moon Update:  2020  Andrew Sachen <webmaster@RealityRipple.com>
      
     This file is part of Image Zoom.
 
@@ -22,37 +23,33 @@
 ***** END LICENSE BLOCK ***** */
 
 #mainmenu {
-  	border: 2px solid;
-  	-moz-border-top-colors: ThreeDLightShadow ThreeDHighlight;
-  	-moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  	-moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  	-moz-border-left-colors: ThreeDLightShadow ThreeDHighlight;
+  	border: 1px outset;
   	padding: 1px;
   	min-width: 1px;
-  	background-color: Menu;
 	-moz-box-orient: vertical;
 }
 
 #submenu, #subrotatemenu {
-  	border: 2px solid;
-  	-moz-border-top-colors: ThreeDLightShadow ThreeDHighlight;
-  	-moz-border-right-colors: ThreeDDarkShadow ThreeDShadow;
-  	-moz-border-bottom-colors: ThreeDDarkShadow ThreeDShadow;
-  	-moz-border-left-colors: ThreeDLightShadow ThreeDHighlight;
+  	border: 1px outset;
   	padding: 1px;
   	min-width: 1px;
-  	background-color: Menu;
 	-moz-box-orient: vertical;
-	margin-top: 2px;
-	margin-left: -2px;
+	margin-top: 1px;
+	margin-left: -1px;
 }
 
 checkbox {
   -moz-box-align: center;
-  color: MenuText;
   padding-right: 25px;
   font: menu;
   margin: 0px;
+}
+
+spacer.line
+{
+ margin-top: 2px;
+ border-top: 1px solid;
+ margin-bottom: 6px;
 }
 
 .dummy {
@@ -63,9 +60,7 @@ checkbox {
 
 .right-arrow {
   margin-top: 6px;
-  margin-right: 6px;
-  float:right;
-  -moz-image-region: auto;
+  -moz-appearance: menuarrow;
 }
 
 .url {

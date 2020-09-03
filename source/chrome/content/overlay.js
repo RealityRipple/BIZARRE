@@ -1,6 +1,7 @@
 /* ***** BEGIN LICENSE BLOCK *****
 
  Copyright (c) 2006-2013  Jason Adams <imagezoom@yellowgorilla.net>
+ Pale Moon Update:  2020  Andrew Sachen <webmaster@RealityRipple.com>
 
  This file is part of Image Zoom.
 
@@ -22,13 +23,11 @@
 
 
 // Initialize the global namespace for image zoom
-if (!net) { var net = {}; }
-if (!net.yellowgorilla) { net.yellowgorilla = {}; }
-if (!net.yellowgorilla.imagezoom) { net.yellowgorilla.imagezoom = {}; }
+if (!izoom) { var izoom = {}; }
 
-net.yellowgorilla.imagezoom.overlay = new ImageZoomOverlay();
+izoom.overlay = new ImageZoomOverlay();
 
-window.addEventListener("load", net.yellowgorilla.imagezoom.overlay.initImageZoom, false);
+window.addEventListener("load", izoom.overlay.initImageZoom, false);
 
 // Image Zoom overlay Object Definition
 function ImageZoomOverlay() {
@@ -60,21 +59,21 @@ function ImageZoomOverlay() {
     // Add events for the mouse functions
     gPanelContainer().addEventListener("mousedown", izOnMouseDown, true);
 
-    imagezoomBundle = document.getElementById("net.yellowgorilla.imagezoom.stringbundle");
+    imagezoomBundle = document.getElementById("imagezoom.stringbundle");
 
   };
 
   this.izShowCustomZoom = function () {
     // Create the image object and pass it to the custom zoom dialog
     var oizImage = new IzImage(document.popupNode);
-    openDialog("chrome://net.yellowgorilla.imagezoom/content/customzoom.xul", "", "chrome,modal,centerscreen", "Image", oizImage);
+    openDialog("chrome://imagezoom/content/customzoom.xul", "", "chrome,modal,centerscreen", "Image", oizImage);
     reportStatus(oizImage);
   };
 
   this.izShowCustomDim = function () {
     // Create the image object and pass it to the custom dimension dialog
     var oizImage = new IzImage(document.popupNode);
-    openDialog("chrome://net.yellowgorilla.imagezoom/content/customdim.xul", "", "chrome,modal,centerscreen", oizImage);
+    openDialog("chrome://imagezoom/content/customdim.xul", "", "chrome,modal,centerscreen", oizImage);
     reportStatus(oizImage);
   };
 

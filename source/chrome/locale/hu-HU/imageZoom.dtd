@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Image Zoom">
-<!ENTITY iz.product.version "0.3">
-<!ENTITY iz.about.version.label "verzió">
-<!ENTITY iz.about.createdby.label "Készítő:">
-<!ENTITY iz.about.help.label "Súgó">
-<!ENTITY iz.about.help.description "Segítség az Image Zoom beállításához és használatához.">
-<!ENTITY iz.about.forums.label "Fórum">
-<!ENTITY iz.about.forums.description "Támogatások, tanácsok, hibák.">
-<!ENTITY iz.about.walkthrough.label "Jellemzők">
-<!ENTITY iz.about.walkthrough.description "Az Image Zoom kiterjesztés tulajdonságainak leírása.">
-<!ENTITY iz.about.close.label "Bezár">
 <!ENTITY iz.customzoom.label "A nagyítás mértéke">
 <!ENTITY iz.customzoom.title "Egyedi nagyítás">
 <!ENTITY iz.customdim.width.label "Szélesség:">

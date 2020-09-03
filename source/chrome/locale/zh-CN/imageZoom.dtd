@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Image Zoom">
-<!ENTITY iz.product.version "0.3">
-<!ENTITY iz.about.version.label "版本">
-<!ENTITY iz.about.createdby.label "创建者">
-<!ENTITY iz.about.help.label "帮助">
-<!ENTITY iz.about.help.description "帮助您设置和使用 Image Zoom">
-<!ENTITY iz.about.forums.label "论坛">
-<!ENTITY iz.about.forums.description "支持，建议，除错">
-<!ENTITY iz.about.walkthrough.label "漫游">
-<!ENTITY iz.about.walkthrough.description "Image Zoom 主要特征综述">
-<!ENTITY iz.about.close.label "关闭">
 <!ENTITY iz.customzoom.label "输入缩放系数">
 <!ENTITY iz.customzoom.title "自定义缩放">
 <!ENTITY iz.customdim.width.label "宽度：">

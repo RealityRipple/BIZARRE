@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Image Zoom">
-<!ENTITY iz.product.version "0.3">
-<!ENTITY iz.about.version.label "Verzija">
-<!ENTITY iz.about.createdby.label "Autor:">
-<!ENTITY iz.about.help.label "Pomoć">
-<!ENTITY iz.about.help.description "Pomoć pri podešavanju i korištenju Image Zoom-a">
-<!ENTITY iz.about.forums.label "Forumi">
-<!ENTITY iz.about.forums.description "Podrška, Savjeti, Pogreške u programu">
-<!ENTITY iz.about.walkthrough.label "Upute">
-<!ENTITY iz.about.walkthrough.description "Kratak pregled mogućnosti Image Zoom-a">
-<!ENTITY iz.about.close.label "Zatvori">
 <!ENTITY iz.customzoom.label "Upiši postotak uvećanja">
 <!ENTITY iz.customzoom.title "Definiraj Zoom">
 <!ENTITY iz.customdim.width.label "Širina:">

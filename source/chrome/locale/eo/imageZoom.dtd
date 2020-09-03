@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Image Zoom">
-<!ENTITY iz.product.version "0.6">
-<!ENTITY iz.about.version.label "Versio">
-<!ENTITY iz.about.createdby.label "Kreita de">
-<!ENTITY iz.about.help.label "Helpo">
-<!ENTITY iz.about.help.description "Helpo por agordi kaj uzi Image Zoom">
-<!ENTITY iz.about.forums.label "Forumoj">
-<!ENTITY iz.about.forums.description "Subteno, proponoj, cimoj">
-<!ENTITY iz.about.walkthrough.label "Prezento">
-<!ENTITY iz.about.walkthrough.description "Mallonga prezento de la funkcioj de Image Zoom">
-<!ENTITY iz.about.close.label "Fermi">
 <!ENTITY iz.customzoom.label "Entajpi zoman faktoron">
 <!ENTITY iz.customzoom.title "Laŭvola zomo">
 <!ENTITY iz.customdim.width.label "Larĝo:">

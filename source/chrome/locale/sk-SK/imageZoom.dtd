@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Image Zoom">
-<!ENTITY iz.product.version "0.3">
-<!ENTITY iz.about.version.label "Verzia">
-<!ENTITY iz.about.createdby.label "Vytvoril">
-<!ENTITY iz.about.help.label "Pomoc">
-<!ENTITY iz.about.help.description "Pomoc pri konfigurácii a používaní Image Zoom.">
-<!ENTITY iz.about.forums.label "Diskusné fóra">
-<!ENTITY iz.about.forums.description "Podpora, námety, nahlasovanie chýb.">
-<!ENTITY iz.about.walkthrough.label "Prehliadka">
-<!ENTITY iz.about.walkthrough.description "Celkový prehľad funkcií Image Zoom.">
-<!ENTITY iz.about.close.label "Zavrieť">
 <!ENTITY iz.customzoom.label "Zadajte pomer">
 <!ENTITY iz.customzoom.title "Vlastný pomer strán">
 <!ENTITY iz.customdim.width.label "Šírka:">

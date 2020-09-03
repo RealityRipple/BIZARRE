@@ -1,4 +1,2 @@
 *.xpi
-*.tmp*
-.idea/*
-other/
+*.bat

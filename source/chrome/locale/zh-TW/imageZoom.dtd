@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Image Zoom">
-<!ENTITY iz.product.version "0.3">
-<!ENTITY iz.about.version.label "版本">
-<!ENTITY iz.about.createdby.label "作者">
-<!ENTITY iz.about.help.label "幫助">
-<!ENTITY iz.about.help.description "協助您設定與使用 Image Zoom">
-<!ENTITY iz.about.forums.label "討論區">
-<!ENTITY iz.about.forums.description "技術支援、程式建議以及錯誤回報">
-<!ENTITY iz.about.walkthrough.label "新手上路">
-<!ENTITY iz.about.walkthrough.description "簡單的介紹 Image Zoom 的特色">
-<!ENTITY iz.about.close.label "關閉">
 <!ENTITY iz.customzoom.label "請輸入縮放比例">
 <!ENTITY iz.customzoom.title "自定比例">
 <!ENTITY iz.customdim.width.label "寬度：">

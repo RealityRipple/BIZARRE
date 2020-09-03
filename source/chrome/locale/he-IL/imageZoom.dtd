@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Image Zoom">
-<!ENTITY iz.product.version "0.3">
-<!ENTITY iz.about.version.label "גירסא">
-<!ENTITY iz.about.createdby.label "נוצר על ידי">
-<!ENTITY iz.about.help.label "עזרה">
-<!ENTITY iz.about.help.description "עזרה בתיכנות ובשימוש ב Image Zoom">
-<!ENTITY iz.about.forums.label "פורומים">
-<!ENTITY iz.about.forums.description "תמיכה, הצעות, באגים">
-<!ENTITY iz.about.walkthrough.label "עזרה במהלך">
-<!ENTITY iz.about.walkthrough.description "תיאור קצר של מאפייני Image Zoom">
-<!ENTITY iz.about.close.label "סגור">
 <!ENTITY iz.customzoom.label "הכנס אחוזי התמונה הרצויה">
 <!ENTITY iz.customzoom.title "התאמת אחוזי הזום">
 <!ENTITY iz.customdim.width.label "רוחב:">

@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "ImageZoom">
-<!ENTITY iz.product.version "0.4">
-<!ENTITY iz.about.version.label "Versie">
-<!ENTITY iz.about.createdby.label "Gemaakt door">
-<!ENTITY iz.about.help.label "Help">
-<!ENTITY iz.about.help.description "Help - Configureren en gebruiken van ImageZoom">
-<!ENTITY iz.about.forums.label "Forums">
-<!ENTITY iz.about.forums.description "Ondersteuning, suggesties, fouten">
-<!ENTITY iz.about.walkthrough.label "Analyse">
-<!ENTITY iz.about.walkthrough.description "Kort overzicht van ImageZoom-mogelijkheden">
-<!ENTITY iz.about.close.label "Sluiten">
 <!ENTITY iz.customzoom.label "Voer zoomfactor in">
 <!ENTITY iz.customzoom.title "Aangepaste zoom">
 <!ENTITY iz.customdim.width.label "Breedte:">

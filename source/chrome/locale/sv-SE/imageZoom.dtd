@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Image Zoom">
-<!ENTITY iz.product.version "0.3">
-<!ENTITY iz.about.version.label "Version">
-<!ENTITY iz.about.createdby.label "Skapad av">
-<!ENTITY iz.about.help.label "Hjälp">
-<!ENTITY iz.about.help.description "Hjälp för konfigurering och användning av Image Zoom">
-<!ENTITY iz.about.forums.label "Forum">
-<!ENTITY iz.about.forums.description "Support, Förbättringsförslag, Programfel">
-<!ENTITY iz.about.walkthrough.label "Guide">
-<!ENTITY iz.about.walkthrough.description "Kortfattad översikt över funktioner i Image Zoom">
-<!ENTITY iz.about.close.label "Stäng">
 <!ENTITY iz.customzoom.label "Ange zoomfaktor">
 <!ENTITY iz.customzoom.title "Valfri zoom">
 <!ENTITY iz.customdim.width.label "Bredd:">

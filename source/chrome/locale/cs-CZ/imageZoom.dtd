@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Image Zoom">
-<!ENTITY iz.product.version "0.3">
-<!ENTITY iz.about.version.label "Verze">
-<!ENTITY iz.about.createdby.label "Vytvořil">
-<!ENTITY iz.about.help.label "Nápověda">
-<!ENTITY iz.about.help.description "Nápověda pro konfiguraci a užívání Image Zoom.">
-<!ENTITY iz.about.forums.label "Diskuzní fóra">
-<!ENTITY iz.about.forums.description "Podpora, náměty, nahlašování chyb.">
-<!ENTITY iz.about.walkthrough.label "Prohlídka">
-<!ENTITY iz.about.walkthrough.description "Celkový přehled funkcí Image Zoom.">
-<!ENTITY iz.about.close.label "Zavřít">
 <!ENTITY iz.customzoom.label "Zadejte měřítko">
 <!ENTITY iz.customzoom.title "Vlastní měřítko">
 <!ENTITY iz.customdim.width.label "Délka:">

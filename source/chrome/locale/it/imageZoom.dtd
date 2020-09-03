@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Image Zoom">
-<!ENTITY iz.product.version "0.3">
-<!ENTITY iz.about.version.label "Versione">
-<!ENTITY iz.about.createdby.label "Creata da">
-<!ENTITY iz.about.help.label "Aiuto">
-<!ENTITY iz.about.help.description "Guida alla configurazione e all'utilizzo di Image Zoom">
-<!ENTITY iz.about.forums.label "Forum">
-<!ENTITY iz.about.forums.description "Supporto, suggerimenti, segnalazioni bug">
-<!ENTITY iz.about.walkthrough.label "Guida">
-<!ENTITY iz.about.walkthrough.description "Panoramica sulle funzioni di Image Zoom">
-<!ENTITY iz.about.close.label "Chiudi">
 <!ENTITY iz.customzoom.label "Inserire il fattore di zoom">
 <!ENTITY iz.customzoom.title "Personalizza zoom">
 <!ENTITY iz.customdim.width.label "Larghezza:">

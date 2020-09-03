@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Увеличение на изображения">
-<!ENTITY iz.product.version "0.4">
-<!ENTITY iz.about.version.label "Версия">
-<!ENTITY iz.about.createdby.label "Създадено от">
-<!ENTITY iz.about.help.label "Помощ">
-<!ENTITY iz.about.help.description "Помощ за конфигуриране и работа с Увеличение на изображения">
-<!ENTITY iz.about.forums.label "Форуми">
-<!ENTITY iz.about.forums.description "Поддръжка, Предложения, Бъгове">
-<!ENTITY iz.about.walkthrough.label "Репетиция">
-<!ENTITY iz.about.walkthrough.description "Кратък преглед на възможностите на Image Zoom">
-<!ENTITY iz.about.close.label "Затвори">
 <!ENTITY iz.customzoom.label "Въведете коефициент на увеличение">
 <!ENTITY iz.customzoom.title "Задаване на Увеличението">
 <!ENTITY iz.customdim.width.label "Ширина:">

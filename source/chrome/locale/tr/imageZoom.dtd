@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Image Zoom">
-<!ENTITY iz.product.version "0.4">
-<!ENTITY iz.about.version.label "Sürüm">
-<!ENTITY iz.about.createdby.label "Hazırlayan">
-<!ENTITY iz.about.help.label "Yardım">
-<!ENTITY iz.about.help.description "Image Zoom'u ayarlama ve kullanımı hakkında yardım">
-<!ENTITY iz.about.forums.label "Forumlar">
-<!ENTITY iz.about.forums.description "Destek, Öneriler, Hatalar">
-<!ENTITY iz.about.walkthrough.label "İlk adımlar">
-<!ENTITY iz.about.walkthrough.description "Image Zoom'un temel özellikleri hakkında bilgi">
-<!ENTITY iz.about.close.label "Kapat">
 <!ENTITY iz.customzoom.label "Yakınlaştırma oranını girin">
 <!ENTITY iz.customzoom.title "Özel yakınlaştırma">
 <!ENTITY iz.customdim.width.label "Genişlik:">

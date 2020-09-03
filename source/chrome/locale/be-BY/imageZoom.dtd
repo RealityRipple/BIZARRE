@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Image Zoom">
-<!ENTITY iz.product.version "0.3">
-<!ENTITY iz.about.version.label "Версія">
-<!ENTITY iz.about.createdby.label "Аўтар">
-<!ENTITY iz.about.help.label "Даведка">
-<!ENTITY iz.about.help.description "Даведка аб наладзе і выкарыстанні Image Zoom">
-<!ENTITY iz.about.forums.label "Форумы">
-<!ENTITY iz.about.forums.description "Падтрымка, Прапановы, Памылкі">
-<!ENTITY iz.about.walkthrough.label "Уводзіны">
-<!ENTITY iz.about.walkthrough.description "Кароткі агляд магчымасцяў Image Zoom">
-<!ENTITY iz.about.close.label "Зачыніць">
 <!ENTITY iz.customzoom.label "Увядзіце Каэфіцыент павелічэння">
 <!ENTITY iz.customzoom.title "Адмысловае павелічэнне">
 <!ENTITY iz.customdim.width.label "Шырыня:">

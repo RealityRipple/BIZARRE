@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Image Zoom">
-<!ENTITY iz.product.version "0.3">
-<!ENTITY iz.about.version.label "versio">
-<!ENTITY iz.about.createdby.label "tehnyt:">
-<!ENTITY iz.about.help.label "Ohje">
-<!ENTITY iz.about.help.description "Image Zoomin asetus- ja käyttösohjeet">
-<!ENTITY iz.about.forums.label "Keskustelukanavat">
-<!ENTITY iz.about.forums.description "Tuki, ehdotukset, virheet">
-<!ENTITY iz.about.walkthrough.label "Läpikulku">
-<!ENTITY iz.about.walkthrough.description "Katsaus Image Zoomin ominaisuuksiin">
-<!ENTITY iz.about.close.label "Sulje">
 <!ENTITY iz.customzoom.label "Syötä suurennuksen tekijä">
 <!ENTITY iz.customzoom.title "Mukautettu suurennus">
 <!ENTITY iz.customdim.width.label "Leveys:">

@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "زوم">
-<!ENTITY iz.product.version "0.4">
-<!ENTITY iz.about.version.label "نسخه">
-<!ENTITY iz.about.createdby.label "سازنده توسط">
-<!ENTITY iz.about.help.label "کمک">
-<!ENTITY iz.about.help.description "راهنما پیکربندی و استفاده از زوم تصاویر">
-<!ENTITY iz.about.forums.label "انجمن">
-<!ENTITY iz.about.forums.description "Support, Suggestions, Bugs">
-<!ENTITY iz.about.walkthrough.label "Walkthrough">
-<!ENTITY iz.about.walkthrough.description "Brief overview of Image Zoom features">
-<!ENTITY iz.about.close.label "بسته">
 <!ENTITY iz.customzoom.label "Enter Zoom Factor">
 <!ENTITY iz.customzoom.title "Custom Zoom">
 <!ENTITY iz.customdim.width.label "Width:">

@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Zmadhues Fotosh">
-<!ENTITY iz.product.version "0.4">
-<!ENTITY iz.about.version.label "Versioni">
-<!ENTITY iz.about.createdby.label "Programuar nga">
-<!ENTITY iz.about.help.label "Ndihmë">
-<!ENTITY iz.about.help.description "Ndihmë rreth konfigurimit dhe përdorimit të Zmadhuesit të Fotove">
-<!ENTITY iz.about.forums.label "Forumet">
-<!ENTITY iz.about.forums.description "Ndihmë, Sugjerime, Gabime">
-<!ENTITY iz.about.walkthrough.label "Kalo përmes">
-<!ENTITY iz.about.walkthrough.description "Përshkrim i shkurtër i mundësive të Zmadhuesit të Fotove">
-<!ENTITY iz.about.close.label "Mbylle">
 <!ENTITY iz.customzoom.label "Hyr tek Faktori i Zmadhimit">
 <!ENTITY iz.customzoom.title "Zmadhimi i Përzgjedhur">
 <!ENTITY iz.customdim.width.label "Gjerësia">

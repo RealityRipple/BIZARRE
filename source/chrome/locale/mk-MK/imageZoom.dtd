@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Image Zoom">
-<!ENTITY iz.product.version "0.3">
-<!ENTITY iz.about.version.label "Верзија">
-<!ENTITY iz.about.createdby.label "Создадена од">
-<!ENTITY iz.about.help.label "Помош">
-<!ENTITY iz.about.help.description "Помош за подесувањето и употребата на проширувањето „Image Zoom“">
-<!ENTITY iz.about.forums.label "Форум">
-<!ENTITY iz.about.forums.description "Поддршка, предлози, пријавување грешки">
-<!ENTITY iz.about.walkthrough.label "Преглед">
-<!ENTITY iz.about.walkthrough.description "Преглед на особините на проширувањето „Image Zoom“">
-<!ENTITY iz.about.close.label "Затвори">
 <!ENTITY iz.customzoom.label "Внесете степен на зголемување">
 <!ENTITY iz.customzoom.title "Степен на зголемување">
 <!ENTITY iz.customdim.width.label "Ширина:">

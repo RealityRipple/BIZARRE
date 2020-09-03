@@ -2,6 +2,7 @@
 <!-- ***** BEGIN LICENSE BLOCK *****
 
     Copyright (c) 2006-2013  Jason Adams <imagezoom@yellowgorilla.net>
+    Pale Moon Update:  2020  Andrew Sachen <webmaster@RealityRipple.com>
 
     This file is part of Image Zoom.
 
@@ -22,24 +23,23 @@
 ***** END LICENSE BLOCK ***** -->
 
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-<?xml-stylesheet href="chrome://net.yellowgorilla.imagezoom/skin/imagezoom.css" type="text/css"?>
+<?xml-stylesheet href="chrome://imagezoom/skin/imagezoom.css" type="text/css"?>
 <?xml-stylesheet href="chrome://mozapps/skin/pref/pref.css" type="text/css"?>
 
-<!DOCTYPE window SYSTEM "chrome://net.yellowgorilla.imagezoom/locale/imageZoom.dtd">
+<!DOCTYPE window SYSTEM "chrome://imagezoom/locale/imageZoom.dtd">
 
 <dialog buttons="accept, cancel"
         id="imagezoom-options-dialog"
         ondialogaccept="return imagezoom_saveOptions()"
         onload="imagezoom_initializeOptions()"
-        title="&iz.product.name; &iz.options.label;"
+        title="Image Zoom &iz.options.label;"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-    <script type="application/x-javascript" src="chrome://net.yellowgorilla.imagezoom/content/globals.js"/>
-    <script type="application/x-javascript" src="chrome://net.yellowgorilla.imagezoom/content/options.js"/>
+    <script type="application/x-javascript" src="chrome://imagezoom/content/options.js"/>
 
 
     <stringbundleset id="stringbundleset">
-        <stringbundle id="bundle_ImageZoom" src="chrome://net.yellowgorilla.imagezoom/locale/imageZoom.properties"/>
+        <stringbundle id="bundle_ImageZoom" src="chrome://imagezoom/locale/imageZoom.properties"/>
     </stringbundleset>
 
     <tabbox id="wf_tabbox">
@@ -51,8 +51,6 @@
         <tabpanels flex="1">
             <tabpanel orient="vertical" flex="1">
                 <vbox flex="1">
-                    <label id="visitHome" class="url help" value="&iz.options.help.label;"
-                           onclick="net.yellowgorilla.imagezoom.globals.openURL('http://imagezoom.yellowgorilla.net/help/?source=options&amp;version=' + net.yellowgorilla.imagezoom.globals.getAppVersion());"/>
                     <groupbox align="start">
                         <caption>
                             <checkbox id="imagezoomusemouseoptions" label="&iz.options.usemouse.label;"
@@ -240,14 +238,9 @@
                 </vbox>
             </tabpanel>
             <tabpanel orient="vertical">
-                <hbox>
-                    <spacer flex="1"/>
-                    <label id="visitHome" class="url help" value="&iz.options.help.label;"
-                           onclick="net.yellowgorilla.imagezoom.globals.openURL('http://imagezoom.yellowgorilla.net/help/?source=options&amp;version=&iz.product.version;');"/>
-                </hbox>
-                <groupbox id="container" orient="horizontal" flex="1">
-                    <caption label="&iz.options.contextdisplay.label;"/>
-                    <label id="imagezoomcontextdescription" label="&iz.options.contextdescription.label;"/>
+                <label id="imagezoomcontextdescription" value="&iz.options.contextdescription.label;"/>
+                <spacer class="line" flex="1" />
+                <hbox flex="1">
                     <vbox flex="1"/>
                     <vbox>
                         <hbox flex="1"/>
@@ -270,17 +263,17 @@
                             <checkbox id="context-zoom-zin"
                                       label="&iz.menu.context.increase.label;"
                                       oncommand="setOption(this);"
-                                      accesskey="&iz.menu.context.increase.label;"
+                                      accesskey="&iz.menu.context.increase.accesskey;"
                                     />
                             <checkbox id="context-zoom-zreset"
                                       label="&iz.menu.context.reset.label;"
                                       oncommand="setOption(this);"
-                                      accesskey="&iz.menu.context.reset.label;"
+                                      accesskey="&iz.menu.context.reset.accesskey;"
                                     />
                             <checkbox id="context-zoom-zout"
                                       label="&iz.menu.context.decrease.label;"
                                       oncommand="setOption(this);"
-                                      accesskey="&iz.menu.context.decrease.label;"
+                                      accesskey="&iz.menu.context.decrease.accesskey;"
                                     />
                             <checkbox id="context-zoom-zcustom"
                                       label="&iz.menu.context.customzoom.label;"
@@ -302,12 +295,12 @@
                                 <vbox flex="1">
                                     <checkbox id="context-zoomsub"
                                               label="&iz.menu.context.zoomimage.label;"
-                                              accesskey="&iz.menu.context.zoomimage.label;"
+                                              accesskey="&iz.menu.context.zoomimage.accesskey;"
                                               oncommand="toggleSubMenu();"
                                             />
                                 </vbox>
                                 <vbox>
-                                    <image class="right-arrow" src="chrome://global/skin/menu/menu-arrow.gif"/>
+                                    <image class="right-arrow"/>
                                 </vbox>
                             </hbox>
                             <menuseparator/>
@@ -325,17 +318,17 @@
                             <checkbox id="zoomsub-zin"
                                       label="&iz.menu.context.increase.label;"
                                       oncommand="setOption(this);"
-                                      accesskey="&iz.menu.context.increase.label;"
+                                      accesskey="&iz.menu.context.increase.accesskey;"
                                     />
                             <checkbox id="zoomsub-zreset"
                                       label="&iz.menu.context.reset.label;"
                                       oncommand="setOption(this);"
-                                      accesskey="&iz.menu.context.reset.label;"
+                                      accesskey="&iz.menu.context.reset.accesskey;"
                                     />
                             <checkbox id="zoomsub-zout"
                                       label="&iz.menu.context.decrease.label;"
                                       oncommand="setOption(this);"
-                                      accesskey="&iz.menu.context.decrease.label;"
+                                      accesskey="&iz.menu.context.decrease.accesskey;"
                                     />
                             <menuseparator/>
                             <checkbox id="zoomsub-zcustom"
@@ -406,17 +399,13 @@
                         </box>
                     </vbox>
                     <vbox flex="1"/>
-                </groupbox>
+                </hbox>
+                <spacer flex="1" />
             </tabpanel>
             <tabpanel orient="vertical">
-                <hbox>
-                    <spacer flex="1"/>
-                    <label id="visitHome" class="url help" value="&iz.options.help.label;"
-                           onclick="net.yellowgorilla.imagezoom.globals.openURL('http://imagezoom.yellowgorilla.net/help/?source=options&amp;version=&iz.product.version;');"/>
-                </hbox>
-                <groupbox id="container" orient="horizontal" flex="1">
-                    <caption label="&iz.options.contextdisplay.label;"/>
-                    <label id="imagezoomcontextdescription" label="&iz.options.contextdescription.label;"/>
+                <label id="imagezoomcontextdescription" value="&iz.options.contextdescription.label;"/>
+                <spacer class="line" flex="1" />
+                <hbox flex="1">
                     <vbox flex="1"/>
                     <vbox>
                         <hbox flex="1"/>
@@ -469,7 +458,7 @@
                                             />
                                 </vbox>
                                 <vbox>
-                                    <image class="right-arrow" src="chrome://global/skin/menu/menu-arrow.gif"/>
+                                    <image class="right-arrow"/>
                                 </vbox>
                             </hbox>
                             <menuseparator/>
@@ -517,7 +506,8 @@
                         <hbox flex="1"/>
                     </vbox>
                     <vbox flex="1"/>
-                </groupbox>
+                </hbox>
+                <spacer flex="1" />
             </tabpanel>
         </tabpanels>
     </tabbox>

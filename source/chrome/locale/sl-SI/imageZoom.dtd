@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Povečava slike">
-<!ENTITY iz.product.version "0.4">
-<!ENTITY iz.about.version.label "Različica">
-<!ENTITY iz.about.createdby.label "Avtor">
-<!ENTITY iz.about.help.label "Pomoč">
-<!ENTITY iz.about.help.description "Pomoč pri prilagajanju in uporabi Povečave slike">
-<!ENTITY iz.about.forums.label "Forumi">
-<!ENTITY iz.about.forums.description "Podpora, predlogi, napake">
-<!ENTITY iz.about.walkthrough.label "Povzetek">
-<!ENTITY iz.about.walkthrough.description "Kratek pregled značilnosti Povečave slike">
-<!ENTITY iz.about.close.label "Zapri">
 <!ENTITY iz.customzoom.label "Vnesite odstotek povečave">
 <!ENTITY iz.customzoom.title "Povečava po meri">
 <!ENTITY iz.customdim.width.label "Širina:">

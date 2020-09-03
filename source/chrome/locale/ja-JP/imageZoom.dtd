@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Image Zoom">
-<!ENTITY iz.product.version "0.4">
-<!ENTITY iz.about.version.label "バージョン">
-<!ENTITY iz.about.createdby.label "作成者">
-<!ENTITY iz.about.help.label "ヘルプ (英語)">
-<!ENTITY iz.about.help.description "Image Zoom の設定や使用を助けます。">
-<!ENTITY iz.about.forums.label "フォーラム (英語)">
-<!ENTITY iz.about.forums.description "サポートや次期バージョンへの提案やバグの報告。">
-<!ENTITY iz.about.walkthrough.label "チュートリアル (英語)">
-<!ENTITY iz.about.walkthrough.description "Image Zoom の機能について説明します。">
-<!ENTITY iz.about.close.label "閉じる">
 <!ENTITY iz.customzoom.label "画像の拡大/縮小率(&#37;)を入力">
 <!ENTITY iz.customzoom.title "画像の拡大/縮小">
 <!ENTITY iz.customdim.width.label "横幅:">

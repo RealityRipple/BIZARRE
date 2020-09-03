@@ -1,14 +1,3 @@
-<!ENTITY iz.product.name "Image Zoom">
-<!ENTITY iz.product.version "0.4">
-<!ENTITY iz.about.version.label "Leagan">
-<!ENTITY iz.about.createdby.label "Cruthaithe Ag">
-<!ENTITY iz.about.help.label "Cabhair">
-<!ENTITY iz.about.help.description "Cabhair chun Image Zoom a chumrú agus chun feidhm a bhaint as">
-<!ENTITY iz.about.forums.label "Cláir Plé">
-<!ENTITY iz.about.forums.description "Tacaíocht, Moltaí, Fabhtanna">
-<!ENTITY iz.about.walkthrough.label "Siúl Tríd">
-<!ENTITY iz.about.walkthrough.description "Brief overview of Image Zoom features">
-<!ENTITY iz.about.close.label "Dún">
 <!ENTITY iz.customzoom.label "Enter Zoom Factor">
 <!ENTITY iz.customzoom.title "Custom Zoom">
 <!ENTITY iz.customdim.width.label "Leithead:">
