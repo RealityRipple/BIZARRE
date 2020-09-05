@@ -1,4 +1,4 @@
-# Image Zoom
+# Image Zoom for Pale Moon
 
 If you have ever had an image that was too large to fit on your screen or too small to see the finer detail in your browser, then Image Zoom can help. Image Zoom gives you complete control of the size of most images displayed in Pale Moon. Both individual images or whole pages of images can be zoomed.
 
