@@ -1,0 +1,68 @@
+<!ENTITY bizarre.customzoom.label "画像の拡大/縮小率(&#37;)を入力">
+<!ENTITY bizarre.customzoom.title "画像の拡大/縮小">
+<!ENTITY bizarre.customdim.width.label "横幅:">
+<!ENTITY bizarre.customdim.height.label "高さ:">
+<!ENTITY bizarre.customdim.title "画像のサイズを入力">
+<!ENTITY bizarre.customdim.aspect.label "縦横比の保持">
+<!ENTITY bizarre.options.label "設定">
+<!ENTITY bizarre.options.help.label "ヘルプを表示">
+<!ENTITY bizarre.options.defaultzoom.label "1回に行う 拡大/縮小 の量">
+<!ENTITY bizarre.options.showautofit.label "[ウィンドウの大きさに合わせる] を [表示] メニューに表示">
+<!ENTITY bizarre.options.defaultscroll.label "ホイールの1目盛りで 拡大/縮小 する量">
+<!ENTITY bizarre.options.scrollmode.label "スクロール">
+<!ENTITY bizarre.options.scrollrelative.label "相対距離">
+<!ENTITY bizarre.options.scrollabsolute.label "絶対距離">
+<!ENTITY bizarre.options.rotatekeys.label "Rotate Key">
+<!ENTITY bizarre.options.defaultrotate.label "Rotate Angle Increments">
+<!ENTITY bizarre.options.singlezoom.label "画像の拡大 オプション">
+<!ENTITY bizarre.options.misc.label "Miscellaneous Options">
+<!ENTITY bizarre.options.showStatus.label "Show Image Zoom status in the Status Bar">
+<!ENTITY bizarre.options.context.label "コンテキストメニュー">
+<!ENTITY bizarre.options.contextdisplay.label "コンテキストメニュー 表示オプション">
+<!ENTITY bizarre.options.tabs.contextmenu.label "コンテキストメニューの項目">
+<!ENTITY bizarre.options.tabs.zoomcontext.label "拡大">
+<!ENTITY bizarre.options.tabs.rotatecontext.label "回転">
+<!ENTITY bizarre.options.tabs.main.label "全般">
+<!ENTITY bizarre.options.reversescroll.label "スクロールの反転">
+<!ENTITY bizarre.options.autocenter.label "ウィンドウに合わせて表示するさいに自動的に中央に寄せる">
+<!ENTITY bizarre.options.mouseaccess.label1 "マウスの">
+<!ENTITY bizarre.options.mouseaccess.label2 "ボタンを押しっぱなしにしている時に下記の機能を実行する。">
+<!ENTITY bizarre.options.imagefit.label "画像をウィンドウに合わせる">
+<!ENTITY bizarre.options.imagereset.label "画像を元の大きさに戻す">
+<!ENTITY bizarre.options.none.label "使用しない">
+<!ENTITY bizarre.options.lmb.label "左">
+<!ENTITY bizarre.options.mmb.label "センター">
+<!ENTITY bizarre.options.rmb.label "右">
+<!ENTITY bizarre.options.usemouse.label "マウスジェスチャーを使用する">
+<!ENTITY bizarre.options.contextdescription.label "コンテキストメニューに表示する項目の選択">
+<!ENTITY bizarre.options.togglefitreset.label "Toggle Image Fit/Reset">
+<!ENTITY bizarre.options.menudummy.view.label "画像の表示">
+<!ENTITY bizarre.options.menudummy.view.accesskey "i">
+<!ENTITY bizarre.options.menudummy.contents.label "画像のコピー">
+<!ENTITY bizarre.options.menudummy.contents.accesskey "y">
+<!ENTITY bizarre.options.menudummy.image.label "画像の URL のコピー">
+<!ENTITY bizarre.options.menudummy.image.accesskey "o">
+<!ENTITY bizarre.options.menudummy.save.label "画像を名前を付けて保存">
+<!ENTITY bizarre.options.menudummy.save.accesskey "v">
+<!ENTITY bizarre.menu.context.zoomimage.label "画像の大きさ">
+<!ENTITY bizarre.menu.context.zoomimage.accesskey "Z">
+<!ENTITY bizarre.menu.context.increase.label "+ 拡大">
+<!ENTITY bizarre.menu.context.increase.accesskey "+">
+<!ENTITY bizarre.menu.context.reset.label "= 元の大きさ">
+<!ENTITY bizarre.menu.context.reset.accesskey "=">
+<!ENTITY bizarre.menu.context.decrease.label "- 縮小">
+<!ENTITY bizarre.menu.context.decrease.accesskey "-">
+<!ENTITY bizarre.menu.context.customzoom.label "数値を入力して拡大/縮小">
+<!ENTITY bizarre.menu.context.customdim.label "数値を入力してサイズの変更">
+<!ENTITY bizarre.menu.context.imagefit.label "ウィンドウに合わせる">
+<!ENTITY bizarre.menu.context.imagefitwidth.label "Fit Width">
+<!ENTITY bizarre.menu.context.rotateimage.label "画像の回転">
+<!ENTITY bizarre.menu.context.rotateimage.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateright.label "右方向へ回転">
+<!ENTITY bizarre.menu.context.rotate.right.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateleft.label "左方向へ回転">
+<!ENTITY bizarre.menu.context.rotate.left.accesskey "L">
+<!ENTITY bizarre.menu.context.imagerotate180.label "180° 回転">
+<!ENTITY bizarre.menu.context.rotate.180.accesskey "1">
+<!ENTITY bizarre.menu.context.imagerotatereset.label "回転をリセット">
+<!ENTITY bizarre.menu.context.rotate.reset.accesskey "s">

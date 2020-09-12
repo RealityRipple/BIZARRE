@@ -2,7 +2,7 @@
 
  Copyright (c) 2006-2013  Jason Adams <imagezoom@yellowgorilla.net>
 
- This file is part of Image Zoom.
+ This file is part of Image Zoom (now BIZARRE).
 
  Image Zoom is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -63,13 +63,13 @@ var menuOptions = new OptionCache();
 
 // Preference Service objects
 var nsIPrefServiceObj = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
-var nsIPrefBranchObj = nsIPrefServiceObj.getBranch("extensions.imagezoom.");
+var nsIPrefBranchObj = nsIPrefServiceObj.getBranch("extensions.bizarre.");
 
 
 // Save options for Firefox and Thunderbird
 
 
-function imagezoom_saveOptions() {
+function bizarre_saveOptions() {
   if (!validateOptions()) return false;
 
   for (var i = 0; i < menuItems.length; i++) {
@@ -77,89 +77,89 @@ function imagezoom_saveOptions() {
       nsIPrefBranchObj.setBoolPref(optionItems[i], menuOptions.getOption(optionItems[i]));
     }
   }
-  nsIPrefBranchObj.setBoolPref("usescroll", document.getElementById("imagezoomusemouseoptions").checked);
-  nsIPrefBranchObj.setIntPref("scrollvalue", document.getElementById("imagezoomscrollvalue").value);
-  nsIPrefBranchObj.setIntPref("scrollmode", document.getElementById("imagezoomscrollmode").value);
+  nsIPrefBranchObj.setBoolPref("usescroll", document.getElementById("bizarreusemouseoptions").checked);
+  nsIPrefBranchObj.setIntPref("scrollvalue", document.getElementById("bizarrescrollvalue").value);
+  nsIPrefBranchObj.setIntPref("scrollmode", document.getElementById("bizarrescrollmode").value);
 
-  nsIPrefBranchObj.setIntPref("zoomvalue", document.getElementById("imagezoomzoomvalue").value);
-  nsIPrefBranchObj.setBoolPref("autocenter", document.getElementById("imagezoomautocenter").checked);
+  nsIPrefBranchObj.setIntPref("zoomvalue", document.getElementById("bizarrezoomvalue").value);
+  nsIPrefBranchObj.setBoolPref("autocenter", document.getElementById("bizarreautocenter").checked);
 
-  nsIPrefBranchObj.setBoolPref("showStatus", document.getElementById("imagezoomshowstatus").checked);
+  nsIPrefBranchObj.setBoolPref("showStatus", document.getElementById("bizarreshowstatus").checked);
 
-  nsIPrefBranchObj.setIntPref("triggerbutton", document.getElementById("imagezoommouseaccess").value);
-  nsIPrefBranchObj.setIntPref("imagefitbutton", document.getElementById("imagezoomimagefitbutton").value);
-  nsIPrefBranchObj.setIntPref("imageresetbutton", document.getElementById("imagezoomimageresetbutton").value);
-  nsIPrefBranchObj.setBoolPref("toggleFitReset", document.getElementById("imagezoomtogglefitreset").checked);
+  nsIPrefBranchObj.setIntPref("triggerbutton", document.getElementById("bizarremouseaccess").value);
+  nsIPrefBranchObj.setIntPref("imagefitbutton", document.getElementById("bizarreimagefitbutton").value);
+  nsIPrefBranchObj.setIntPref("imageresetbutton", document.getElementById("bizarreimageresetbutton").value);
+  nsIPrefBranchObj.setBoolPref("toggleFitReset", document.getElementById("bizarretogglefitreset").checked);
 
-  nsIPrefBranchObj.setBoolPref("reversescrollzoom", document.getElementById("imagezoomreversescroll").checked);
+  nsIPrefBranchObj.setBoolPref("reversescrollzoom", document.getElementById("bizarrereversescroll").checked);
 
-  nsIPrefBranchObj.setIntPref("rotateKeys", document.getElementById("imagezoomrotatekeys").value);
-  nsIPrefBranchObj.setIntPref("rotateValue", document.getElementById("imagezoomrotatevalue").value);
+  nsIPrefBranchObj.setIntPref("rotateKeys", document.getElementById("bizarrerotatekeys").value);
+  nsIPrefBranchObj.setIntPref("rotateValue", document.getElementById("bizarrerotatevalue").value);
 
   return true;
 }
 
 function validateOptions() {
-  if ((document.getElementById("imagezoommouseaccess").value == document.getElementById("imagezoomimagefitbutton").value) || (document.getElementById("imagezoommouseaccess").value == document.getElementById("imagezoomimageresetbutton").value) || ((document.getElementById("imagezoomimageresetbutton").value == document.getElementById("imagezoomimagefitbutton").value) && (document.getElementById("imagezoomimagefitbutton").value !== "0"))) {
-    alert(document.getElementById("bundle_ImageZoom").getString("op_mouse_error"));
+  if ((document.getElementById("bizarremouseaccess").value == document.getElementById("bizarreimagefitbutton").value) || (document.getElementById("bizarremouseaccess").value == document.getElementById("bizarreimageresetbutton").value) || ((document.getElementById("bizarreimageresetbutton").value == document.getElementById("bizarreimagefitbutton").value) && (document.getElementById("bizarreimagefitbutton").value !== "0"))) {
+    alert(document.getElementById("bundle_BIZARRE").getString("op_mouse_error"));
     return false;
   }
   return true;
 }
 
 // Initialise options for Firefox and Thunderbird
-function imagezoom_initializeOptions() {
+function bizarre_initializeOptions() {
 
-  document.getElementById("imagezoomusemouseoptions").checked = nsIPrefBranchObj.getBoolPref("usescroll");
+  document.getElementById("bizarreusemouseoptions").checked = nsIPrefBranchObj.getBoolPref("usescroll");
 
   var scroll = nsIPrefBranchObj.getIntPref("scrollvalue");
-  var scrollValueBox = document.getElementById("imagezoomscrollvalue");
+  var scrollValueBox = document.getElementById("bizarrescrollvalue");
   scrollValueBox.selectedItem = scrollValueBox.getElementsByAttribute("value", scroll)[0];
 
   scroll = nsIPrefBranchObj.getIntPref("scrollmode");
-  scrollValueBox = document.getElementById("imagezoomscrollmode");
+  scrollValueBox = document.getElementById("bizarrescrollmode");
   scrollValueBox.selectedItem = scrollValueBox.getElementsByAttribute("value", scroll)[0];
 
   scroll = nsIPrefBranchObj.getIntPref("triggerbutton");
-  scrollValueBox = document.getElementById("imagezoommouseaccess");
+  scrollValueBox = document.getElementById("bizarremouseaccess");
   scrollValueBox.selectedItem = scrollValueBox.getElementsByAttribute("value", scroll)[0];
 
   scroll = nsIPrefBranchObj.getIntPref("imagefitbutton");
-  scrollValueBox = document.getElementById("imagezoomimagefitbutton");
+  scrollValueBox = document.getElementById("bizarreimagefitbutton");
   scrollValueBox.selectedItem = scrollValueBox.getElementsByAttribute("value", scroll)[0];
 
   scroll = nsIPrefBranchObj.getIntPref("imageresetbutton");
-  scrollValueBox = document.getElementById("imagezoomimageresetbutton");
+  scrollValueBox = document.getElementById("bizarreimageresetbutton");
   scrollValueBox.selectedItem = scrollValueBox.getElementsByAttribute("value", scroll)[0];
 
   scroll = nsIPrefBranchObj.getIntPref("rotateKeys");
-  scrollValueBox = document.getElementById("imagezoomrotatekeys");
+  scrollValueBox = document.getElementById("bizarrerotatekeys");
   scrollValueBox.selectedItem = scrollValueBox.getElementsByAttribute("value", scroll)[0];
 
   scroll = nsIPrefBranchObj.getIntPref("rotateValue");
-  scrollValueBox = document.getElementById("imagezoomrotatevalue");
+  scrollValueBox = document.getElementById("bizarrerotatevalue");
   scrollValueBox.selectedItem = scrollValueBox.getElementsByAttribute("value", scroll)[0];
 
   var zoom = nsIPrefBranchObj.getIntPref("zoomvalue");
-  var zoomValueBox = document.getElementById("imagezoomzoomvalue");
+  var zoomValueBox = document.getElementById("bizarrezoomvalue");
   zoomValueBox.selectedItem = zoomValueBox.getElementsByAttribute("value", zoom)[0];
 
-  document.getElementById("imagezoomautocenter").checked = nsIPrefBranchObj.getBoolPref("autocenter");
-  document.getElementById("imagezoomshowstatus").checked = nsIPrefBranchObj.getBoolPref("showStatus");
-  document.getElementById("imagezoomreversescroll").checked = nsIPrefBranchObj.getBoolPref("reversescrollzoom");
-  document.getElementById("imagezoomtogglefitreset").checked = nsIPrefBranchObj.getBoolPref("toggleFitReset");
+  document.getElementById("bizarreautocenter").checked = nsIPrefBranchObj.getBoolPref("autocenter");
+  document.getElementById("bizarreshowstatus").checked = nsIPrefBranchObj.getBoolPref("showStatus");
+  document.getElementById("bizarrereversescroll").checked = nsIPrefBranchObj.getBoolPref("reversescrollzoom");
+  document.getElementById("bizarretogglefitreset").checked = nsIPrefBranchObj.getBoolPref("toggleFitReset");
 
   for (var i = 0; i < menuItems.length; i++) {
     menuOptions.setOption(optionItems[i], nsIPrefBranchObj.getBoolPref(optionItems[i]));
     document.getElementById(menuItems[i]).setAttribute("hidden", "false");
   }
 
-  setDisableAllChildren(document.getElementById('mouseoptions'), !document.getElementById("imagezoomusemouseoptions").checked);
+  setDisableAllChildren(document.getElementById('mouseoptions'), !document.getElementById("bizarreusemouseoptions").checked);
 
-  setImageZoomMenu();
+  setBIZARREMenu();
 }
 
-function setImageZoomMenu() {
+function setBIZARREMenu() {
 
   // Display the correct menu items depending on options and whether an image was clicked
   for (var i = 0; i < menuItems.length; i++) {
@@ -185,7 +185,7 @@ function setPreference(izCheck) {
 
 function setOption(izCheck) {
   setPreference(izCheck);
-  setImageZoomMenu();
+  setBIZARREMenu();
 }
 
 function setDisableAllChildren(xulElement, disabled) {
@@ -201,7 +201,7 @@ function toggleSubMenu() {
     checkboxes[i].checked = document.getElementById("context-zoomsub").checked;
     setPreference(checkboxes[i]);
   }
-  setImageZoomMenu();
+  setBIZARREMenu();
 }
 
 
@@ -211,7 +211,7 @@ function toggleRotateMenu() {
     checkboxes[i].checked = document.getElementById("context-rotatesub").checked;
     setPreference(checkboxes[i]);
   }
-  setImageZoomMenu();
+  setBIZARREMenu();
 }
 
 function togglePercentages() {

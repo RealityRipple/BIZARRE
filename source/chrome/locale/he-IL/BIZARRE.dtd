@@ -1,0 +1,68 @@
+<!ENTITY bizarre.customzoom.label "הכנס אחוזי התמונה הרצויה">
+<!ENTITY bizarre.customzoom.title "התאמת אחוזי הזום">
+<!ENTITY bizarre.customdim.width.label "רוחב:">
+<!ENTITY bizarre.customdim.height.label "גובה:">
+<!ENTITY bizarre.customdim.title "התאמת מימדי התמונה">
+<!ENTITY bizarre.customdim.aspect.label "שמור על הפרופורציה">
+<!ENTITY bizarre.options.label "אפשרויות">
+<!ENTITY bizarre.options.help.label "עמוד העזרה">
+<!ENTITY bizarre.options.defaultzoom.label "זום פנימה/החוצה">
+<!ENTITY bizarre.options.showautofit.label "Show Autofit in Global Menu">
+<!ENTITY bizarre.options.defaultscroll.label "גלול בתוספת הזום">
+<!ENTITY bizarre.options.scrollmode.label "מצב גלילה">
+<!ENTITY bizarre.options.scrollrelative.label "קשור">
+<!ENTITY bizarre.options.scrollabsolute.label "קבוע">
+<!ENTITY bizarre.options.rotatekeys.label "Rotate Key">
+<!ENTITY bizarre.options.defaultrotate.label "Rotate Angle Increments">
+<!ENTITY bizarre.options.singlezoom.label "אפשרויות זום בלעדיות">
+<!ENTITY bizarre.options.misc.label "Miscellaneous Options">
+<!ENTITY bizarre.options.showStatus.label "Show Image Zoom status in the Status Bar">
+<!ENTITY bizarre.options.context.label "תפריט העכבר">
+<!ENTITY bizarre.options.contextdisplay.label "תפריט העכבר אפשרויות מראה">
+<!ENTITY bizarre.options.tabs.contextmenu.label "פריטי תפריט העכבר">
+<!ENTITY bizarre.options.tabs.zoomcontext.label "Zoom Context Menu">
+<!ENTITY bizarre.options.tabs.rotatecontext.label "Rotate Context Menu">
+<!ENTITY bizarre.options.tabs.main.label "כללי">
+<!ENTITY bizarre.options.reversescroll.label "גלילה הפוכה">
+<!ENTITY bizarre.options.autocenter.label "מקם תמונות במרכז אוטומטית כאשר משתמשים בהתאמת תמונה למסך">
+<!ENTITY bizarre.options.mouseaccess.label1 "כנס לאפשרויות בלחיצת">
+<!ENTITY bizarre.options.mouseaccess.label2 "כפתור העכבר.">
+<!ENTITY bizarre.options.imagefit.label "כפתור התאמת התמונה למסך">
+<!ENTITY bizarre.options.imagereset.label "כפתור החזרת התמונה למצב המקורי">
+<!ENTITY bizarre.options.none.label "מבוטל">
+<!ENTITY bizarre.options.lmb.label "שמאל">
+<!ENTITY bizarre.options.mmb.label "אמצע">
+<!ENTITY bizarre.options.rmb.label "ימין">
+<!ENTITY bizarre.options.usemouse.label "השתמש באפשרויות העכבר">
+<!ENTITY bizarre.options.contextdescription.label "סמן את הפריטים שאתה רוצה שיהיו מוצגות בתפריט העכבר לתמונות">
+<!ENTITY bizarre.options.togglefitreset.label "Toggle Image Fit/Reset">
+<!ENTITY bizarre.options.menudummy.view.label "הצג תמונה">
+<!ENTITY bizarre.options.menudummy.view.accesskey "i">
+<!ENTITY bizarre.options.menudummy.contents.label "העתק תמונה">
+<!ENTITY bizarre.options.menudummy.contents.accesskey "y">
+<!ENTITY bizarre.options.menudummy.image.label "העתק מיקום התמונה">
+<!ENTITY bizarre.options.menudummy.image.accesskey "o">
+<!ENTITY bizarre.options.menudummy.save.label "שמור תמונה כ..">
+<!ENTITY bizarre.options.menudummy.save.accesskey "o">
+<!ENTITY bizarre.menu.context.zoomimage.label "הגדל/הקטן תמונה">
+<!ENTITY bizarre.menu.context.zoomimage.accesskey "Z">
+<!ENTITY bizarre.menu.context.increase.label "+ זום פנימה">
+<!ENTITY bizarre.menu.context.increase.accesskey "+">
+<!ENTITY bizarre.menu.context.reset.label "= החזרת זום למצב המקורי">
+<!ENTITY bizarre.menu.context.reset.accesskey "=">
+<!ENTITY bizarre.menu.context.decrease.label "- זום החוצה">
+<!ENTITY bizarre.menu.context.decrease.accesskey "-">
+<!ENTITY bizarre.menu.context.customzoom.label "זום מותאם">
+<!ENTITY bizarre.menu.context.customdim.label "מימדים מותאמים">
+<!ENTITY bizarre.menu.context.imagefit.label "התאמת התמונה למסך">
+<!ENTITY bizarre.menu.context.imagefitwidth.label "Fit Width">
+<!ENTITY bizarre.menu.context.rotateimage.label "Rotate Image">
+<!ENTITY bizarre.menu.context.rotateimage.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateright.label "Rotate Right">
+<!ENTITY bizarre.menu.context.rotate.right.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateleft.label "Rotate Left">
+<!ENTITY bizarre.menu.context.rotate.left.accesskey "L">
+<!ENTITY bizarre.menu.context.imagerotate180.label "Rotate 180°">
+<!ENTITY bizarre.menu.context.rotate.180.accesskey "1">
+<!ENTITY bizarre.menu.context.imagerotatereset.label "Rotate Reset">
+<!ENTITY bizarre.menu.context.rotate.reset.accesskey "s">

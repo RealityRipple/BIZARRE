@@ -1,0 +1,68 @@
+<!ENTITY bizarre.customzoom.label "A nagyítás mértéke">
+<!ENTITY bizarre.customzoom.title "Egyedi nagyítás">
+<!ENTITY bizarre.customdim.width.label "Szélesség:">
+<!ENTITY bizarre.customdim.height.label "Magasság:">
+<!ENTITY bizarre.customdim.title "Egyedi dimenzió">
+<!ENTITY bizarre.customdim.aspect.label "Oldalarány megtartása">
+<!ENTITY bizarre.options.label "Beállítások">
+<!ENTITY bizarre.options.help.label "Image Zoom honlapja">
+<!ENTITY bizarre.options.defaultzoom.label "A képátméretezés léptéke">
+<!ENTITY bizarre.options.showautofit.label "A „Nézet” menünél látható az „Automatikus ablakhoz igazítás” menüpont.">
+<!ENTITY bizarre.options.defaultscroll.label "Egérgörgővel való nagyítás">
+<!ENTITY bizarre.options.scrollmode.label "Görgetési mód">
+<!ENTITY bizarre.options.scrollrelative.label "Relatív">
+<!ENTITY bizarre.options.scrollabsolute.label "Abszolút">
+<!ENTITY bizarre.options.rotatekeys.label "Rotate Key">
+<!ENTITY bizarre.options.defaultrotate.label "Rotate Angle Increments">
+<!ENTITY bizarre.options.singlezoom.label "Képek egyedi átméretezése">
+<!ENTITY bizarre.options.misc.label "Miscellaneous Options">
+<!ENTITY bizarre.options.showStatus.label "Show Image Zoom status in the Status Bar">
+<!ENTITY bizarre.options.context.label "Helyzetérzékeny menü">
+<!ENTITY bizarre.options.contextdisplay.label "Kép helyzetérzékeny menü">
+<!ENTITY bizarre.options.tabs.contextmenu.label "Helyzetérzékeny menü">
+<!ENTITY bizarre.options.tabs.zoomcontext.label "Nagyítás helyi menü">
+<!ENTITY bizarre.options.tabs.rotatecontext.label "Forgatás helyi menü">
+<!ENTITY bizarre.options.tabs.main.label "Általános beállítások">
+<!ENTITY bizarre.options.reversescroll.label "Visszafelé görgetés">
+<!ENTITY bizarre.options.autocenter.label "A kép automatikus középre igazítás az ablakhoz méretezéskor.">
+<!ENTITY bizarre.options.mouseaccess.label1 "Az egérfunkciók elérése, ha a">
+<!ENTITY bizarre.options.mouseaccess.label2 "egérgomb nyomva van.">
+<!ENTITY bizarre.options.imagefit.label "Kép ablakhoz méretezése">
+<!ENTITY bizarre.options.imagereset.label "Eredeti méret">
+<!ENTITY bizarre.options.none.label "Tiltva">
+<!ENTITY bizarre.options.lmb.label "Bal">
+<!ENTITY bizarre.options.mmb.label "Középső">
+<!ENTITY bizarre.options.rmb.label "Jobb">
+<!ENTITY bizarre.options.usemouse.label "Képek átméretezése egérrel">
+<!ENTITY bizarre.options.contextdescription.label "Ellenőrizze, hogy melyik menüelemeket akarja megjeleníteni!">
+<!ENTITY bizarre.options.togglefitreset.label "Ablakhoz méretezés kapcsoló">
+<!ENTITY bizarre.options.menudummy.view.label "Kép megjelenítése">
+<!ENTITY bizarre.options.menudummy.view.accesskey "g">
+<!ENTITY bizarre.options.menudummy.contents.label "Kép másolása">
+<!ENTITY bizarre.options.menudummy.contents.accesskey "á">
+<!ENTITY bizarre.options.menudummy.image.label "Kép címének másolása">
+<!ENTITY bizarre.options.menudummy.image.accesskey "c">
+<!ENTITY bizarre.options.menudummy.save.label "Kép mentése más néven...">
+<!ENTITY bizarre.options.menudummy.save.accesskey "p">
+<!ENTITY bizarre.menu.context.zoomimage.label "Kép átméretezése">
+<!ENTITY bizarre.menu.context.zoomimage.accesskey "á">
+<!ENTITY bizarre.menu.context.increase.label "+ Kép nagyítása">
+<!ENTITY bizarre.menu.context.increase.accesskey "+">
+<!ENTITY bizarre.menu.context.reset.label "= Eredeti méret">
+<!ENTITY bizarre.menu.context.reset.accesskey "=">
+<!ENTITY bizarre.menu.context.decrease.label "- Kép kicsinyítése">
+<!ENTITY bizarre.menu.context.decrease.accesskey "-">
+<!ENTITY bizarre.menu.context.customzoom.label "Egyedi nagyítás">
+<!ENTITY bizarre.menu.context.customdim.label "Egyedi méret">
+<!ENTITY bizarre.menu.context.imagefit.label "Ablakhoz méretezés">
+<!ENTITY bizarre.menu.context.imagefitwidth.label "Fit Width">
+<!ENTITY bizarre.menu.context.rotateimage.label "Kép forgatása">
+<!ENTITY bizarre.menu.context.rotateimage.accesskey "f">
+<!ENTITY bizarre.menu.context.imagerotateright.label "Forgatás jobbra">
+<!ENTITY bizarre.menu.context.rotate.right.accesskey "j">
+<!ENTITY bizarre.menu.context.imagerotateleft.label "Forgatás balra">
+<!ENTITY bizarre.menu.context.rotate.left.accesskey "b">
+<!ENTITY bizarre.menu.context.imagerotate180.label "Fejjel lefelé">
+<!ENTITY bizarre.menu.context.rotate.180.accesskey "F">
+<!ENTITY bizarre.menu.context.imagerotatereset.label "Alapállapot">
+<!ENTITY bizarre.menu.context.rotate.reset.accesskey "A">

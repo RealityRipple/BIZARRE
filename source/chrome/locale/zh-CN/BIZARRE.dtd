@@ -1,0 +1,68 @@
+<!ENTITY bizarre.customzoom.label "输入缩放系数">
+<!ENTITY bizarre.customzoom.title "自定义缩放">
+<!ENTITY bizarre.customdim.width.label "宽度：">
+<!ENTITY bizarre.customdim.height.label "高度：">
+<!ENTITY bizarre.customdim.title "自定义尺寸">
+<!ENTITY bizarre.customdim.aspect.label "保持外观比例">
+<!ENTITY bizarre.options.label "属性">
+<!ENTITY bizarre.options.help.label "帮助页面">
+<!ENTITY bizarre.options.defaultzoom.label "缩放系数">
+<!ENTITY bizarre.options.showautofit.label "在全局菜单中显示自动适应">
+<!ENTITY bizarre.options.defaultscroll.label "滚轮缩放增量">
+<!ENTITY bizarre.options.scrollmode.label "滚轮模式">
+<!ENTITY bizarre.options.scrollrelative.label "相对滚动">
+<!ENTITY bizarre.options.scrollabsolute.label "绝对滚动">
+<!ENTITY bizarre.options.rotatekeys.label "Rotate Key">
+<!ENTITY bizarre.options.defaultrotate.label "Rotate Angle Increments">
+<!ENTITY bizarre.options.singlezoom.label "单一缩放选项">
+<!ENTITY bizarre.options.misc.label "Miscellaneous Options">
+<!ENTITY bizarre.options.showStatus.label "Show Image Zoom status in the Status Bar">
+<!ENTITY bizarre.options.context.label "右健菜单">
+<!ENTITY bizarre.options.contextdisplay.label "右健菜单显示选项">
+<!ENTITY bizarre.options.tabs.contextmenu.label "右健菜单项">
+<!ENTITY bizarre.options.tabs.zoomcontext.label "Zoom Context Menu">
+<!ENTITY bizarre.options.tabs.rotatecontext.label "Rotate Context Menu">
+<!ENTITY bizarre.options.tabs.main.label "常规">
+<!ENTITY bizarre.options.reversescroll.label "反转滚动方向">
+<!ENTITY bizarre.options.autocenter.label "使用适度缩放功能时居中图片">
+<!ENTITY bizarre.options.mouseaccess.label1 "完成以下相应功能，请在按住鼠标">
+<!ENTITY bizarre.options.mouseaccess.label2 "不放的情况下再按下">
+<!ENTITY bizarre.options.imagefit.label "适度缩放按键">
+<!ENTITY bizarre.options.imagereset.label "重置图片按键">
+<!ENTITY bizarre.options.none.label "禁用">
+<!ENTITY bizarre.options.lmb.label "左键">
+<!ENTITY bizarre.options.mmb.label "中键">
+<!ENTITY bizarre.options.rmb.label "右键">
+<!ENTITY bizarre.options.usemouse.label "启用鼠标功能">
+<!ENTITY bizarre.options.contextdescription.label "选择您想显示在图片右健菜单上的项目">
+<!ENTITY bizarre.options.togglefitreset.label "在适合/重置之间切换图片">
+<!ENTITY bizarre.options.menudummy.view.label "查看图片 (i)">
+<!ENTITY bizarre.options.menudummy.view.accesskey "i">
+<!ENTITY bizarre.options.menudummy.contents.label "复制图片 (y)">
+<!ENTITY bizarre.options.menudummy.contents.accesskey "y">
+<!ENTITY bizarre.options.menudummy.image.label "复制图片地址 (o)">
+<!ENTITY bizarre.options.menudummy.image.accesskey "o">
+<!ENTITY bizarre.options.menudummy.save.label "另存图片为 (v)">
+<!ENTITY bizarre.options.menudummy.save.accesskey "v">
+<!ENTITY bizarre.menu.context.zoomimage.label "缩放图片 (Z)">
+<!ENTITY bizarre.menu.context.zoomimage.accesskey "Z">
+<!ENTITY bizarre.menu.context.increase.label "放大 (+)">
+<!ENTITY bizarre.menu.context.increase.accesskey "+">
+<!ENTITY bizarre.menu.context.reset.label "重置 (=)">
+<!ENTITY bizarre.menu.context.reset.accesskey "=">
+<!ENTITY bizarre.menu.context.decrease.label "缩小 (-)">
+<!ENTITY bizarre.menu.context.decrease.accesskey "-">
+<!ENTITY bizarre.menu.context.customzoom.label "自定义缩放">
+<!ENTITY bizarre.menu.context.customdim.label "自定义尺寸">
+<!ENTITY bizarre.menu.context.imagefit.label "适度缩放">
+<!ENTITY bizarre.menu.context.imagefitwidth.label "Fit Width">
+<!ENTITY bizarre.menu.context.rotateimage.label "Rotate Image">
+<!ENTITY bizarre.menu.context.rotateimage.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateright.label "Rotate Right">
+<!ENTITY bizarre.menu.context.rotate.right.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateleft.label "Rotate Left">
+<!ENTITY bizarre.menu.context.rotate.left.accesskey "L">
+<!ENTITY bizarre.menu.context.imagerotate180.label "Rotate 180°">
+<!ENTITY bizarre.menu.context.rotate.180.accesskey "1">
+<!ENTITY bizarre.menu.context.imagerotatereset.label "Rotate Reset">
+<!ENTITY bizarre.menu.context.rotate.reset.accesskey "s">

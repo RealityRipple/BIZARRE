@@ -1,0 +1,68 @@
+<!ENTITY bizarre.customzoom.label "Zadejte měřítko">
+<!ENTITY bizarre.customzoom.title "Vlastní měřítko">
+<!ENTITY bizarre.customdim.width.label "Délka:">
+<!ENTITY bizarre.customdim.height.label "Výška:">
+<!ENTITY bizarre.customdim.title "Vlastní rozměr">
+<!ENTITY bizarre.customdim.aspect.label "Zachovat poměr stran">
+<!ENTITY bizarre.options.label "Možnosti">
+<!ENTITY bizarre.options.help.label "Nápověda">
+<!ENTITY bizarre.options.defaultzoom.label "Měřítko">
+<!ENTITY bizarre.options.showautofit.label "Show Autofit in Global Menu">
+<!ENTITY bizarre.options.defaultscroll.label "Přírůstek při posouvání">
+<!ENTITY bizarre.options.scrollmode.label "Scroll Mode">
+<!ENTITY bizarre.options.scrollrelative.label "Relative">
+<!ENTITY bizarre.options.scrollabsolute.label "Absolute">
+<!ENTITY bizarre.options.rotatekeys.label "Rotate Key">
+<!ENTITY bizarre.options.defaultrotate.label "Rotate Angle Increments">
+<!ENTITY bizarre.options.singlezoom.label "Osobní nastavení měřítka">
+<!ENTITY bizarre.options.misc.label "Miscellaneous Options">
+<!ENTITY bizarre.options.showStatus.label "Show Image Zoom status in the Status Bar">
+<!ENTITY bizarre.options.context.label "Místní nabídka">
+<!ENTITY bizarre.options.contextdisplay.label "Nastavení položek místní nabídky">
+<!ENTITY bizarre.options.tabs.contextmenu.label "Položky místní nabídky">
+<!ENTITY bizarre.options.tabs.zoomcontext.label "Zoom Context Menu">
+<!ENTITY bizarre.options.tabs.rotatecontext.label "Rotate Context Menu">
+<!ENTITY bizarre.options.tabs.main.label "Hlavní">
+<!ENTITY bizarre.options.reversescroll.label "Obrátit posouvání">
+<!ENTITY bizarre.options.autocenter.label "Vycentrovat obrázky při přizpůsobení obrazovce">
+<!ENTITY bizarre.options.mouseaccess.label1 "Přístup ke gestům držením ">
+<!ENTITY bizarre.options.mouseaccess.label2 " tlačítka myši.">
+<!ENTITY bizarre.options.imagefit.label "Přizpůsobit obrázek následným stisknutím">
+<!ENTITY bizarre.options.imagereset.label "Obnovit obrázek následným stisknutím">
+<!ENTITY bizarre.options.none.label "zakázáno">
+<!ENTITY bizarre.options.lmb.label "levého">
+<!ENTITY bizarre.options.mmb.label "prostředního">
+<!ENTITY bizarre.options.rmb.label "pravého">
+<!ENTITY bizarre.options.usemouse.label "Používat gesta myší">
+<!ENTITY bizarre.options.contextdescription.label "Zvolte položky, které chcete zobrazovat v místní nabídce">
+<!ENTITY bizarre.options.togglefitreset.label "Toggle Image Fit/Reset">
+<!ENTITY bizarre.options.menudummy.view.label "Zobrazit obrázek">
+<!ENTITY bizarre.options.menudummy.view.accesskey "Z">
+<!ENTITY bizarre.options.menudummy.contents.label "Kopírovat obrázek">
+<!ENTITY bizarre.options.menudummy.contents.accesskey "K">
+<!ENTITY bizarre.options.menudummy.image.label "Kopírovat adresu obrázku">
+<!ENTITY bizarre.options.menudummy.image.accesskey "o">
+<!ENTITY bizarre.options.menudummy.save.label "Uložit obrázek jako...">
+<!ENTITY bizarre.options.menudummy.save.accesskey "U">
+<!ENTITY bizarre.menu.context.zoomimage.label "Měřítko obrázku">
+<!ENTITY bizarre.menu.context.zoomimage.accesskey "M">
+<!ENTITY bizarre.menu.context.increase.label "+ Přiblížit">
+<!ENTITY bizarre.menu.context.increase.accesskey "+">
+<!ENTITY bizarre.menu.context.reset.label "= Obnovit">
+<!ENTITY bizarre.menu.context.reset.accesskey "=">
+<!ENTITY bizarre.menu.context.decrease.label "- Oddálit">
+<!ENTITY bizarre.menu.context.decrease.accesskey "-">
+<!ENTITY bizarre.menu.context.customzoom.label "Vlastní přiblížení">
+<!ENTITY bizarre.menu.context.customdim.label "Vlastní rozměr">
+<!ENTITY bizarre.menu.context.imagefit.label "Přizpůsobit">
+<!ENTITY bizarre.menu.context.imagefitwidth.label "Fit Width">
+<!ENTITY bizarre.menu.context.rotateimage.label "Rotate Image">
+<!ENTITY bizarre.menu.context.rotateimage.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateright.label "Rotate Right">
+<!ENTITY bizarre.menu.context.rotate.right.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateleft.label "Rotate Left">
+<!ENTITY bizarre.menu.context.rotate.left.accesskey "L">
+<!ENTITY bizarre.menu.context.imagerotate180.label "Rotate 180°">
+<!ENTITY bizarre.menu.context.rotate.180.accesskey "1">
+<!ENTITY bizarre.menu.context.imagerotatereset.label "Rotate Reset">
+<!ENTITY bizarre.menu.context.rotate.reset.accesskey "s">

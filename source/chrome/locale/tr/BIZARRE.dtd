@@ -1,0 +1,68 @@
+<!ENTITY bizarre.customzoom.label "Yakınlaştırma oranını girin">
+<!ENTITY bizarre.customzoom.title "Özel yakınlaştırma">
+<!ENTITY bizarre.customdim.width.label "Genişlik:">
+<!ENTITY bizarre.customdim.height.label "Yükseklik:">
+<!ENTITY bizarre.customdim.title "Özel ebat">
+<!ENTITY bizarre.customdim.aspect.label "En-boy oranını koru">
+<!ENTITY bizarre.options.label "Tercihleri">
+<!ENTITY bizarre.options.help.label "Yardım sayfası">
+<!ENTITY bizarre.options.defaultzoom.label "Yakınlaştırma artış/azalışı">
+<!ENTITY bizarre.options.showautofit.label "Toplu yakınlaştırma menüsünde 'Otomatik sığdır'ı göster">
+<!ENTITY bizarre.options.defaultscroll.label "Tekerlekle yakınlaştırma">
+<!ENTITY bizarre.options.scrollmode.label "Tekerlek modu">
+<!ENTITY bizarre.options.scrollrelative.label "Nisbi">
+<!ENTITY bizarre.options.scrollabsolute.label "Kesin">
+<!ENTITY bizarre.options.rotatekeys.label "Rotate Key">
+<!ENTITY bizarre.options.defaultrotate.label "Rotate Angle Increments">
+<!ENTITY bizarre.options.singlezoom.label "Tek resmi yakınlaştırma seçenekleri">
+<!ENTITY bizarre.options.misc.label "Miscellaneous Options">
+<!ENTITY bizarre.options.showStatus.label "Show Image Zoom status in the Status Bar">
+<!ENTITY bizarre.options.context.label "Açılır menü">
+<!ENTITY bizarre.options.contextdisplay.label "Açılır Menü Görünüm Seçenekleri">
+<!ENTITY bizarre.options.tabs.contextmenu.label "Açılır Menü Öğeleri">
+<!ENTITY bizarre.options.tabs.zoomcontext.label "Yaklaştırma Açılır Menüsü">
+<!ENTITY bizarre.options.tabs.rotatecontext.label "Döndürme Açılır Menüsü">
+<!ENTITY bizarre.options.tabs.main.label "Genel">
+<!ENTITY bizarre.options.reversescroll.label "Tekerleği tersine çevir">
+<!ENTITY bizarre.options.autocenter.label "Resim sığdırıldığında otomatik olarak ortala">
+<!ENTITY bizarre.options.mouseaccess.label1 "Fonksiyonları">
+<!ENTITY bizarre.options.mouseaccess.label2 "fare düğmesi basılı tutulduğunda kullan.">
+<!ENTITY bizarre.options.imagefit.label "Resmi sığdır düğmesi">
+<!ENTITY bizarre.options.imagereset.label "Resmi sıfırla düğmesi">
+<!ENTITY bizarre.options.none.label "Devre dışı">
+<!ENTITY bizarre.options.lmb.label "Sol">
+<!ENTITY bizarre.options.mmb.label "Orta">
+<!ENTITY bizarre.options.rmb.label "Sağ">
+<!ENTITY bizarre.options.usemouse.label "Fare Fonksiyonlarını Kullan">
+<!ENTITY bizarre.options.contextdescription.label "Resim Açılır Menüsü'nde gösterilmesini istediğiniz öğeleri işaretleyin">
+<!ENTITY bizarre.options.togglefitreset.label "Tekrar tıklayınca sıfırla">
+<!ENTITY bizarre.options.menudummy.view.label "Resme bak">
+<!ENTITY bizarre.options.menudummy.view.accesskey "r">
+<!ENTITY bizarre.options.menudummy.contents.label "Resmi kopyala">
+<!ENTITY bizarre.options.menudummy.contents.accesskey "y">
+<!ENTITY bizarre.options.menudummy.image.label "Resim konumunu kopyala">
+<!ENTITY bizarre.options.menudummy.image.accesskey "k">
+<!ENTITY bizarre.options.menudummy.save.label "Resmi farklı kaydet">
+<!ENTITY bizarre.options.menudummy.save.accesskey "r">
+<!ENTITY bizarre.menu.context.zoomimage.label "Resim yakınlaştırma">
+<!ENTITY bizarre.menu.context.zoomimage.accesskey "R">
+<!ENTITY bizarre.menu.context.increase.label "+ Büyüt">
+<!ENTITY bizarre.menu.context.increase.accesskey "+">
+<!ENTITY bizarre.menu.context.reset.label "= Sıfırla">
+<!ENTITY bizarre.menu.context.reset.accesskey "=">
+<!ENTITY bizarre.menu.context.decrease.label "- Küçült">
+<!ENTITY bizarre.menu.context.decrease.accesskey "-">
+<!ENTITY bizarre.menu.context.customzoom.label "Özel yakınlaştırma">
+<!ENTITY bizarre.menu.context.customdim.label "Özel ebatlar">
+<!ENTITY bizarre.menu.context.imagefit.label "Resmi sığdır">
+<!ENTITY bizarre.menu.context.imagefitwidth.label "Fit Width">
+<!ENTITY bizarre.menu.context.rotateimage.label "Resmi döndür">
+<!ENTITY bizarre.menu.context.rotateimage.accesskey "d">
+<!ENTITY bizarre.menu.context.imagerotateright.label "Sağa döndür">
+<!ENTITY bizarre.menu.context.rotate.right.accesskey "S">
+<!ENTITY bizarre.menu.context.imagerotateleft.label "Sola döndür">
+<!ENTITY bizarre.menu.context.rotate.left.accesskey "O">
+<!ENTITY bizarre.menu.context.imagerotate180.label "Baş aşağı döndür">
+<!ENTITY bizarre.menu.context.rotate.180.accesskey "B">
+<!ENTITY bizarre.menu.context.imagerotatereset.label "Döndürmeyi sıfırla">
+<!ENTITY bizarre.menu.context.rotate.reset.accesskey "D">

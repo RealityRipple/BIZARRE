@@ -1,0 +1,68 @@
+<!ENTITY bizarre.customzoom.label "Factor d'ampliació/reducció">
+<!ENTITY bizarre.customzoom.title "Zoom personalitzat">
+<!ENTITY bizarre.customdim.width.label "Amplada:">
+<!ENTITY bizarre.customdim.height.label "Alçada:">
+<!ENTITY bizarre.customdim.title "Dimensions personalitzades">
+<!ENTITY bizarre.customdim.aspect.label "Conserva la relació d'aspecte">
+<!ENTITY bizarre.options.label "- Preferències">
+<!ENTITY bizarre.options.help.label "Pàgina d'ajuda">
+<!ENTITY bizarre.options.defaultzoom.label "Factor d'ampliació/reducció">
+<!ENTITY bizarre.options.showautofit.label "Mostra l'element Ajusta automàticament al menú global">
+<!ENTITY bizarre.options.defaultscroll.label "Increments del zoom quan s'utilitza la roda de desplaçament del ratolí">
+<!ENTITY bizarre.options.scrollmode.label "Mode de desplaçament">
+<!ENTITY bizarre.options.scrollrelative.label "Relatiu">
+<!ENTITY bizarre.options.scrollabsolute.label "Absolut">
+<!ENTITY bizarre.options.rotatekeys.label "Rotate Key">
+<!ENTITY bizarre.options.defaultrotate.label "Rotate Angle Increments">
+<!ENTITY bizarre.options.singlezoom.label "Opcions de zoom individual">
+<!ENTITY bizarre.options.misc.label "Miscellaneous Options">
+<!ENTITY bizarre.options.showStatus.label "Show Image Zoom status in the Status Bar">
+<!ENTITY bizarre.options.context.label "Menú contextual">
+<!ENTITY bizarre.options.contextdisplay.label "Opcions de visualització del menú contextual">
+<!ENTITY bizarre.options.tabs.contextmenu.label "Elements del menú contextual">
+<!ENTITY bizarre.options.tabs.zoomcontext.label "Menú contextual Amplia/redueix">
+<!ENTITY bizarre.options.tabs.rotatecontext.label "Menú contextual Gira">
+<!ENTITY bizarre.options.tabs.main.label "General">
+<!ENTITY bizarre.options.reversescroll.label "Inverteix el desplaçament">
+<!ENTITY bizarre.options.autocenter.label "Centra automàticament les imatges en utilitzar l'opció d'ajustar la imatge">
+<!ENTITY bizarre.options.mouseaccess.label1 "Per accedir a les funcions, cal mantenir premut el botó">
+<!ENTITY bizarre.options.mouseaccess.label2 "del ratolí.">
+<!ENTITY bizarre.options.imagefit.label "Botó per ajustar la imatge">
+<!ENTITY bizarre.options.imagereset.label "Botó per reiniciar la imatge">
+<!ENTITY bizarre.options.none.label "Inhabilitat">
+<!ENTITY bizarre.options.lmb.label "Esquerre">
+<!ENTITY bizarre.options.mmb.label "Mig">
+<!ENTITY bizarre.options.rmb.label "Dret">
+<!ENTITY bizarre.options.usemouse.label "Utilitza les funcions del ratolí">
+<!ENTITY bizarre.options.contextdescription.label "Comproveu els elements que voleu que es mostrin al menú contextual de les imatges">
+<!ENTITY bizarre.options.togglefitreset.label "Commuta entre les opcions d'ajustar/reiniciar la imatge">
+<!ENTITY bizarre.options.menudummy.view.label "Visualitza la imatge">
+<!ENTITY bizarre.options.menudummy.view.accesskey "i">
+<!ENTITY bizarre.options.menudummy.contents.label "Copia la imatge">
+<!ENTITY bizarre.options.menudummy.contents.accesskey "m">
+<!ENTITY bizarre.options.menudummy.image.label "Copia la ubicació de la imatge">
+<!ENTITY bizarre.options.menudummy.image.accesskey "o">
+<!ENTITY bizarre.options.menudummy.save.label "Anomena i desa la imatge...">
+<!ENTITY bizarre.options.menudummy.save.accesskey "a">
+<!ENTITY bizarre.menu.context.zoomimage.label "Amplia/redueix la imatge">
+<!ENTITY bizarre.menu.context.zoomimage.accesskey "l">
+<!ENTITY bizarre.menu.context.increase.label "+ Amplia">
+<!ENTITY bizarre.menu.context.increase.accesskey "+">
+<!ENTITY bizarre.menu.context.reset.label "= Reinicia el zoom">
+<!ENTITY bizarre.menu.context.reset.accesskey "=">
+<!ENTITY bizarre.menu.context.decrease.label "- Redueix">
+<!ENTITY bizarre.menu.context.decrease.accesskey "-">
+<!ENTITY bizarre.menu.context.customzoom.label "Zoom personalitzat">
+<!ENTITY bizarre.menu.context.customdim.label "Dimensions personalitzades">
+<!ENTITY bizarre.menu.context.imagefit.label "Ajusta la imatge">
+<!ENTITY bizarre.menu.context.imagefitwidth.label "Fit Width">
+<!ENTITY bizarre.menu.context.rotateimage.label "Gira la imatge">
+<!ENTITY bizarre.menu.context.rotateimage.accesskey "G">
+<!ENTITY bizarre.menu.context.imagerotateright.label "Gira a la dreta">
+<!ENTITY bizarre.menu.context.rotate.right.accesskey "d">
+<!ENTITY bizarre.menu.context.imagerotateleft.label "Gira a l'esquerra">
+<!ENTITY bizarre.menu.context.rotate.left.accesskey "e">
+<!ENTITY bizarre.menu.context.imagerotate180.label "Gira 180°">
+<!ENTITY bizarre.menu.context.rotate.180.accesskey "1">
+<!ENTITY bizarre.menu.context.imagerotatereset.label "Reinicia el gir">
+<!ENTITY bizarre.menu.context.rotate.reset.accesskey "R">

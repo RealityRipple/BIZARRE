@@ -1,0 +1,68 @@
+<!ENTITY bizarre.customzoom.label "Enter Zoom Factor">
+<!ENTITY bizarre.customzoom.title "Custom Zoom">
+<!ENTITY bizarre.customdim.width.label "Leithead:">
+<!ENTITY bizarre.customdim.height.label "Airde:">
+<!ENTITY bizarre.customdim.title "Custom Dimension">
+<!ENTITY bizarre.customdim.aspect.label "Maintain Aspect Ratio">
+<!ENTITY bizarre.options.label "Sainroghanna">
+<!ENTITY bizarre.options.help.label "Leathanach Cabhair">
+<!ENTITY bizarre.options.defaultzoom.label "Zoom In/Out Factor">
+<!ENTITY bizarre.options.showautofit.label "Show Autofit in Global Menu">
+<!ENTITY bizarre.options.defaultscroll.label "Scroll Zoom Increments">
+<!ENTITY bizarre.options.scrollmode.label "Scroll Mode">
+<!ENTITY bizarre.options.scrollrelative.label "Relative">
+<!ENTITY bizarre.options.scrollabsolute.label "Absolute">
+<!ENTITY bizarre.options.rotatekeys.label "Rotate Key">
+<!ENTITY bizarre.options.defaultrotate.label "Rotate Angle Increments">
+<!ENTITY bizarre.options.singlezoom.label "Individual Zoom Options">
+<!ENTITY bizarre.options.misc.label "Miscellaneous Options">
+<!ENTITY bizarre.options.showStatus.label "Show Image Zoom status in the Status Bar">
+<!ENTITY bizarre.options.context.label "Context Menu">
+<!ENTITY bizarre.options.contextdisplay.label "Context Menu Display Options">
+<!ENTITY bizarre.options.tabs.contextmenu.label "Context Menu Items">
+<!ENTITY bizarre.options.tabs.zoomcontext.label "Zoom Context Menu">
+<!ENTITY bizarre.options.tabs.rotatecontext.label "Rotate Context Menu">
+<!ENTITY bizarre.options.tabs.main.label "Coitianta">
+<!ENTITY bizarre.options.reversescroll.label "Reverse Scroll">
+<!ENTITY bizarre.options.autocenter.label "Auto Center Images when using Image Fit">
+<!ENTITY bizarre.options.mouseaccess.label1 "Access functions by holding down the ">
+<!ENTITY bizarre.options.mouseaccess.label2 " mouse button.">
+<!ENTITY bizarre.options.imagefit.label "Image Fit Button">
+<!ENTITY bizarre.options.imagereset.label "Image Reset Button">
+<!ENTITY bizarre.options.none.label "Díchumasaithe">
+<!ENTITY bizarre.options.lmb.label "Clé">
+<!ENTITY bizarre.options.mmb.label "Lár">
+<!ENTITY bizarre.options.rmb.label "Deas">
+<!ENTITY bizarre.options.usemouse.label "Use Mouse Functions">
+<!ENTITY bizarre.options.contextdescription.label "Check the items that you want to be displayed in the Image Context Menu">
+<!ENTITY bizarre.options.togglefitreset.label "Toggle Image Fit/Reset">
+<!ENTITY bizarre.options.menudummy.view.label "Féach ar an Íomhá">
+<!ENTITY bizarre.options.menudummy.view.accesskey "i">
+<!ENTITY bizarre.options.menudummy.contents.label "Macasamhlaigh an Íomhá">
+<!ENTITY bizarre.options.menudummy.contents.accesskey "y">
+<!ENTITY bizarre.options.menudummy.image.label "Copy Image Location">
+<!ENTITY bizarre.options.menudummy.image.accesskey "o">
+<!ENTITY bizarre.options.menudummy.save.label "Taisc an Íomhá Mar">
+<!ENTITY bizarre.options.menudummy.save.accesskey "v">
+<!ENTITY bizarre.menu.context.zoomimage.label "Zoom Image">
+<!ENTITY bizarre.menu.context.zoomimage.accesskey "Z">
+<!ENTITY bizarre.menu.context.increase.label "+ Zoom In">
+<!ENTITY bizarre.menu.context.increase.accesskey "+">
+<!ENTITY bizarre.menu.context.reset.label "= Zoom Reset">
+<!ENTITY bizarre.menu.context.reset.accesskey "=">
+<!ENTITY bizarre.menu.context.decrease.label "- Zoom Out">
+<!ENTITY bizarre.menu.context.decrease.accesskey "-">
+<!ENTITY bizarre.menu.context.customzoom.label "Custom Zoom">
+<!ENTITY bizarre.menu.context.customdim.label "Custom Dimensions">
+<!ENTITY bizarre.menu.context.imagefit.label "Image Fit">
+<!ENTITY bizarre.menu.context.imagefitwidth.label "Fit Width">
+<!ENTITY bizarre.menu.context.rotateimage.label "Rothlaigh an Íomhá">
+<!ENTITY bizarre.menu.context.rotateimage.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateright.label "Rothlaigh Deas">
+<!ENTITY bizarre.menu.context.rotate.right.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateleft.label "Rothlaigh Clé">
+<!ENTITY bizarre.menu.context.rotate.left.accesskey "L">
+<!ENTITY bizarre.menu.context.imagerotate180.label "Rothlaigh 180°">
+<!ENTITY bizarre.menu.context.rotate.180.accesskey "1">
+<!ENTITY bizarre.menu.context.imagerotatereset.label "Athshocraigh an Rothlú">
+<!ENTITY bizarre.menu.context.rotate.reset.accesskey "s">

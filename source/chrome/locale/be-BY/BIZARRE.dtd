@@ -1,0 +1,68 @@
+<!ENTITY bizarre.customzoom.label "Увядзіце Каэфіцыент павелічэння">
+<!ENTITY bizarre.customzoom.title "Адмысловае павелічэнне">
+<!ENTITY bizarre.customdim.width.label "Шырыня:">
+<!ENTITY bizarre.customdim.height.label "Вышыня:">
+<!ENTITY bizarre.customdim.title "Адмысловы памер">
+<!ENTITY bizarre.customdim.aspect.label "Захаваць дачыненне памераў">
+<!ENTITY bizarre.options.label "Налады">
+<!ENTITY bizarre.options.help.label "Старонка Даведкі">
+<!ENTITY bizarre.options.defaultzoom.label "Каэфіцыент павелічэння">
+<!ENTITY bizarre.options.showautofit.label "Show Autofit in Global Menu">
+<!ENTITY bizarre.options.defaultscroll.label "Павелічэнне на адзін паварот кола">
+<!ENTITY bizarre.options.scrollmode.label "Рэжым скролінга">
+<!ENTITY bizarre.options.scrollrelative.label "Relative">
+<!ENTITY bizarre.options.scrollabsolute.label "Абсалютна">
+<!ENTITY bizarre.options.rotatekeys.label "Rotate Key">
+<!ENTITY bizarre.options.defaultrotate.label "Rotate Angle Increments">
+<!ENTITY bizarre.options.singlezoom.label "Індывідуальныя опцыі павелічэння">
+<!ENTITY bizarre.options.misc.label "Miscellaneous Options">
+<!ENTITY bizarre.options.showStatus.label "Show Image Zoom status in the Status Bar">
+<!ENTITY bizarre.options.context.label "Кантэкстнае меню">
+<!ENTITY bizarre.options.contextdisplay.label "Адлюстраванне Кантэкстнага меню">
+<!ENTITY bizarre.options.tabs.contextmenu.label "Пункты Кантэкстнага меню">
+<!ENTITY bizarre.options.tabs.zoomcontext.label "Zoom Context Menu">
+<!ENTITY bizarre.options.tabs.rotatecontext.label "Rotate Context Menu">
+<!ENTITY bizarre.options.tabs.main.label "Асноўныя">
+<!ENTITY bizarre.options.reversescroll.label "Рэверс кола мышы">
+<!ENTITY bizarre.options.autocenter.label "Аўтацэнтраванне малюнкаў пры Расцяжэнні ва ўвесь экран">
+<!ENTITY bizarre.options.mouseaccess.label1 "Доступ да функцый, затрымоўваючы">
+<!ENTITY bizarre.options.mouseaccess.label2 "кнопку мышы.">
+<!ENTITY bizarre.options.imagefit.label "Кнопка расцяжэння Ва ўвесь экран">
+<!ENTITY bizarre.options.imagereset.label "Кнопка скіду">
+<!ENTITY bizarre.options.none.label "Адключана">
+<!ENTITY bizarre.options.lmb.label "Левая">
+<!ENTITY bizarre.options.mmb.label "Сярэдняя">
+<!ENTITY bizarre.options.rmb.label "Правая">
+<!ENTITY bizarre.options.usemouse.label "Выкарыстанне функцыяў мышы">
+<!ENTITY bizarre.options.contextdescription.label "Вылучыце элементы, якія вы жадаеце ўбачыць у кантэкстным меню">
+<!ENTITY bizarre.options.togglefitreset.label "Toggle Image Fit/Reset">
+<!ENTITY bizarre.options.menudummy.view.label "Паказаць малюнак">
+<!ENTITY bizarre.options.menudummy.view.accesskey "П">
+<!ENTITY bizarre.options.menudummy.contents.label "Капіяваць малюнак">
+<!ENTITY bizarre.options.menudummy.contents.accesskey "і">
+<!ENTITY bizarre.options.menudummy.image.label "Капіяваць спасылку на малюнак">
+<!ENTITY bizarre.options.menudummy.image.accesskey "і">
+<!ENTITY bizarre.options.menudummy.save.label "Захаваць малюнак як...">
+<!ENTITY bizarre.options.menudummy.save.accesskey "х">
+<!ENTITY bizarre.menu.context.zoomimage.label "Змяніць памер">
+<!ENTITY bizarre.menu.context.zoomimage.accesskey "м">
+<!ENTITY bizarre.menu.context.increase.label "+ Павялічыць">
+<!ENTITY bizarre.menu.context.increase.accesskey "+">
+<!ENTITY bizarre.menu.context.reset.label "= Зыходны памер">
+<!ENTITY bizarre.menu.context.reset.accesskey "=">
+<!ENTITY bizarre.menu.context.decrease.label "- Паменшыць">
+<!ENTITY bizarre.menu.context.decrease.accesskey "-">
+<!ENTITY bizarre.menu.context.customzoom.label "Адмысловая змена">
+<!ENTITY bizarre.menu.context.customdim.label "Адмысловыя памеры">
+<!ENTITY bizarre.menu.context.imagefit.label "Ва ўвесь экран">
+<!ENTITY bizarre.menu.context.imagefitwidth.label "Fit Width">
+<!ENTITY bizarre.menu.context.rotateimage.label "Rotate Image">
+<!ENTITY bizarre.menu.context.rotateimage.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateright.label "Rotate Right">
+<!ENTITY bizarre.menu.context.rotate.right.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateleft.label "Rotate Left">
+<!ENTITY bizarre.menu.context.rotate.left.accesskey "L">
+<!ENTITY bizarre.menu.context.imagerotate180.label "Rotate 180°">
+<!ENTITY bizarre.menu.context.rotate.180.accesskey "1">
+<!ENTITY bizarre.menu.context.imagerotatereset.label "Rotate Reset">
+<!ENTITY bizarre.menu.context.rotate.reset.accesskey "s">

@@ -1,0 +1,68 @@
+<!ENTITY bizarre.customzoom.label "Ange zoomfaktor">
+<!ENTITY bizarre.customzoom.title "Valfri zoom">
+<!ENTITY bizarre.customdim.width.label "Bredd:">
+<!ENTITY bizarre.customdim.height.label "Höjd:">
+<!ENTITY bizarre.customdim.title "Egen storlek">
+<!ENTITY bizarre.customdim.aspect.label "Behåll bredd/höjdförhållande">
+<!ENTITY bizarre.options.label "Inställningar">
+<!ENTITY bizarre.options.help.label "Hjälpsida">
+<!ENTITY bizarre.options.defaultzoom.label "Zooma in/ut-faktor">
+<!ENTITY bizarre.options.showautofit.label "Show Autofit in Global Menu">
+<!ENTITY bizarre.options.defaultscroll.label "Rulla zoomförändringar">
+<!ENTITY bizarre.options.scrollmode.label "Rullmetod">
+<!ENTITY bizarre.options.scrollrelative.label "Relativ">
+<!ENTITY bizarre.options.scrollabsolute.label "Absolut">
+<!ENTITY bizarre.options.rotatekeys.label "Rotate Key">
+<!ENTITY bizarre.options.defaultrotate.label "Rotate Angle Increments">
+<!ENTITY bizarre.options.singlezoom.label "Individuella zoomalternativ">
+<!ENTITY bizarre.options.misc.label "Miscellaneous Options">
+<!ENTITY bizarre.options.showStatus.label "Show Image Zoom status in the Status Bar">
+<!ENTITY bizarre.options.context.label "Meny vid högerklick">
+<!ENTITY bizarre.options.contextdisplay.label "Visningsalternativ högerklicksmeny">
+<!ENTITY bizarre.options.tabs.contextmenu.label "Komponenter i högerklicksmeny">
+<!ENTITY bizarre.options.tabs.zoomcontext.label "Zoom Context Menu">
+<!ENTITY bizarre.options.tabs.rotatecontext.label "Rotate Context Menu">
+<!ENTITY bizarre.options.tabs.main.label "Allmänt">
+<!ENTITY bizarre.options.reversescroll.label "Omvänd rullning">
+<!ENTITY bizarre.options.autocenter.label "Centrera bilder automatisk när Bildanpassning används">
+<!ENTITY bizarre.options.mouseaccess.label1 "Använd funktioner genom att hålla nere den">
+<!ENTITY bizarre.options.mouseaccess.label2 "musknappen.">
+<!ENTITY bizarre.options.imagefit.label "Knapp för Bildanpassning">
+<!ENTITY bizarre.options.imagereset.label "Knapp för bildåterställning">
+<!ENTITY bizarre.options.none.label "Avaktivera">
+<!ENTITY bizarre.options.lmb.label "Vänster">
+<!ENTITY bizarre.options.mmb.label "Mitten">
+<!ENTITY bizarre.options.rmb.label "Höger">
+<!ENTITY bizarre.options.usemouse.label "Använd musfunktioner">
+<!ENTITY bizarre.options.contextdescription.label "Kryssa i rutorna för de objekt som ska visas i menyn för högerklick på en bild">
+<!ENTITY bizarre.options.togglefitreset.label "Slå på/av bildanpassning/återställning">
+<!ENTITY bizarre.options.menudummy.view.label "Visa bild">
+<!ENTITY bizarre.options.menudummy.view.accesskey "s">
+<!ENTITY bizarre.options.menudummy.contents.label "Kopiera bild">
+<!ENTITY bizarre.options.menudummy.contents.accesskey "o">
+<!ENTITY bizarre.options.menudummy.image.label "Kopiera sökväg för bild">
+<!ENTITY bizarre.options.menudummy.image.accesskey "ö">
+<!ENTITY bizarre.options.menudummy.save.label "Spara bild som">
+<!ENTITY bizarre.options.menudummy.save.accesskey "m">
+<!ENTITY bizarre.menu.context.zoomimage.label "Zooma bild">
+<!ENTITY bizarre.menu.context.zoomimage.accesskey "Z">
+<!ENTITY bizarre.menu.context.increase.label "+ Zooma in">
+<!ENTITY bizarre.menu.context.increase.accesskey "+">
+<!ENTITY bizarre.menu.context.reset.label "= Nollställ zoom">
+<!ENTITY bizarre.menu.context.reset.accesskey "=">
+<!ENTITY bizarre.menu.context.decrease.label "- Zooma ut">
+<!ENTITY bizarre.menu.context.decrease.accesskey "-">
+<!ENTITY bizarre.menu.context.customzoom.label "Egen zoom">
+<!ENTITY bizarre.menu.context.customdim.label "Egen storlek">
+<!ENTITY bizarre.menu.context.imagefit.label "Bildanpassning">
+<!ENTITY bizarre.menu.context.imagefitwidth.label "Fit Width">
+<!ENTITY bizarre.menu.context.rotateimage.label "Rotate Image">
+<!ENTITY bizarre.menu.context.rotateimage.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateright.label "Rotera höger">
+<!ENTITY bizarre.menu.context.rotate.right.accesskey "ö">
+<!ENTITY bizarre.menu.context.imagerotateleft.label "Rotera vänster">
+<!ENTITY bizarre.menu.context.rotate.left.accesskey "ä">
+<!ENTITY bizarre.menu.context.imagerotate180.label "Rotera 180&amp;#xB0;">
+<!ENTITY bizarre.menu.context.rotate.180.accesskey "8">
+<!ENTITY bizarre.menu.context.imagerotatereset.label "Återställ rotering">
+<!ENTITY bizarre.menu.context.rotate.reset.accesskey "Å">

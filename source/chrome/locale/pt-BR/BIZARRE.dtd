@@ -1,0 +1,68 @@
+<!ENTITY bizarre.customzoom.label "Entre com o fator de Zoom">
+<!ENTITY bizarre.customzoom.title "Zoom personalizado">
+<!ENTITY bizarre.customdim.width.label "Largura:">
+<!ENTITY bizarre.customdim.height.label "Altura:">
+<!ENTITY bizarre.customdim.title "Dimensões personalizadas">
+<!ENTITY bizarre.customdim.aspect.label "Manter Proporções">
+<!ENTITY bizarre.options.label "Preferências">
+<!ENTITY bizarre.options.help.label "Página de Ajuda">
+<!ENTITY bizarre.options.defaultzoom.label "Fator de Zoom In/Out">
+<!ENTITY bizarre.options.showautofit.label "Show Autofit in Global Menu">
+<!ENTITY bizarre.options.defaultscroll.label "Incremento da rolagem do Zoom">
+<!ENTITY bizarre.options.scrollmode.label "Scroll Mode">
+<!ENTITY bizarre.options.scrollrelative.label "Relative">
+<!ENTITY bizarre.options.scrollabsolute.label "Absolute">
+<!ENTITY bizarre.options.rotatekeys.label "Rotate Key">
+<!ENTITY bizarre.options.defaultrotate.label "Rotate Angle Increments">
+<!ENTITY bizarre.options.singlezoom.label "Opções de Zoom individual">
+<!ENTITY bizarre.options.misc.label "Miscellaneous Options">
+<!ENTITY bizarre.options.showStatus.label "Show Image Zoom status in the Status Bar">
+<!ENTITY bizarre.options.context.label "Menu de Contexto">
+<!ENTITY bizarre.options.contextdisplay.label "Opções de Exibição do Menu de Contexo">
+<!ENTITY bizarre.options.tabs.contextmenu.label "Itens do Menu de Contexo">
+<!ENTITY bizarre.options.tabs.zoomcontext.label "Zoom Context Menu">
+<!ENTITY bizarre.options.tabs.rotatecontext.label "Rotate Context Menu">
+<!ENTITY bizarre.options.tabs.main.label "Geral">
+<!ENTITY bizarre.options.reversescroll.label "Rolagem Reversa">
+<!ENTITY bizarre.options.autocenter.label "Auto Centralizar quando usar o Ajuste de Imagem na Tela">
+<!ENTITY bizarre.options.mouseaccess.label1 "Acessar funções segurando o botão">
+<!ENTITY bizarre.options.mouseaccess.label2 "do mouse.">
+<!ENTITY bizarre.options.imagefit.label "Botão para Ajustar Imagem na Tela">
+<!ENTITY bizarre.options.imagereset.label "Botão para Tamanho Original da Imagem">
+<!ENTITY bizarre.options.none.label "Desativado">
+<!ENTITY bizarre.options.lmb.label "Esquerdo">
+<!ENTITY bizarre.options.mmb.label "do Meio">
+<!ENTITY bizarre.options.rmb.label "Direito">
+<!ENTITY bizarre.options.usemouse.label "Usar Funções do Mouse">
+<!ENTITY bizarre.options.contextdescription.label "Marque os itens que você deseja exibir no Menu de Contexto">
+<!ENTITY bizarre.options.togglefitreset.label "Toggle Image Fit/Reset">
+<!ENTITY bizarre.options.menudummy.view.label "Visualizar Imagem">
+<!ENTITY bizarre.options.menudummy.view.accesskey "i">
+<!ENTITY bizarre.options.menudummy.contents.label "Copiar Imagem">
+<!ENTITY bizarre.options.menudummy.contents.accesskey "y">
+<!ENTITY bizarre.options.menudummy.image.label "Copiar endereço da Imagem">
+<!ENTITY bizarre.options.menudummy.image.accesskey "o">
+<!ENTITY bizarre.options.menudummy.save.label "Salvar Imagem Como">
+<!ENTITY bizarre.options.menudummy.save.accesskey "v">
+<!ENTITY bizarre.menu.context.zoomimage.label "Zoom Image">
+<!ENTITY bizarre.menu.context.zoomimage.accesskey "Z">
+<!ENTITY bizarre.menu.context.increase.label "+ Zoom In">
+<!ENTITY bizarre.menu.context.increase.accesskey "+">
+<!ENTITY bizarre.menu.context.reset.label "= Tamanho Original">
+<!ENTITY bizarre.menu.context.reset.accesskey "=">
+<!ENTITY bizarre.menu.context.decrease.label "- Zoom Out">
+<!ENTITY bizarre.menu.context.decrease.accesskey "-">
+<!ENTITY bizarre.menu.context.customzoom.label "Zoom personalizado">
+<!ENTITY bizarre.menu.context.customdim.label "Dimensões personalizadas">
+<!ENTITY bizarre.menu.context.imagefit.label "Ajustar Imagem">
+<!ENTITY bizarre.menu.context.imagefitwidth.label "Fit Width">
+<!ENTITY bizarre.menu.context.rotateimage.label "Rotate Image">
+<!ENTITY bizarre.menu.context.rotateimage.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateright.label "Rotacionar à direita">
+<!ENTITY bizarre.menu.context.rotate.right.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateleft.label "Rotacionar à esquerda">
+<!ENTITY bizarre.menu.context.rotate.left.accesskey "L">
+<!ENTITY bizarre.menu.context.imagerotate180.label "Rotacionar 180&amp;#xB0;">
+<!ENTITY bizarre.menu.context.rotate.180.accesskey "1">
+<!ENTITY bizarre.menu.context.imagerotatereset.label "Reiniciar Rotacionamento">
+<!ENTITY bizarre.menu.context.rotate.reset.accesskey "s">

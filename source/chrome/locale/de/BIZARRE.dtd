@@ -1,0 +1,68 @@
+<!ENTITY bizarre.customzoom.label "Zoom-Faktor eingeben:">
+<!ENTITY bizarre.customzoom.title "Benutzerdefinierter Zoom">
+<!ENTITY bizarre.customdim.width.label "Breite:">
+<!ENTITY bizarre.customdim.height.label "Höhe:">
+<!ENTITY bizarre.customdim.title "Benutzerdefinierte Größe">
+<!ENTITY bizarre.customdim.aspect.label "Seitenverhältnis beibehalten">
+<!ENTITY bizarre.options.label "- Einstellungen">
+<!ENTITY bizarre.options.help.label "Hilfe (engl.)">
+<!ENTITY bizarre.options.defaultzoom.label "Zoom-Faktor beim Vergrößern/Verkleinern:">
+<!ENTITY bizarre.options.showautofit.label "Eintrag zum automatischen Anpassen an Fenstergröße im Menü &quot;Ansicht &gt; Grafik-Zoom&quot; anzeigen">
+<!ENTITY bizarre.options.defaultscroll.label "Zoom-Rate beim Scrollen des Mausrads:">
+<!ENTITY bizarre.options.scrollmode.label "Scroll-Modus:">
+<!ENTITY bizarre.options.scrollrelative.label "Relativ">
+<!ENTITY bizarre.options.scrollabsolute.label "Absolut">
+<!ENTITY bizarre.options.rotatekeys.label "Rotate Key">
+<!ENTITY bizarre.options.defaultrotate.label "Rotate Angle Increments">
+<!ENTITY bizarre.options.singlezoom.label "Zoom-Einstellungen für Einzelgrafiken">
+<!ENTITY bizarre.options.misc.label "Miscellaneous Options">
+<!ENTITY bizarre.options.showStatus.label "Show Image Zoom status in the Status Bar">
+<!ENTITY bizarre.options.context.label "Kontextmenü">
+<!ENTITY bizarre.options.contextdisplay.label "Anzeigeoptionen für das Kontextmenü">
+<!ENTITY bizarre.options.tabs.contextmenu.label "Kontextmenü">
+<!ENTITY bizarre.options.tabs.zoomcontext.label "&quot;Grafik zoomen&quot;-Kontextmenü">
+<!ENTITY bizarre.options.tabs.rotatecontext.label "&quot;Grafik drehen&quot;-Kontextmenü">
+<!ENTITY bizarre.options.tabs.main.label "Allgemein">
+<!ENTITY bizarre.options.reversescroll.label "Scrollrichtung umkehren">
+<!ENTITY bizarre.options.autocenter.label "Grafik beim Anpassen an die Fenstergröße automatisch zentrieren">
+<!ENTITY bizarre.options.mouseaccess.label1 "Aktivierung der Funktionen durch Halten folgender Maustaste:">
+<!ENTITY bizarre.options.mouseaccess.label2 " ">
+<!ENTITY bizarre.options.imagefit.label "Taste zur Anpassung an Fenstergröße:">
+<!ENTITY bizarre.options.imagereset.label "Taste zum Zurücksetzen auf Originalgröße:">
+<!ENTITY bizarre.options.none.label "Deaktiviert">
+<!ENTITY bizarre.options.lmb.label "Links">
+<!ENTITY bizarre.options.mmb.label "Mitte">
+<!ENTITY bizarre.options.rmb.label "Rechts">
+<!ENTITY bizarre.options.usemouse.label "Mausfunktionen verwenden">
+<!ENTITY bizarre.options.contextdescription.label "Auswählen der Einträge, die im Grafik-Kontextmenü angezeigt werden sollen">
+<!ENTITY bizarre.options.togglefitreset.label "Anpassung an Fenstergröße umschalten/zurücksetzen">
+<!ENTITY bizarre.options.menudummy.view.label "Grafik anzeigen">
+<!ENTITY bizarre.options.menudummy.view.accesskey "i">
+<!ENTITY bizarre.options.menudummy.contents.label "Grafik kopieren">
+<!ENTITY bizarre.options.menudummy.contents.accesskey "k">
+<!ENTITY bizarre.options.menudummy.image.label "Grafikadresse kopieren">
+<!ENTITY bizarre.options.menudummy.image.accesskey "d">
+<!ENTITY bizarre.options.menudummy.save.label "Grafik speichern unter">
+<!ENTITY bizarre.options.menudummy.save.accesskey "G">
+<!ENTITY bizarre.menu.context.zoomimage.label "Grafik zoomen">
+<!ENTITY bizarre.menu.context.zoomimage.accesskey "o">
+<!ENTITY bizarre.menu.context.increase.label "+  Grafik vergrößern">
+<!ENTITY bizarre.menu.context.increase.accesskey "+">
+<!ENTITY bizarre.menu.context.reset.label "&lt;  Grafik zurücksetzen">
+<!ENTITY bizarre.menu.context.reset.accesskey "&lt;">
+<!ENTITY bizarre.menu.context.decrease.label "-   Grafik verkleinern">
+<!ENTITY bizarre.menu.context.decrease.accesskey "-">
+<!ENTITY bizarre.menu.context.customzoom.label "Benutzerdefinierter Zoom">
+<!ENTITY bizarre.menu.context.customdim.label "Benutzerdefinierte Maße">
+<!ENTITY bizarre.menu.context.imagefit.label "Grafik an Fenstergröße anpassen">
+<!ENTITY bizarre.menu.context.imagefitwidth.label "Fit Width">
+<!ENTITY bizarre.menu.context.rotateimage.label "Grafik drehen">
+<!ENTITY bizarre.menu.context.rotateimage.accesskey "d">
+<!ENTITY bizarre.menu.context.imagerotateright.label "Nach Rechts drehen">
+<!ENTITY bizarre.menu.context.rotate.right.accesskey "r">
+<!ENTITY bizarre.menu.context.imagerotateleft.label "Nach Links drehen">
+<!ENTITY bizarre.menu.context.rotate.left.accesskey "L">
+<!ENTITY bizarre.menu.context.imagerotate180.label "180° drehen">
+<!ENTITY bizarre.menu.context.rotate.180.accesskey "1">
+<!ENTITY bizarre.menu.context.imagerotatereset.label "Rotation zurücksetzen">
+<!ENTITY bizarre.menu.context.rotate.reset.accesskey "z">

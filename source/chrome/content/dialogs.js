@@ -2,7 +2,7 @@
 
  Copyright (c) 2006-2013  Jason Adams <imagezoom@yellowgorilla.net>
 
- This file is part of Image Zoom.
+ This file is part of Image Zoom (now BIZARRE).
 
  Image Zoom is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -90,7 +90,7 @@ function checkInput() {
   }
 }
 
-function imagezoom_customZoom() {
+function bizarre_customZoom() {
   var zoomValue = document.getElementById("customZoom").value;
   if (pIsNumeric(zoomValue)) {
     var izoImage = window.arguments[1];
@@ -98,13 +98,13 @@ function imagezoom_customZoom() {
   }
 }
 
-function imagezoom_loadCustomZoom() {
+function bizarre_loadCustomZoom() {
   var zoomValueBox = document.getElementById("customZoom");
   var izoImage = window.arguments[1];
   zoomValueBox.value = izoImage.zoomFactor();
 }
 
-function imagezoom_customDim() {
+function bizarre_customDim() {
   var dimWidth = document.getElementById("dimWidth").value;
   var dimHeight = document.getElementById("dimHeight").value;
   if (pIsNumeric(dimWidth) && pIsNumeric(dimHeight)) {
@@ -113,7 +113,7 @@ function imagezoom_customDim() {
   }
 }
 
-function imagezoom_loadCustomDim() {
+function bizarre_loadCustomDim() {
   gDimWidth = document.getElementById("dimWidth");
   gDimHeight = document.getElementById("dimHeight");
   gDimAspect = document.getElementById("dimAspect");

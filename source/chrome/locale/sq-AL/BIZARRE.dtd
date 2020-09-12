@@ -1,0 +1,68 @@
+<!ENTITY bizarre.customzoom.label "Hyr tek Faktori i Zmadhimit">
+<!ENTITY bizarre.customzoom.title "Zmadhimi i Përzgjedhur">
+<!ENTITY bizarre.customdim.width.label "Gjerësia">
+<!ENTITY bizarre.customdim.height.label "Lartësia">
+<!ENTITY bizarre.customdim.title "Dimensionet e Parazgjedhura">
+<!ENTITY bizarre.customdim.aspect.label "Maintain Aspect Ratio">
+<!ENTITY bizarre.options.label "Preferencat">
+<!ENTITY bizarre.options.help.label "Faqja Ndihmëse">
+<!ENTITY bizarre.options.defaultzoom.label "Zoom In/Out Factor">
+<!ENTITY bizarre.options.showautofit.label "Show Autofit in Global Menu">
+<!ENTITY bizarre.options.defaultscroll.label "Scroll Zoom Increments">
+<!ENTITY bizarre.options.scrollmode.label "Scroll Mode">
+<!ENTITY bizarre.options.scrollrelative.label "Relativ">
+<!ENTITY bizarre.options.scrollabsolute.label "Absolut">
+<!ENTITY bizarre.options.rotatekeys.label "Rotate Key">
+<!ENTITY bizarre.options.defaultrotate.label "Rotate Angle Increments">
+<!ENTITY bizarre.options.singlezoom.label "Mundësitë Individuale të Rritjes">
+<!ENTITY bizarre.options.misc.label "Miscellaneous Options">
+<!ENTITY bizarre.options.showStatus.label "Show Image Zoom status in the Status Bar">
+<!ENTITY bizarre.options.context.label "Menyja Kontekstuale">
+<!ENTITY bizarre.options.contextdisplay.label "Context Menu Display Options">
+<!ENTITY bizarre.options.tabs.contextmenu.label "Context Menu Items">
+<!ENTITY bizarre.options.tabs.zoomcontext.label "Zoom Context Menu">
+<!ENTITY bizarre.options.tabs.rotatecontext.label "Rotate Context Menu">
+<!ENTITY bizarre.options.tabs.main.label "Përgjithëshëm">
+<!ENTITY bizarre.options.reversescroll.label "Reverse Scroll">
+<!ENTITY bizarre.options.autocenter.label "Auto Center Images when using Image Fit">
+<!ENTITY bizarre.options.mouseaccess.label1 "Access functions by holding down the ">
+<!ENTITY bizarre.options.mouseaccess.label2 "pulla e miut.">
+<!ENTITY bizarre.options.imagefit.label "Image Fit Button">
+<!ENTITY bizarre.options.imagereset.label "Pulla e Rikthimit të Fotos">
+<!ENTITY bizarre.options.none.label "Pamundëso">
+<!ENTITY bizarre.options.lmb.label "Majtas">
+<!ENTITY bizarre.options.mmb.label "Në Mes">
+<!ENTITY bizarre.options.rmb.label "Djathtas">
+<!ENTITY bizarre.options.usemouse.label "Use Mouse Functions">
+<!ENTITY bizarre.options.contextdescription.label "Check the items that you want to be displayed in the Image Context Menu">
+<!ENTITY bizarre.options.togglefitreset.label "Toggle Image Fit/Reset">
+<!ENTITY bizarre.options.menudummy.view.label "Shih Foton">
+<!ENTITY bizarre.options.menudummy.view.accesskey "i">
+<!ENTITY bizarre.options.menudummy.contents.label "Kopjo Foton">
+<!ENTITY bizarre.options.menudummy.contents.accesskey "y">
+<!ENTITY bizarre.options.menudummy.image.label "Kopjo Vendin e Fotos">
+<!ENTITY bizarre.options.menudummy.image.accesskey "o">
+<!ENTITY bizarre.options.menudummy.save.label "Ruaje Foton Si">
+<!ENTITY bizarre.options.menudummy.save.accesskey "v">
+<!ENTITY bizarre.menu.context.zoomimage.label "Zmadho Foton">
+<!ENTITY bizarre.menu.context.zoomimage.accesskey "Z">
+<!ENTITY bizarre.menu.context.increase.label "+ Zmadho">
+<!ENTITY bizarre.menu.context.increase.accesskey "+">
+<!ENTITY bizarre.menu.context.reset.label "= Ribëj Zmadhimin">
+<!ENTITY bizarre.menu.context.reset.accesskey "=">
+<!ENTITY bizarre.menu.context.decrease.label "- Zvoglo">
+<!ENTITY bizarre.menu.context.decrease.accesskey "-">
+<!ENTITY bizarre.menu.context.customzoom.label "Zmadhim i Parazgjedhur">
+<!ENTITY bizarre.menu.context.customdim.label "Dimensionet e Parazgjedhura">
+<!ENTITY bizarre.menu.context.imagefit.label "Image Fit">
+<!ENTITY bizarre.menu.context.imagefitwidth.label "Fit Width">
+<!ENTITY bizarre.menu.context.rotateimage.label "Rrotullo Foton">
+<!ENTITY bizarre.menu.context.rotateimage.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateright.label "RRotullo Djathtas">
+<!ENTITY bizarre.menu.context.rotate.right.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateleft.label "Rrotullo Majtas">
+<!ENTITY bizarre.menu.context.rotate.left.accesskey "L">
+<!ENTITY bizarre.menu.context.imagerotate180.label "Rrotullo 180&amp;#176;">
+<!ENTITY bizarre.menu.context.rotate.180.accesskey "1">
+<!ENTITY bizarre.menu.context.imagerotatereset.label "Ribëj Rrotullimin">
+<!ENTITY bizarre.menu.context.rotate.reset.accesskey "s">

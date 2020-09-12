@@ -4,7 +4,7 @@
     Copyright (c) 2006-2013  Jason Adams <imagezoom@yellowgorilla.net>
     Pale Moon Update:  2020  Andrew Sachen <webmaster@RealityRipple.com>
 
-    This file is part of Image Zoom.
+    This file is part of Image Zoom (now BIZARRE).
 
     Image Zoom is free software; you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -21,109 +21,109 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 ***** END LICENSE BLOCK ***** -->
-<!DOCTYPE overlay SYSTEM "chrome://imagezoom/locale/imageZoom.dtd">
-<overlay id="imagezoom.overlay"
+<!DOCTYPE overlay SYSTEM "chrome://bizarre/locale/BIZARRE.dtd">
+<overlay id="bizarre.overlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
-    <script type="application/x-javascript" src="chrome://imagezoom/content/overlay.js"/>
+    <script type="application/x-javascript" src="chrome://bizarre/content/overlay.js"/>
 
     <stringbundleset id="stringbundleset">
-        <stringbundle id="imagezoom.stringbundle"
-                      src="chrome://imagezoom/locale/imageZoom.properties"/>
+        <stringbundle id="bizarre.stringbundle"
+                      src="chrome://bizarre/locale/BIZARRE.properties"/>
     </stringbundleset>
 
     <popup id="contentAreaContextMenu">
         <menuitem id="context-zoom-zin"
-                  label="&iz.menu.context.increase.label;"
-                  accesskey="&iz.menu.context.increase.accesskey;"
+                  label="&bizarre.menu.context.increase.label;"
+                  accesskey="&bizarre.menu.context.increase.accesskey;"
                   oncommand="izoom.overlay.izZoomIn();"
                   insertbefore="context-sep-copyimage"
                   hidden="true"
                 />
         <menuitem id="context-zoom-zreset"
-                  label="&iz.menu.context.reset.label;"
-                  accesskey="&iz.menu.context.reset.accesskey;"
+                  label="&bizarre.menu.context.reset.label;"
+                  accesskey="&bizarre.menu.context.reset.accesskey;"
                   insertbefore="context-sep-copyimage"
                   oncommand="izoom.overlay.izSetZoom(100);"
                   hidden="true"
                 />
         <menuitem id="context-zoom-zout"
-                  label="&iz.menu.context.decrease.label;"
-                  accesskey="&iz.menu.context.decrease.accesskey;"
+                  label="&bizarre.menu.context.decrease.label;"
+                  accesskey="&bizarre.menu.context.decrease.accesskey;"
                   insertbefore="context-sep-copyimage"
                   oncommand="izoom.overlay.izZoomOut();"
                   hidden="true"
                 />
         <menuitem id="context-zoom-zcustom"
-                  label="&iz.menu.context.customzoom.label;"
+                  label="&bizarre.menu.context.customzoom.label;"
                   insertbefore="context-sep-copyimage"
                   oncommand="izoom.overlay.izShowCustomZoom();"
                   hidden="true"
                 />
         <menuitem id="context-zoom-dcustom"
-                  label="&iz.menu.context.customdim.label;"
+                  label="&bizarre.menu.context.customdim.label;"
                   insertbefore="context-sep-copyimage"
                   oncommand="izoom.overlay.izShowCustomDim();"
                   hidden="true"
                 />
         <menuitem id="context-zoom-fit"
-                  label="&iz.menu.context.imagefit.label;"
+                  label="&bizarre.menu.context.imagefit.label;"
                   insertbefore="context-sep-copyimage"
                   oncommand="izoom.overlay.izImageFit();"
                   hidden="true"
                 />
         <menuitem id="context-zoom-fitwidth"
-                  label="&iz.menu.context.imagefitwidth.label;"
+                  label="&bizarre.menu.context.imagefitwidth.label;"
                   insertbefore="context-sep-copyimage"
                   oncommand="izoom.overlay.izFitWidth();"
                   hidden="true"
                 />
         <menuitem id="context-zoom-rotate-right"
-                  label="&iz.menu.context.imagerotateright.label;"
+                  label="&bizarre.menu.context.imagerotateright.label;"
                   insertbefore="context-sep-copyimage"
                   oncommand="izoom.overlay.izRotateRight();"
                   hidden="true"
                 />
         <menuitem id="context-zoom-rotate-left"
-                  label="&iz.menu.context.imagerotateleft.label;"
+                  label="&bizarre.menu.context.imagerotateleft.label;"
                   insertbefore="context-sep-copyimage"
                   oncommand="izoom.overlay.izRotateLeft();"
                   hidden="true"
                 />
         <menuitem id="context-zoom-rotate-180"
-                  label="&iz.menu.context.imagerotate180.label;"
+                  label="&bizarre.menu.context.imagerotate180.label;"
                   insertbefore="context-sep-copyimage"
                   oncommand="izoom.overlay.izRotate180();"
                   hidden="true"
                 />
         <menuitem id="context-zoom-rotate-reset"
-                  label="&iz.menu.context.imagerotatereset.label;"
+                  label="&bizarre.menu.context.imagerotatereset.label;"
                   insertbefore="context-sep-copyimage"
                   oncommand="izoom.overlay.izRotateReset();"
                   hidden="true"
                 />
         <menu id="context-zoomsub"
-              label="&iz.menu.context.zoomimage.label;"
-              accesskey="&iz.menu.context.zoomimage.accesskey;"
+              label="&bizarre.menu.context.zoomimage.label;"
+              accesskey="&bizarre.menu.context.zoomimage.accesskey;"
               insertbefore="context-sep-copyimage"
               hidden="true"
                 >
             <menupopup id="zoompopup">
                 <menuitem id="zoomsub-zin"
-                          label="&iz.menu.context.increase.label;"
-                          accesskey="&iz.menu.context.increase.accesskey;"
+                          label="&bizarre.menu.context.increase.label;"
+                          accesskey="&bizarre.menu.context.increase.accesskey;"
                           oncommand="izoom.overlay.izZoomIn();"
                           hidden="true"
                         />
                 <menuitem id="zoomsub-zreset"
-                          label="&iz.menu.context.reset.label;"
-                          accesskey="&iz.menu.context.reset.accesskey;"
+                          label="&bizarre.menu.context.reset.label;"
+                          accesskey="&bizarre.menu.context.reset.accesskey;"
                           oncommand="izoom.overlay.izSetZoom(100);"
                           hidden="true"
                         />
                 <menuitem id="zoomsub-zout"
-                          label="&iz.menu.context.decrease.label;"
-                          accesskey="&iz.menu.context.decrease.accesskey;"
+                          label="&bizarre.menu.context.decrease.label;"
+                          accesskey="&bizarre.menu.context.decrease.accesskey;"
                           oncommand="izoom.overlay.izZoomOut();"
                           hidden="true"
                         />
@@ -131,12 +131,12 @@
                                hidden="true"
                         />
                 <menuitem id="zoomsub-zcustom"
-                          label="&iz.menu.context.customzoom.label;"
+                          label="&bizarre.menu.context.customzoom.label;"
                           oncommand="izoom.overlay.izShowCustomZoom();"
                           hidden="true"
                         />
                 <menuitem id="zoomsub-dcustom"
-                          label="&iz.menu.context.customdim.label;"
+                          label="&bizarre.menu.context.customdim.label;"
                           oncommand="izoom.overlay.izShowCustomDim();"
                           hidden="true"
                         />
@@ -144,12 +144,12 @@
                                hidden="true"
                         />
                 <menuitem id="zoomsub-fit"
-                          label="&iz.menu.context.imagefit.label;"
+                          label="&bizarre.menu.context.imagefit.label;"
                           oncommand="izoom.overlay.izImageFit();"
                           hidden="true"
                         />
                 <menuitem id="zoomsub-fitwidth"
-                          label="&iz.menu.context.imagefitwidth.label;"
+                          label="&bizarre.menu.context.imagefitwidth.label;"
                           oncommand="izoom.overlay.izFitWidth();"
                           hidden="true"
                         />
@@ -210,33 +210,33 @@
             </menupopup>
         </menu>
         <menu id="context-rotatesub"
-              label="&iz.menu.context.rotateimage.label;"
-              accesskey="&iz.menu.context.rotateimage.accesskey;"
+              label="&bizarre.menu.context.rotateimage.label;"
+              accesskey="&bizarre.menu.context.rotateimage.accesskey;"
               insertbefore="context-sep-copyimage"
               hidden="true"
                 >
             <menupopup id="rotatepopup">
                 <menuitem id="rotatesub-rotate-right"
-                          label="&iz.menu.context.imagerotateright.label;"
-                          accesskey="&iz.menu.context.rotate.right.accesskey;"
+                          label="&bizarre.menu.context.imagerotateright.label;"
+                          accesskey="&bizarre.menu.context.rotate.right.accesskey;"
                           oncommand="izoom.overlay.izRotateRight();"
                           hidden="true"
                         />
                 <menuitem id="rotatesub-rotate-left"
-                          label="&iz.menu.context.imagerotateleft.label;"
-                          accesskey="&iz.menu.context.rotate.left.accesskey;"
+                          label="&bizarre.menu.context.imagerotateleft.label;"
+                          accesskey="&bizarre.menu.context.rotate.left.accesskey;"
                           oncommand="izoom.overlay.izRotateLeft();"
                           hidden="true"
                         />
                 <menuitem id="rotatesub-rotate-180"
-                          label="&iz.menu.context.imagerotate180.label;"
-                          accesskey="&iz.menu.context.rotate.180.accesskey;"
+                          label="&bizarre.menu.context.imagerotate180.label;"
+                          accesskey="&bizarre.menu.context.rotate.180.accesskey;"
                           oncommand="izoom.overlay.izRotate180();"
                           hidden="true"
                         />
                 <menuitem id="rotatesub-rotate-reset"
-                          label="&iz.menu.context.imagerotatereset.label;"
-                          accesskey="&iz.menu.context.rotate.reset.accesskey;"
+                          label="&bizarre.menu.context.imagerotatereset.label;"
+                          accesskey="&bizarre.menu.context.rotate.reset.accesskey;"
                           oncommand="izoom.overlay.izRotateReset();"
                           hidden="true"
                         />

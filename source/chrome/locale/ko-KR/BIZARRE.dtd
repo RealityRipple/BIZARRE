@@ -1,0 +1,68 @@
+<!ENTITY bizarre.customzoom.label "그림의 배율">
+<!ENTITY bizarre.customzoom.title "배율 설정">
+<!ENTITY bizarre.customdim.width.label "너비:">
+<!ENTITY bizarre.customdim.height.label "높이:">
+<!ENTITY bizarre.customdim.title "크기 설정">
+<!ENTITY bizarre.customdim.aspect.label "가로 세로 비율 유지">
+<!ENTITY bizarre.options.label "설정">
+<!ENTITY bizarre.options.help.label "도움말 페이지">
+<!ENTITY bizarre.options.defaultzoom.label "확대/축소 비율">
+<!ENTITY bizarre.options.showautofit.label "자동 맞춤을 일반 메뉴에 보이기">
+<!ENTITY bizarre.options.defaultscroll.label "한번 스크롤할 때 확대/축소할 양">
+<!ENTITY bizarre.options.scrollmode.label "스크롤 방식">
+<!ENTITY bizarre.options.scrollrelative.label "상대 스크롤">
+<!ENTITY bizarre.options.scrollabsolute.label "절대 스크롤">
+<!ENTITY bizarre.options.rotatekeys.label "Rotate Key">
+<!ENTITY bizarre.options.defaultrotate.label "Rotate Angle Increments">
+<!ENTITY bizarre.options.singlezoom.label "그림 확대 설정">
+<!ENTITY bizarre.options.misc.label "Miscellaneous Options">
+<!ENTITY bizarre.options.showStatus.label "Show Image Zoom status in the Status Bar">
+<!ENTITY bizarre.options.context.label "문맥 메뉴">
+<!ENTITY bizarre.options.contextdisplay.label "문맥 메뉴에서 보여줄 항목">
+<!ENTITY bizarre.options.tabs.contextmenu.label "문맥 메뉴 항목">
+<!ENTITY bizarre.options.tabs.zoomcontext.label "줌 문맥 메뉴">
+<!ENTITY bizarre.options.tabs.rotatecontext.label "회전 문맥 메뉴">
+<!ENTITY bizarre.options.tabs.main.label "일반">
+<!ENTITY bizarre.options.reversescroll.label "스크롤 반전">
+<!ENTITY bizarre.options.autocenter.label "창 크기에 맞추기를 사용했을 때 정중앙에 그림 놓기">
+<!ENTITY bizarre.options.mouseaccess.label1 "마우스의">
+<!ENTITY bizarre.options.mouseaccess.label2 "버튼을 누르고 있을 때 아래의 기능을 사용">
+<!ENTITY bizarre.options.imagefit.label "창 크기에 맞추기 버튼">
+<!ENTITY bizarre.options.imagereset.label "그림 초기화 버튼">
+<!ENTITY bizarre.options.none.label "사용 안 함">
+<!ENTITY bizarre.options.lmb.label "왼쪽">
+<!ENTITY bizarre.options.mmb.label "가운데">
+<!ENTITY bizarre.options.rmb.label "오른쪽">
+<!ENTITY bizarre.options.usemouse.label "마우스 동작 사용">
+<!ENTITY bizarre.options.contextdescription.label "그림 문맥 메뉴에서 보여줄 항목을 선택">
+<!ENTITY bizarre.options.togglefitreset.label "그림을 창 크기에 맞추기/초기화">
+<!ENTITY bizarre.options.menudummy.view.label "그림 보기">
+<!ENTITY bizarre.options.menudummy.view.accesskey "i">
+<!ENTITY bizarre.options.menudummy.contents.label "그림 복사">
+<!ENTITY bizarre.options.menudummy.contents.accesskey "y">
+<!ENTITY bizarre.options.menudummy.image.label "그림 주소 복사">
+<!ENTITY bizarre.options.menudummy.image.accesskey "o">
+<!ENTITY bizarre.options.menudummy.save.label "그림을 다른 이름으로 저장">
+<!ENTITY bizarre.options.menudummy.save.accesskey "v">
+<!ENTITY bizarre.menu.context.zoomimage.label "그림 확대">
+<!ENTITY bizarre.menu.context.zoomimage.accesskey "Z">
+<!ENTITY bizarre.menu.context.increase.label "+ 확대">
+<!ENTITY bizarre.menu.context.increase.accesskey "+">
+<!ENTITY bizarre.menu.context.reset.label "= 원래 크기">
+<!ENTITY bizarre.menu.context.reset.accesskey "=">
+<!ENTITY bizarre.menu.context.decrease.label "- 축소">
+<!ENTITY bizarre.menu.context.decrease.accesskey "-">
+<!ENTITY bizarre.menu.context.customzoom.label "배율 바꾸기">
+<!ENTITY bizarre.menu.context.customdim.label "크기 바꾸기">
+<!ENTITY bizarre.menu.context.imagefit.label "창 크기에 맞추기">
+<!ENTITY bizarre.menu.context.imagefitwidth.label "Fit Width">
+<!ENTITY bizarre.menu.context.rotateimage.label "그림 회전">
+<!ENTITY bizarre.menu.context.rotateimage.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateright.label "오른쪽으로 돌리기">
+<!ENTITY bizarre.menu.context.rotate.right.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateleft.label "왼쪽으로 돌리기">
+<!ENTITY bizarre.menu.context.rotate.left.accesskey "L">
+<!ENTITY bizarre.menu.context.imagerotate180.label "180° 돌리기">
+<!ENTITY bizarre.menu.context.rotate.180.accesskey "1">
+<!ENTITY bizarre.menu.context.imagerotatereset.label "회전 취소">
+<!ENTITY bizarre.menu.context.rotate.reset.accesskey "S">

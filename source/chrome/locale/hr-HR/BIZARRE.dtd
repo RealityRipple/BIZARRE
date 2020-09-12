@@ -1,0 +1,68 @@
+<!ENTITY bizarre.customzoom.label "Upiši postotak uvećanja">
+<!ENTITY bizarre.customzoom.title "Definiraj Zoom">
+<!ENTITY bizarre.customdim.width.label "Širina:">
+<!ENTITY bizarre.customdim.height.label "Visina:">
+<!ENTITY bizarre.customdim.title "Custom Dimension">
+<!ENTITY bizarre.customdim.aspect.label "Maintain Aspect Ratio">
+<!ENTITY bizarre.options.label "Postavke">
+<!ENTITY bizarre.options.help.label "Pomoć">
+<!ENTITY bizarre.options.defaultzoom.label "Zoom In/Out Factor">
+<!ENTITY bizarre.options.showautofit.label "Show Autofit in Global Menu">
+<!ENTITY bizarre.options.defaultscroll.label "Scroll Zoom Increments">
+<!ENTITY bizarre.options.scrollmode.label "Scroll Mode">
+<!ENTITY bizarre.options.scrollrelative.label "Relative">
+<!ENTITY bizarre.options.scrollabsolute.label "Absolute">
+<!ENTITY bizarre.options.rotatekeys.label "Rotate Key">
+<!ENTITY bizarre.options.defaultrotate.label "Rotate Angle Increments">
+<!ENTITY bizarre.options.singlezoom.label "Individual Zoom Options">
+<!ENTITY bizarre.options.misc.label "Miscellaneous Options">
+<!ENTITY bizarre.options.showStatus.label "Show Image Zoom status in the Status Bar">
+<!ENTITY bizarre.options.context.label "Context Menu">
+<!ENTITY bizarre.options.contextdisplay.label "Context Menu Display Options">
+<!ENTITY bizarre.options.tabs.contextmenu.label "Context Menu Items">
+<!ENTITY bizarre.options.tabs.zoomcontext.label "Zoom Context Menu">
+<!ENTITY bizarre.options.tabs.rotatecontext.label "Rotate Context Menu">
+<!ENTITY bizarre.options.tabs.main.label "General">
+<!ENTITY bizarre.options.reversescroll.label "Reverse Scroll">
+<!ENTITY bizarre.options.autocenter.label "Auto Center Images when using Image Fit">
+<!ENTITY bizarre.options.mouseaccess.label1 "Access functions by holding down the">
+<!ENTITY bizarre.options.mouseaccess.label2 "mouse button.">
+<!ENTITY bizarre.options.imagefit.label "Image Fit Button">
+<!ENTITY bizarre.options.imagereset.label "Image Reset Button">
+<!ENTITY bizarre.options.none.label "Isključen">
+<!ENTITY bizarre.options.lmb.label "Lijevo">
+<!ENTITY bizarre.options.mmb.label "Sredina">
+<!ENTITY bizarre.options.rmb.label "Desno">
+<!ENTITY bizarre.options.usemouse.label "Koristi funkcije miša">
+<!ENTITY bizarre.options.contextdescription.label "Check the items that you want to be displayed in the Image Context Menu">
+<!ENTITY bizarre.options.togglefitreset.label "Toggle Image Fit/Reset">
+<!ENTITY bizarre.options.menudummy.view.label "Pogledaj sliku">
+<!ENTITY bizarre.options.menudummy.view.accesskey "i">
+<!ENTITY bizarre.options.menudummy.contents.label "Kopiraj sliku">
+<!ENTITY bizarre.options.menudummy.contents.accesskey "y">
+<!ENTITY bizarre.options.menudummy.image.label "Kopiraj lokaciju slike">
+<!ENTITY bizarre.options.menudummy.image.accesskey "o">
+<!ENTITY bizarre.options.menudummy.save.label "Spremi sliku kao">
+<!ENTITY bizarre.options.menudummy.save.accesskey "v">
+<!ENTITY bizarre.menu.context.zoomimage.label "Zoom Image">
+<!ENTITY bizarre.menu.context.zoomimage.accesskey "Z">
+<!ENTITY bizarre.menu.context.increase.label "+ Povećaj">
+<!ENTITY bizarre.menu.context.increase.accesskey "+">
+<!ENTITY bizarre.menu.context.reset.label "= Zoom Reset">
+<!ENTITY bizarre.menu.context.reset.accesskey "=">
+<!ENTITY bizarre.menu.context.decrease.label "- Smanji">
+<!ENTITY bizarre.menu.context.decrease.accesskey "-">
+<!ENTITY bizarre.menu.context.customzoom.label "Custom Zoom">
+<!ENTITY bizarre.menu.context.customdim.label "Custom Dimensions">
+<!ENTITY bizarre.menu.context.imagefit.label "Image Fit">
+<!ENTITY bizarre.menu.context.imagefitwidth.label "Fit Width">
+<!ENTITY bizarre.menu.context.rotateimage.label "Rotate Image">
+<!ENTITY bizarre.menu.context.rotateimage.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateright.label "Zakreni udesno">
+<!ENTITY bizarre.menu.context.rotate.right.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateleft.label "Zakreni ulijevo">
+<!ENTITY bizarre.menu.context.rotate.left.accesskey "L">
+<!ENTITY bizarre.menu.context.imagerotate180.label "Rotate 180°">
+<!ENTITY bizarre.menu.context.rotate.180.accesskey "1">
+<!ENTITY bizarre.menu.context.imagerotatereset.label "Rotate Reset">
+<!ENTITY bizarre.menu.context.rotate.reset.accesskey "s">

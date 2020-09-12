@@ -1,0 +1,68 @@
+<!ENTITY bizarre.customzoom.label "Внесете степен на зголемување">
+<!ENTITY bizarre.customzoom.title "Степен на зголемување">
+<!ENTITY bizarre.customdim.width.label "Ширина:">
+<!ENTITY bizarre.customdim.height.label "Висина:">
+<!ENTITY bizarre.customdim.title "Димензии">
+<!ENTITY bizarre.customdim.aspect.label "Задржи го соодносот">
+<!ENTITY bizarre.options.label "Подесувања">
+<!ENTITY bizarre.options.help.label "Помош (на англиски)">
+<!ENTITY bizarre.options.defaultzoom.label "Степен на зголемување/намалување">
+<!ENTITY bizarre.options.showautofit.label "Додади „Автоматска големина“ во општото мени">
+<!ENTITY bizarre.options.defaultscroll.label "Степен на зголемување на тркалото на глувчето">
+<!ENTITY bizarre.options.scrollmode.label "Начин за тркалање">
+<!ENTITY bizarre.options.scrollrelative.label "релативен">
+<!ENTITY bizarre.options.scrollabsolute.label "апсолутен">
+<!ENTITY bizarre.options.rotatekeys.label "Rotate Key">
+<!ENTITY bizarre.options.defaultrotate.label "Rotate Angle Increments">
+<!ENTITY bizarre.options.singlezoom.label "Засебни подесувања за зголемување">
+<!ENTITY bizarre.options.misc.label "Miscellaneous Options">
+<!ENTITY bizarre.options.showStatus.label "Show Image Zoom status in the Status Bar">
+<!ENTITY bizarre.options.context.label "Контекстно мени">
+<!ENTITY bizarre.options.contextdisplay.label "Подесувања за приказ на контекстното мени">
+<!ENTITY bizarre.options.tabs.contextmenu.label "Делови на контекстното мени">
+<!ENTITY bizarre.options.tabs.zoomcontext.label "Контекстуално мени на &quot;Зголемување&quot;">
+<!ENTITY bizarre.options.tabs.rotatecontext.label "Контекстуално мени на &quot;Ротирај&quot;">
+<!ENTITY bizarre.options.tabs.main.label "Општо">
+<!ENTITY bizarre.options.reversescroll.label "Обратно вртење (напред)">
+<!ENTITY bizarre.options.autocenter.label "Центрирај ја сликата при прилагодување">
+<!ENTITY bizarre.options.mouseaccess.label1 "Пристапи им на дејствата држејќи го">
+<!ENTITY bizarre.options.mouseaccess.label2 "-то копче на глувчето.">
+<!ENTITY bizarre.options.imagefit.label "Копче за прилагодување на сликата">
+<!ENTITY bizarre.options.imagereset.label "Копче за враќање во основната состојба">
+<!ENTITY bizarre.options.none.label "Оневозможено">
+<!ENTITY bizarre.options.lmb.label "лево">
+<!ENTITY bizarre.options.mmb.label "средно">
+<!ENTITY bizarre.options.rmb.label "десно">
+<!ENTITY bizarre.options.usemouse.label "Употребувај ги дејствата на глувчето">
+<!ENTITY bizarre.options.contextdescription.label "Проверете ги деловите што ќе се појавуваат во контекстното мени.">
+<!ENTITY bizarre.options.togglefitreset.label "Смени „Вклопена слика“/„Врати почетни вредности“">
+<!ENTITY bizarre.options.menudummy.view.label "Отвори ја сликата">
+<!ENTITY bizarre.options.menudummy.view.accesskey "с">
+<!ENTITY bizarre.options.menudummy.contents.label "Копирај ја сликата">
+<!ENTITY bizarre.options.menudummy.contents.accesskey "К">
+<!ENTITY bizarre.options.menudummy.image.label "Копирај го местото на сликата">
+<!ENTITY bizarre.options.menudummy.image.accesskey "о">
+<!ENTITY bizarre.options.menudummy.save.label "Сними ја сликата како">
+<!ENTITY bizarre.options.menudummy.save.accesskey "С">
+<!ENTITY bizarre.menu.context.zoomimage.label "Големина на сликата">
+<!ENTITY bizarre.menu.context.zoomimage.accesskey "г">
+<!ENTITY bizarre.menu.context.increase.label "Зголеми (+)">
+<!ENTITY bizarre.menu.context.increase.accesskey "+">
+<!ENTITY bizarre.menu.context.reset.label "Врати на старо (=)">
+<!ENTITY bizarre.menu.context.reset.accesskey "=">
+<!ENTITY bizarre.menu.context.decrease.label "Намали (-)">
+<!ENTITY bizarre.menu.context.decrease.accesskey "-">
+<!ENTITY bizarre.menu.context.customzoom.label "Степен на зголемување">
+<!ENTITY bizarre.menu.context.customdim.label "Димензии">
+<!ENTITY bizarre.menu.context.imagefit.label "Прилагоди ја сликата">
+<!ENTITY bizarre.menu.context.imagefitwidth.label "Fit Width">
+<!ENTITY bizarre.menu.context.rotateimage.label "Ротирај ја сликата">
+<!ENTITY bizarre.menu.context.rotateimage.accesskey "Р">
+<!ENTITY bizarre.menu.context.imagerotateright.label "Ротирај Десно">
+<!ENTITY bizarre.menu.context.rotate.right.accesskey "Д">
+<!ENTITY bizarre.menu.context.imagerotateleft.label "Ротирај Лево">
+<!ENTITY bizarre.menu.context.rotate.left.accesskey "Л">
+<!ENTITY bizarre.menu.context.imagerotate180.label "Ротирај 180°">
+<!ENTITY bizarre.menu.context.rotate.180.accesskey "1">
+<!ENTITY bizarre.menu.context.imagerotatereset.label "Ресетирај го Ротирањето">
+<!ENTITY bizarre.menu.context.rotate.reset.accesskey "с">

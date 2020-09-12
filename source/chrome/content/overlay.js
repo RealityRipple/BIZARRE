@@ -3,7 +3,7 @@
  Copyright (c) 2006-2013  Jason Adams <imagezoom@yellowgorilla.net>
  Pale Moon Update:  2020  Andrew Sachen <webmaster@RealityRipple.com>
 
- This file is part of Image Zoom.
+ This file is part of Image Zoom (now BIZARRE).
 
  Image Zoom is free software; you can redistribute it and/or modify
  it under the terms of the GNU General Public License as published by
@@ -25,55 +25,55 @@
 // Initialize the global namespace for image zoom
 if (!izoom) { var izoom = {}; }
 
-izoom.overlay = new ImageZoomOverlay();
+izoom.overlay = new BIZARREOverlay();
 
-window.addEventListener("load", izoom.overlay.initImageZoom, false);
+window.addEventListener("load", izoom.overlay.initBIZARRE, false);
 
 // Image Zoom overlay Object Definition
-function ImageZoomOverlay() {
+function BIZARREOverlay() {
   'use strict';
   // Private Global Variables
   // Preference Service objects
 
   var nsIPrefServiceObj = Components.classes["@mozilla.org/preferences-service;1"].getService(Components.interfaces.nsIPrefService);
-  var nsIPrefBranchObj = nsIPrefServiceObj.getBranch("extensions.imagezoom.");
+  var nsIPrefBranchObj = nsIPrefServiceObj.getBranch("extensions.bizarre.");
 
   var izContext;
   var contextDisabled = false;
-  var imagezoomBundle;
+  var bizarreBundle;
   var contextSubMenuLabel;
   var contextRotateMenuLabel;
   var rotateTime = 0;
 
   //Public Functions
-  this.initImageZoom = function () {
+  this.initBIZARRE = function () {
 
     // For Mozilla and Firefox
     if (document.getElementById("contentAreaContextMenu")) {
-      document.getElementById("contentAreaContextMenu").addEventListener("popupshowing", imageZoomMenu, false);
+      document.getElementById("contentAreaContextMenu").addEventListener("popupshowing", BIZARREMenu, false);
     }
     // For Thunderbird
     if (document.getElementById("mailContext")) {
-      document.getElementById("mailContext").addEventListener("popupshowing", imageZoomMenu, false);
+      document.getElementById("mailContext").addEventListener("popupshowing", BIZARREMenu, false);
     }
     // Add events for the mouse functions
     gPanelContainer().addEventListener("mousedown", izOnMouseDown, true);
 
-    imagezoomBundle = document.getElementById("imagezoom.stringbundle");
+    bizarreBundle = document.getElementById("bizarre.stringbundle");
 
   };
 
   this.izShowCustomZoom = function () {
     // Create the image object and pass it to the custom zoom dialog
     var oizImage = new IzImage(document.popupNode);
-    openDialog("chrome://imagezoom/content/customzoom.xul", "", "chrome,modal,centerscreen", "Image", oizImage);
+    openDialog("chrome://bizarre/content/customzoom.xul", "", "chrome,modal,centerscreen", "Image", oizImage);
     reportStatus(oizImage);
   };
 
   this.izShowCustomDim = function () {
     // Create the image object and pass it to the custom dimension dialog
     var oizImage = new IzImage(document.popupNode);
-    openDialog("chrome://imagezoom/content/customdim.xul", "", "chrome,modal,centerscreen", oizImage);
+    openDialog("chrome://bizarre/content/customdim.xul", "", "chrome,modal,centerscreen", oizImage);
     reportStatus(oizImage);
   };
 
@@ -183,8 +183,8 @@ function ImageZoomOverlay() {
         statusTextFld = document.getElementById("statusbar-display");
       }
 
-      tmpStatus = "Image Zoom: " + oizImage.zoomFactor() + "% | " + imagezoomBundle.getString("widthLabel") + ": " + oizImage.getWidth() + "px | " + imagezoomBundle.getString("heightLabel") + ": " + oizImage.getHeight() + "px";
-      tmpStatus = tmpStatus + " | " + imagezoomBundle.getString("rotateLabel") + ": " + oizImage.getAngle() + "\u00B0";
+      tmpStatus = "Image Zoom: " + oizImage.zoomFactor() + "% | " + bizarreBundle.getString("widthLabel") + ": " + oizImage.getWidth() + "px | " + bizarreBundle.getString("heightLabel") + ": " + oizImage.getHeight() + "px";
+      tmpStatus = tmpStatus + " | " + bizarreBundle.getString("rotateLabel") + ": " + oizImage.getAngle() + "\u00B0";
       statusTextFld.label = tmpStatus;
     }
   }
@@ -400,7 +400,7 @@ function ImageZoomOverlay() {
     return (beforeShow && afterShow);
   }
 
-  function imageZoomMenu() {
+  function BIZARREMenu() {
     var menuItems, optionItems, i, oizImage;
 
     menuItems = new Array("context-zoom-zin", "context-zoom-zout", "context-zoom-zreset", "context-zoom-zcustom", "context-zoom-dcustom", "context-zoom-fit", "context-zoom-fitwidth", "context-zoom-rotate-right", "context-zoom-rotate-left", "context-zoom-rotate-180", "context-zoom-rotate-reset", "zoomsub-zin", "zoomsub-zout", "zoomsub-zreset", "rotatesub-rotate-right", "rotatesub-rotate-left", "rotatesub-rotate-180", "rotatesub-rotate-reset", "zoomsub-zcustom", "zoomsub-dcustom", "zoomsub-fit", "zoomsub-fitwidth", "zoomsub-z400", "zoomsub-z200", "zoomsub-z150", "zoomsub-z125", "zoomsub-z100", "zoomsub-z75", "zoomsub-z50", "zoomsub-z25", "zoomsub-z10");

@@ -1,0 +1,68 @@
+<!ENTITY bizarre.customzoom.label "Alegeți factorul de scalare">
+<!ENTITY bizarre.customzoom.title "Scalare la alegere">
+<!ENTITY bizarre.customdim.width.label "Lățime:">
+<!ENTITY bizarre.customdim.height.label "Înălțime:">
+<!ENTITY bizarre.customdim.title "Dimensiuni la alegere">
+<!ENTITY bizarre.customdim.aspect.label "Menține raportul dimensiunilor">
+<!ENTITY bizarre.options.label "- Preferințe">
+<!ENTITY bizarre.options.help.label "Ghid">
+<!ENTITY bizarre.options.defaultzoom.label "Factorul de scalare:">
+<!ENTITY bizarre.options.showautofit.label "Include Potrivire automat în meniul global">
+<!ENTITY bizarre.options.defaultscroll.label "Mărirea cu rotița:">
+<!ENTITY bizarre.options.scrollmode.label "Modul de scalare:">
+<!ENTITY bizarre.options.scrollrelative.label "Relativ">
+<!ENTITY bizarre.options.scrollabsolute.label "Absolut">
+<!ENTITY bizarre.options.rotatekeys.label "Rotate Key">
+<!ENTITY bizarre.options.defaultrotate.label "Rotate Angle Increments">
+<!ENTITY bizarre.options.singlezoom.label "Opțiuni pentru scalarea individuală">
+<!ENTITY bizarre.options.misc.label "Miscellaneous Options">
+<!ENTITY bizarre.options.showStatus.label "Show Image Zoom status in the Status Bar">
+<!ENTITY bizarre.options.context.label "Meniu contextual">
+<!ENTITY bizarre.options.contextdisplay.label "Opțiunile meniului contextual">
+<!ENTITY bizarre.options.tabs.contextmenu.label "Elementele meniului contextual">
+<!ENTITY bizarre.options.tabs.zoomcontext.label "Zoom Context Menu">
+<!ENTITY bizarre.options.tabs.rotatecontext.label "Rotate Context Menu">
+<!ENTITY bizarre.options.tabs.main.label "Generalități">
+<!ENTITY bizarre.options.reversescroll.label "Scalează invers">
+<!ENTITY bizarre.options.autocenter.label "Centrează automat imaginile la potrivirea lor">
+<!ENTITY bizarre.options.mouseaccess.label1 "Accesați funcțiile ținând apăsat butonul">
+<!ENTITY bizarre.options.mouseaccess.label2 "al mausului.">
+<!ENTITY bizarre.options.imagefit.label "Butonul pt. potrivirea imaginii:">
+<!ENTITY bizarre.options.imagereset.label "Butonul pt. refacerea imaginii:">
+<!ENTITY bizarre.options.none.label "Niciunul">
+<!ENTITY bizarre.options.lmb.label "Stâng">
+<!ENTITY bizarre.options.mmb.label "Mijlociu">
+<!ENTITY bizarre.options.rmb.label "Drept">
+<!ENTITY bizarre.options.usemouse.label "Folosiți funcțiile mausului">
+<!ENTITY bizarre.options.contextdescription.label "Bifați elementele care să apară în meniul contextual al imaginii">
+<!ENTITY bizarre.options.togglefitreset.label "Comută între Potrivire/Refacere">
+<!ENTITY bizarre.options.menudummy.view.label "Afișează imaginea">
+<!ENTITY bizarre.options.menudummy.view.accesskey "i">
+<!ENTITY bizarre.options.menudummy.contents.label "Copiază imaginea">
+<!ENTITY bizarre.options.menudummy.contents.accesskey "C">
+<!ENTITY bizarre.options.menudummy.image.label "Copiază adresa imaginii">
+<!ENTITY bizarre.options.menudummy.image.accesskey "d">
+<!ENTITY bizarre.options.menudummy.save.label "Salvează imaginea ca">
+<!ENTITY bizarre.options.menudummy.save.accesskey "a">
+<!ENTITY bizarre.menu.context.zoomimage.label "Scalează imaginea">
+<!ENTITY bizarre.menu.context.zoomimage.accesskey "a">
+<!ENTITY bizarre.menu.context.increase.label "+ Mărește">
+<!ENTITY bizarre.menu.context.increase.accesskey "+">
+<!ENTITY bizarre.menu.context.reset.label "= Refă">
+<!ENTITY bizarre.menu.context.reset.accesskey "=">
+<!ENTITY bizarre.menu.context.decrease.label "- Micșorează">
+<!ENTITY bizarre.menu.context.decrease.accesskey "-">
+<!ENTITY bizarre.menu.context.customzoom.label "Scalare la alegere">
+<!ENTITY bizarre.menu.context.customdim.label "Dimensiuni la alegere">
+<!ENTITY bizarre.menu.context.imagefit.label "Potrivește imaginea">
+<!ENTITY bizarre.menu.context.imagefitwidth.label "Fit Width">
+<!ENTITY bizarre.menu.context.rotateimage.label "Rotate Image">
+<!ENTITY bizarre.menu.context.rotateimage.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateright.label "Rotate Right">
+<!ENTITY bizarre.menu.context.rotate.right.accesskey "R">
+<!ENTITY bizarre.menu.context.imagerotateleft.label "Rotate Left">
+<!ENTITY bizarre.menu.context.rotate.left.accesskey "L">
+<!ENTITY bizarre.menu.context.imagerotate180.label "Rotate 180°">
+<!ENTITY bizarre.menu.context.rotate.180.accesskey "1">
+<!ENTITY bizarre.menu.context.imagerotatereset.label "Rotate Reset">
+<!ENTITY bizarre.menu.context.rotate.reset.accesskey "s">

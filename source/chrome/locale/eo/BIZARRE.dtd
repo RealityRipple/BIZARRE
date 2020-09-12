@@ -1,0 +1,68 @@
+<!ENTITY bizarre.customzoom.label "Entajpi zoman faktoron">
+<!ENTITY bizarre.customzoom.title "Laŭvola zomo">
+<!ENTITY bizarre.customdim.width.label "Larĝo:">
+<!ENTITY bizarre.customdim.height.label "Alto:">
+<!ENTITY bizarre.customdim.title "Laŭvola grandeco">
+<!ENTITY bizarre.customdim.aspect.label "Konservi grandorejŝon">
+<!ENTITY bizarre.options.label "Preferoj">
+<!ENTITY bizarre.options.help.label "Helpopaĝo">
+<!ENTITY bizarre.options.defaultzoom.label "Zoma/Malzoma faktoro">
+<!ENTITY bizarre.options.showautofit.label "Vidigi alĝustigan funkcion en ĉefmenuo">
+<!ENTITY bizarre.options.defaultscroll.label "Krementaĵo de ruluma zomo">
+<!ENTITY bizarre.options.scrollmode.label "Rulumreĝimo">
+<!ENTITY bizarre.options.scrollrelative.label "Relativa">
+<!ENTITY bizarre.options.scrollabsolute.label "Absoluta">
+<!ENTITY bizarre.options.rotatekeys.label "Turnada klavo">
+<!ENTITY bizarre.options.defaultrotate.label "Turnadaj angulaj alkrementoj">
+<!ENTITY bizarre.options.singlezoom.label "Individuaj zomopcioj">
+<!ENTITY bizarre.options.misc.label "Diversaj agordoj">
+<!ENTITY bizarre.options.showStatus.label "Montri staton de Image Zoom en statlinio">
+<!ENTITY bizarre.options.context.label "Kunteksta menuo">
+<!ENTITY bizarre.options.contextdisplay.label "Vidigopcioj de kunteksta menuo">
+<!ENTITY bizarre.options.tabs.contextmenu.label "Enskriboj de kunteksta menuo">
+<!ENTITY bizarre.options.tabs.zoomcontext.label "Zoma kuntekstmenuo">
+<!ENTITY bizarre.options.tabs.rotatecontext.label "Turnada kunteksta menuo">
+<!ENTITY bizarre.options.tabs.main.label "Ĝenerala">
+<!ENTITY bizarre.options.reversescroll.label "Reen rulumi">
+<!ENTITY bizarre.options.autocenter.label "Aŭtomate centrigi bildojn per alĝustiga funkcio">
+<!ENTITY bizarre.options.mouseaccess.label1 "Atingi funkciojn per la">
+<!ENTITY bizarre.options.mouseaccess.label2 "musbutono.">
+<!ENTITY bizarre.options.imagefit.label "Bildalĝustiga butono">
+<!ENTITY bizarre.options.imagereset.label "Butono 'Restaŭri bildon'">
+<!ENTITY bizarre.options.none.label "Malŝaltita">
+<!ENTITY bizarre.options.lmb.label "maldekstra">
+<!ENTITY bizarre.options.mmb.label "meza">
+<!ENTITY bizarre.options.rmb.label "dekstra">
+<!ENTITY bizarre.options.usemouse.label "Uzi musfunkciojn">
+<!ENTITY bizarre.options.contextdescription.label "Kontroli la enskribojn, kiujn vi volas vidigi en la kunteksta bildmenuo">
+<!ENTITY bizarre.options.togglefitreset.label "Alternigi akomodi/restaŭri bildon">
+<!ENTITY bizarre.options.menudummy.view.label "Vidigi bildon">
+<!ENTITY bizarre.options.menudummy.view.accesskey "v">
+<!ENTITY bizarre.options.menudummy.contents.label "Kopii bildon">
+<!ENTITY bizarre.options.menudummy.contents.accesskey "i">
+<!ENTITY bizarre.options.menudummy.image.label "Kopii bildlokon">
+<!ENTITY bizarre.options.menudummy.image.accesskey "o">
+<!ENTITY bizarre.options.menudummy.save.label "Konservi bildon kiel">
+<!ENTITY bizarre.options.menudummy.save.accesskey "k">
+<!ENTITY bizarre.menu.context.zoomimage.label "Zomi bildon">
+<!ENTITY bizarre.menu.context.zoomimage.accesskey "Z">
+<!ENTITY bizarre.menu.context.increase.label "+ Zomi">
+<!ENTITY bizarre.menu.context.increase.accesskey "+">
+<!ENTITY bizarre.menu.context.reset.label "= Originala grandeco">
+<!ENTITY bizarre.menu.context.reset.accesskey "=">
+<!ENTITY bizarre.menu.context.decrease.label "- Malzomi">
+<!ENTITY bizarre.menu.context.decrease.accesskey "-">
+<!ENTITY bizarre.menu.context.customzoom.label "Propra zomo">
+<!ENTITY bizarre.menu.context.customdim.label "Propraj dimensioj">
+<!ENTITY bizarre.menu.context.imagefit.label "Akomodi bildon">
+<!ENTITY bizarre.menu.context.imagefitwidth.label "Adapti larĝecon">
+<!ENTITY bizarre.menu.context.rotateimage.label "Turni bildon">
+<!ENTITY bizarre.menu.context.rotateimage.accesskey "T">
+<!ENTITY bizarre.menu.context.imagerotateright.label "Turni dekstren">
+<!ENTITY bizarre.menu.context.rotate.right.accesskey "D">
+<!ENTITY bizarre.menu.context.imagerotateleft.label "Turni maldekstren">
+<!ENTITY bizarre.menu.context.rotate.left.accesskey "M">
+<!ENTITY bizarre.menu.context.imagerotate180.label "Turni je 180°">
+<!ENTITY bizarre.menu.context.rotate.180.accesskey "U">
+<!ENTITY bizarre.menu.context.imagerotatereset.label "Returni">
+<!ENTITY bizarre.menu.context.rotate.reset.accesskey "R">
