@@ -89,7 +89,7 @@ function BIZARREOverlay() {
     var oizImage = new IzImage(document.popupNode);
     oizImage.fit(nsIPrefBranchObj.getBoolPref("autocenter"), true);
     reportStatus(oizImage);
-  }
+  };
 
   this.izZoomIn = function () {
     //Create the object and invoke its zoom method passing the factor to zoom
@@ -177,7 +177,7 @@ function BIZARREOverlay() {
     var tmpStatus;
     //write the zoom factor to the status bar
     if (nsIPrefBranchObj.getBoolPref("showStatus")) {
-      if (document.documentElement.getAttribute("windowtype") == "mail:3pane") {
+      if (document.documentElement.getAttribute("windowtype") === "mail:3pane") {
         statusTextFld = document.getElementById("statusText");
       } else {
         statusTextFld = document.getElementById("statusbar-display");
@@ -197,7 +197,7 @@ function BIZARREOverlay() {
   }
 
   function disableContextMenu(event) {
-    if (document.popupNode.tagName.toLowerCase() == "img" || document.popupNode.tagName.toLowerCase() == "canvas") {
+    if (document.popupNode.tagName.toLowerCase() === "img" || document.popupNode.tagName.toLowerCase() === "canvas") {
       izContentVariables().linuxImage = document.popupNode;
       izContext = event.originalTarget;
       event.preventDefault();
@@ -209,16 +209,16 @@ function BIZARREOverlay() {
   function izOnMouseDown(event) {
 
     var targetName = event.originalTarget.tagName.toLowerCase();
-    if ((targetName == "img" || targetName == "canvas") && (izContentVariables().scrollZooming) && ((event.which == nsIPrefBranchObj.getIntPref("imageresetbutton")) || (event.which == nsIPrefBranchObj.getIntPref("imagefitbutton")) || (event.which == nsIPrefBranchObj.getIntPref("triggerbutton")))) {
+    if ((targetName === "img" || targetName === "canvas") && (izContentVariables().scrollZooming) && ((event.which === nsIPrefBranchObj.getIntPref("imageresetbutton")) || (event.which === nsIPrefBranchObj.getIntPref("imagefitbutton")) || (event.which === nsIPrefBranchObj.getIntPref("triggerbutton")))) {
       event.preventDefault();
       event.stopPropagation();
     }
 
     // prepare for the mouse functions on a right click when user option is true
-    if ((event.which == nsIPrefBranchObj.getIntPref("triggerbutton")) && (nsIPrefBranchObj.getBoolPref("usescroll")) &&
-       ((targetName == "img" || targetName == "canvas")) &&
+    if ((event.which === nsIPrefBranchObj.getIntPref("triggerbutton")) && (nsIPrefBranchObj.getBoolPref("usescroll")) &&
+       ((targetName === "img" || targetName === "canvas")) &&
        // Prevent zooming from being initiated when an embedded object is clicked apon
-       !(targetName == "embed" || targetName == "object")) {
+       !(targetName === "embed" || targetName === "object")) {
 
       if (navigator.platform !== "Win32" && navigator.platform !== "Win64" && navigator.platform !== "OS/2") {
         addEventListener("popupshowing", disableContextMenu, true);
@@ -235,7 +235,7 @@ function BIZARREOverlay() {
 
   function izOnMouseUp(event) {
     // Right mouse button release, remove listeners
-    if (event.which == nsIPrefBranchObj.getIntPref("triggerbutton")) {
+    if (event.which === nsIPrefBranchObj.getIntPref("triggerbutton")) {
       if (izContentVariables().haveZoomed) {
         event.preventDefault();
       }
@@ -247,7 +247,7 @@ function BIZARREOverlay() {
     var oizImage;
     var targetName = event.originalTarget.tagName.toLowerCase();
 
-    if (event.which == nsIPrefBranchObj.getIntPref("triggerbutton")) {
+    if (event.which === nsIPrefBranchObj.getIntPref("triggerbutton")) {
       if (izContentVariables().haveZoomed) {
         event.preventDefault();
         event.stopPropagation();
@@ -272,7 +272,7 @@ function BIZARREOverlay() {
 
     if (izContentVariables().scrollZooming) {
       // Invoke varios mouse function when mouse is over an image only
-      if (targetName == "img" || targetName == "canvas") {
+      if (targetName === "img" || targetName === "canvas") {
         switch (event.which) {
           // Middle mouse button pressed while right button down, reset image
           case nsIPrefBranchObj.getIntPref("imageresetbutton"):
@@ -281,14 +281,14 @@ function BIZARREOverlay() {
             izContentVariables().haveZoomed = true;
             oizImage = new IzImage(event.originalTarget);
             var rotateKeys = nsIPrefBranchObj.getIntPref("rotateKeys");
-            if(rotateKeys && modifierKeys(event) == rotateKeys){ //alt+click: reset rotation
+            if(rotateKeys && modifierKeys(event) === rotateKeys){ //alt+click: reset rotation
               oizImage.rotate(0 - oizImage.getAngle());
             } else {
-              if (nsIPrefBranchObj.getBoolPref("toggleFitReset") && oizImage.zoomFactor() == 100) {
+              if (nsIPrefBranchObj.getBoolPref("toggleFitReset") && oizImage.zoomFactor() === 100) {
                 oizImage.fit(nsIPrefBranchObj.getBoolPref("autocenter"));
-              } else if(oizImage.zoomFactor() != 100) {
+              } else if(oizImage.zoomFactor() !== 100) {
                 oizImage.setZoom(100);
-              } else if(targetName == "img") {
+              } else if(targetName === "img") {
                 var img = event.originalTarget;
                 oizImage.setDimension(img.naturalWidth, img.naturalHeight);
               }
@@ -324,7 +324,7 @@ function BIZARREOverlay() {
         scrollAmount = event.deltaY;
       }
       else {
-        scrollAmount = event.deltaX
+        scrollAmount = event.deltaX;
       }
       scrollImage(scrollAmount, event);
     }
@@ -343,11 +343,11 @@ function BIZARREOverlay() {
         izContentVariables().haveZoomed = true;
         var oizImage = new IzImage(imageToScroll);
         var rotateKeys = nsIPrefBranchObj.getIntPref("rotateKeys");
-        if(rotateKeys && modifierKeys(event) == rotateKeys){ //alt+scroll: rotate image
+        if(rotateKeys && modifierKeys(event) === rotateKeys){ //alt+scroll: rotate image
           oizImage.rotate(nsIPrefBranchObj.getIntPref("rotateValue") * (wheelIncrement > 0 ? 1 : -1));
         } else{
           var zoomFactor;
-          if (nsIPrefBranchObj.getIntPref("scrollmode") == 0) {
+          if (nsIPrefBranchObj.getIntPref("scrollmode") === 0) {
             if (((wheelIncrement < 0) && !nsIPrefBranchObj.getBoolPref("reversescrollzoom")) || ((wheelIncrement > 0) && nsIPrefBranchObj.getBoolPref("reversescrollzoom"))) {
               zoomFactor = 1 / (1 + (nsIPrefBranchObj.getIntPref("scrollvalue") / 100));
             }
@@ -379,8 +379,8 @@ function BIZARREOverlay() {
     var i;
     // Check for visable items before the separator
     for (i = position - 1; i >= 0; i--) {
-      if ((list[i].tagName == "menuseparator") && (!list[i].hidden)) break;
-      if ((list[i].tagName != "menuseparator") && (!list[i].hidden)) {
+      if ((list[i].tagName === "menuseparator") && (!list[i].hidden)) break;
+      if ((list[i].tagName !== "menuseparator") && (!list[i].hidden)) {
         beforeShow = true;
         break;
       }
@@ -389,7 +389,7 @@ function BIZARREOverlay() {
     // Check for visable items after the separator
     if (beforeShow) {
       for (i = position + 1; i < list.length; i++) {
-        if ((list[i].tagName != "menuseparator") && (!list[i].hidden)) {
+        if ((list[i].tagName !== "menuseparator") && (!list[i].hidden)) {
           afterShow = true;
           break;
         }
@@ -419,7 +419,7 @@ function BIZARREOverlay() {
     // Insert the necessary separators if needed in the sub menu
     var subItems = document.getElementById("zoompopup").getElementsByTagName("*");
     for (i = 0; i < subItems.length; i++) {
-      if (subItems[i].tagName == "menuseparator") subItems[i].setAttribute("hidden", (!insertSeparator(subItems, i)).toString());
+      if (subItems[i].tagName === "menuseparator") subItems[i].setAttribute("hidden", (!insertSeparator(subItems, i)).toString());
     }
 
     var izMenuItem;
@@ -776,7 +776,7 @@ function BIZARREOverlay() {
     var screenWidth;
 
     this.getWidth = function() {
-      if (pImage.ownerDocument.compatMode == "BackCompat") {
+      if (pImage.ownerDocument.compatMode === "BackCompat") {
         screenWidth = pImage.ownerDocument.body.clientWidth - padValue;
       } else {
         screenWidth = pImage.ownerDocument.documentElement.clientWidth - padValue;
@@ -787,7 +787,7 @@ function BIZARREOverlay() {
 
     this.getHeight = function() {
       var screenHeight;
-      if (pImage.ownerDocument.compatMode == "BackCompat") {
+      if (pImage.ownerDocument.compatMode === "BackCompat") {
         screenHeight = pImage.ownerDocument.body.clientHeight - padValue;
       } else {
         screenHeight = pImage.ownerDocument.documentElement.clientHeight - padValue;

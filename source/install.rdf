@@ -7,7 +7,7 @@
   <em:type>2</em:type>
   <em:description>Adds zoom functionality for images</em:description>
   <em:creator>RealityRipple</em:creator>
-  <em:contributor>Jason Adams</em:contributor>
+  <em:developer>Jason Adams</em:developer>
   <em:homepageURL>https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/</em:homepageURL>
   <em:updateURL>https://realityripple.com/Software/Mozilla-Extensions/BIZARRE/update.rdf</em:updateURL>
   <em:optionsURL>chrome://bizarre/content/options.xul</em:optionsURL>

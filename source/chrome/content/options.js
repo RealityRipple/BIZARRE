@@ -26,7 +26,7 @@ function OptionCache() {
 
   function setOption(optionName, optionValue) {
     for (var i = 0; i < optionNames.length; i++) {
-      if (optionNames[i] == optionName) {
+      if (optionNames[i] === optionName) {
         optionValues[i] = optionValue;
         return;
       }
@@ -44,7 +44,7 @@ function OptionCache() {
   function getOption(optionName) {
 
     for (var i = 0; i < optionNames.length; i++) {
-      if (optionNames[i] == optionName) {
+      if (optionNames[i] === optionName) {
         return optionValues[i];
       }
     }
@@ -73,7 +73,7 @@ function bizarre_saveOptions() {
   if (!validateOptions()) return false;
 
   for (var i = 0; i < menuItems.length; i++) {
-    if (document.getElementById(menuItems[i]).tagName.toLowerCase() == "checkbox") {
+    if (document.getElementById(menuItems[i]).tagName.toLowerCase() === "checkbox") {
       nsIPrefBranchObj.setBoolPref(optionItems[i], menuOptions.getOption(optionItems[i]));
     }
   }
@@ -100,7 +100,7 @@ function bizarre_saveOptions() {
 }
 
 function validateOptions() {
-  if ((document.getElementById("bizarremouseaccess").value == document.getElementById("bizarreimagefitbutton").value) || (document.getElementById("bizarremouseaccess").value == document.getElementById("bizarreimageresetbutton").value) || ((document.getElementById("bizarreimageresetbutton").value == document.getElementById("bizarreimagefitbutton").value) && (document.getElementById("bizarreimagefitbutton").value !== "0"))) {
+  if ((document.getElementById("bizarremouseaccess").value === document.getElementById("bizarreimagefitbutton").value) || (document.getElementById("bizarremouseaccess").value === document.getElementById("bizarreimageresetbutton").value) || ((document.getElementById("bizarreimageresetbutton").value === document.getElementById("bizarreimagefitbutton").value) && (document.getElementById("bizarreimagefitbutton").value !== "0"))) {
     alert(document.getElementById("bundle_BIZARRE").getString("op_mouse_error"));
     return false;
   }
@@ -177,7 +177,7 @@ function setBIZARREMenu() {
 function setPreference(izCheck) {
   var i;
   for (i = 0; i < menuItems.length; i++) {
-    if (izCheck.id == menuItems[i]) break;
+    if (izCheck.id === menuItems[i]) break;
   }
 
   menuOptions.setOption(optionItems[i], izCheck.checked);
