@@ -22,109 +22,100 @@
 
 ***** END LICENSE BLOCK ***** */
 
-#mainmenu {
-  	border: 1px outset;
-  	padding: 1px;
-  	min-width: 1px;
-	-moz-box-orient: vertical;
+#mainmenu
+{
+ border: 1px outset;
+ padding: 1px;
+ min-width: 1px;
+ -moz-box-orient: vertical;
 }
-
-#submenu, #subrotatemenu {
-  	border: 1px outset;
-  	padding: 1px;
-  	min-width: 1px;
-	-moz-box-orient: vertical;
-	margin-top: 1px;
-	margin-left: -1px;
+#submenu, #subrotatemenu
+{
+ border: 1px outset;
+ padding: 1px;
+ min-width: 1px;
+ -moz-box-orient: vertical;
+ margin-top: 1px;
+ margin-left: -1px;
 }
-
-checkbox {
-  -moz-box-align: center;
-  padding-right: 25px;
-  font: menu;
-  margin: 0px;
+checkbox
+{
+ -moz-box-align: center;
+ padding-right: 25px;
+ font: menu;
+ margin: 0px;
 }
-
 spacer.line
 {
  margin-top: 2px;
  border-top: 1px solid;
  margin-bottom: 6px;
 }
-
-.dummy {
-	margin-left:4px;
-	margin-right:2px;
-	opacity:1;
+.dummy
+{
+ margin-left:4px;
+ margin-right:2px;
+ opacity:1;
 }
-
-.right-arrow {
-  margin-top: 6px;
-  -moz-appearance: menuarrow;
+.right-arrow
+{
+ margin-top: 6px;
+ -moz-appearance: menuarrow;
 }
-
-.url {
-  color: #0000FF;
-  text-decoration: underline !important;
-  cursor: pointer;
-  -moz-user-focus: normal;
+.url
+{
+ color: #0000FF;
+ text-decoration: underline !important;
+ cursor: pointer;
+ -moz-user-focus: normal;
 }
-
-.help {
-  text-align: right;
- }
-
-.main-title {
-  font-size: x-large;
-  cursor: pointer;
-  color: grey;
-  font-weight: bold;
-  -moz-user-focus: normal;  
+.help
+{
+ text-align: right;
 }
-
-.sub-title {
-  font-weight: bold;
+.main-title
+{
+ font-size: x-large;
+ cursor: pointer;
+ color: grey;
+ font-weight: bold;
+ -moz-user-focus: normal;  
 }
-
-.version {
-  font-size: small;
-  font-weight: bold;
-  color: grey;
+.sub-title
+{
+ font-weight: bold;
 }
-
-.author {
-
+.version
+{
+ font-size: small;
+ font-weight: bold;
+ color: grey;
 }
-
-.about-box {
-  background-color: white;
-  padding: 13px;
-  padding-top: 5px;
+.about-box
+{
+ background-color: white;
+ padding: 13px;
+ padding-top: 5px;
 }
-
-.install-box {
-  background-color: white;
-  padding: 13px;
-  padding-top: 5px;
-  font-family: verdana, sans, arial, helvetica, sans-serif;
+.install-box
+{
+ background-color: white;
+ padding: 13px;
+ padding-top: 5px;
+ font-family: verdana, sans, arial, helvetica, sans-serif;
 }
-
-.warning-box {
-  background-color: white;
-  padding: 13px;
-  padding-top: 5px;
-  font-family: verdana, sans, arial, helvetica, sans-serif;
+.warning-box
+{
+ background-color: white;
+ padding: 13px;
+ padding-top: 5px;
+ font-family: verdana, sans, arial, helvetica, sans-serif;
 }
-
-.warning-question {
-  font-weight: bold;
+.warning-question
+{
+ font-weight: bold;
 }
-
-.install-description {
-
+#install-notice
+{
+ font-size: small;
 }
-
-#install-notice {
-  font-size: small;
-}
-

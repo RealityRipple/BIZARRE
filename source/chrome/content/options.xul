@@ -21,494 +21,423 @@
     Foundation, Inc., 59 Temple Place, Suite 330, Boston, MA  02111-1307  USA
 
 ***** END LICENSE BLOCK ***** -->
-
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
 <?xml-stylesheet href="chrome://bizarre/skin/bizarre.css" type="text/css"?>
 <?xml-stylesheet href="chrome://mozapps/skin/pref/pref.css" type="text/css"?>
-
 <!DOCTYPE window SYSTEM "chrome://bizarre/locale/BIZARRE.dtd">
-
 <dialog buttons="accept, cancel"
         id="bizarre-options-dialog"
         ondialogaccept="return bizarre_saveOptions()"
         onload="bizarre_initializeOptions()"
         title="Image Zoom &bizarre.options.label;"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+ <script src="chrome://bizarre/content/options.js"/>
+ <stringbundleset id="stringbundleset">
+  <stringbundle id="bundle_BIZARRE" src="chrome://bizarre/locale/BIZARRE.properties"/>
+ </stringbundleset>
+ <tabbox id="wf_tabbox">
+  <tabs>
+   <tab id="mainTab" label="&bizarre.options.tabs.main.label;"/>
+   <tab id="zoomTab" label="&bizarre.options.tabs.zoomcontext.label;"/>
+   <tab id="rotateTab" label="&bizarre.options.tabs.rotatecontext.label;"/>
+  </tabs>
+  <tabpanels flex="1">
+   <tabpanel orient="vertical" flex="1">
+    <vbox flex="1">
+     <groupbox align="start">
+      <caption>
+       <checkbox id="bizarreusemouseoptions"
+                 label="&bizarre.options.usemouse.label;"
+                 prefstring="bizarre.usescroll"
+                 oncommand="setDisableAllChildren(document.getElementById('mouseoptions'), !this.checked);"/>
+      </caption>
+      <vbox flex="1" id="mouseoptions">
+       <hbox flex="1" align="center">
+        <label id="bizarremouseaccessbutton" value="&bizarre.options.mouseaccess.label1;" control="bizarremouseaccess"/>
+        <menulist id="bizarremouseaccess" prefstring="bizarre.triggerbutton">
+         <menupopup>
+          <menuitem label="&bizarre.options.lmb.label;" value="1"/>
+          <menuitem label="&bizarre.options.mmb.label;" value="2"/>
+          <menuitem label="&bizarre.options.rmb.label;" value="3"/>
+         </menupopup>
+        </menulist>
+        <label id="bizarremouseaccessbutton" value="&bizarre.options.mouseaccess.label2;" control="bizarremouseaccess"/>
+       </hbox>
+       <hbox flex="1">
+        <grid flex="1">
+         <columns>
+          <column/>
+          <column/>
+          <column/>
+          <column/>
+         </columns>
+         <rows>
+          <row align="center" flex="1">
+           <label id="bizarreimagefitbuttonlable" value="&bizarre.options.imagefit.label;" control="bizarreimagefitbutton"/>
+           <hbox align="center">
+            <menulist id="bizarreimagefitbutton" prefstring="bizarre.imagefitbutton">
+             <menupopup>
+              <menuitem label="&bizarre.options.none.label;" value="0"/>
+              <menuitem label="&bizarre.options.lmb.label;" value="1"/>
+              <menuitem label="&bizarre.options.mmb.label;" value="2"/>
+              <menuitem label="&bizarre.options.rmb.label;" value="3"/>
+             </menupopup>
+            </menulist>
+           </hbox>
+           <spacer style="min-width: 15px" flex="1"/>
+           <hbox align="center" flex="1">
+            <checkbox id="bizarretogglefitreset" label="&bizarre.options.togglefitreset.label;" prefstring="bizarre.toggleFitReset"/>
+           </hbox>
+          </row>
+          <row align="center" flex="1">
+           <label id="bizarreimageresetbuttonlable" value="&bizarre.options.imagereset.label;" control="bizarreimageresetbutton"/>
+           <menulist id="bizarreimageresetbutton" prefstring="bizarre.imageresetbutton">
+            <menupopup>
+             <menuitem label="&bizarre.options.none.label;" value="0"/>
+             <menuitem label="&bizarre.options.lmb.label;" value="1"/>
+             <menuitem label="&bizarre.options.mmb.label;" value="2"/>
+             <menuitem label="&bizarre.options.rmb.label;" value="3"/>
+            </menupopup>
+           </menulist>
+           <spacer flex="1"/>
+           <spacer flex="1"/>
+          </row>
+          <row align="center" flex="1">
+           <label id="bizarrescrollvaluelabelbefore" value="&bizarre.options.defaultscroll.label;" control="bizarrescrollvalue"/>
+           <hbox align="center">
+            <menulist id="bizarrescrollvalue" prefstring="bizarre.scrollvalue">
+             <menupopup>
+              <menuitem label="100" value="100"/>
+              <menuitem label="75" value="75"/>
+              <menuitem label="50" value="50"/>
+              <menuitem label="25" value="25"/>
+              <menuitem label="10" value="10"/>
+              <menuitem label="7" value="7"/>
+              <menuitem label="5" value="5"/>
+              <menuitem label="4" value="4"/>
+              <menuitem label="3" value="3"/>
+              <menuitem label="2" value="2"/>
+              <menuitem label="1" value="1"/>
+             </menupopup>
+            </menulist>
+            <label id="bizarrescrollvaluelabelafter" value="%"/>
+           </hbox>
+           <spacer style="min-width: 15px" flex="1"/>
+           <hbox align="center" flex="1">
+            <checkbox id="bizarrereversescroll" label="&bizarre.options.reversescroll.label;" prefstring="bizarre.reversescrollzoom"/>
+           </hbox>
+          </row>
+          <row align="center" flex="1">
+           <label id="bizarrescrollmodelabelbefore" value="&bizarre.options.scrollmode.label;" control="bizarrescrollmode"/>
+           <menulist id="bizarrescrollmode" prefstring="bizarre.scrollmode">
+            <menupopup>
+             <menuitem label="&bizarre.options.scrollrelative.label;" value="0"/>
+             <menuitem label="&bizarre.options.scrollabsolute.label;" value="1"/>
+            </menupopup>
+           </menulist>
+           <spacer flex="1"/>
+           <spacer flex="1"/>
+          </row>
+          <row align="center" flex="1">
+           <label id="bizarrerotatekeyslabelbefore" value="&bizarre.options.rotatekeys.label;" control="bizarrerotatekeys"/>
+           <menulist id="bizarrerotatekeys" prefstring="bizarre.rotateKeys">
+            <menupopup>
+             <menuitem label="&bizarre.options.none.label;" value="0"/>
+             <menuitem label="Ctrl" value="1"/>
+             <menuitem label="Alt" value="2"/>
+             <menuitem label="Shift" value="4"/>
+             <menuitem label="Ctrl+Alt" value="3"/>
+             <menuitem label="Ctrl+Shift" value="5"/>
+             <menuitem label="Alt+Shift" value="6"/>
+             <menuitem label="Ctrl+Alt+Shift" value="7"/>
+            </menupopup>
+           </menulist>
+           <spacer flex="1"/>
+           <spacer flex="1"/>
+          </row>
+          <row align="center" flex="1">
+           <label id="bizarrerotatevaluelabelbefore" value="&bizarre.options.defaultrotate.label;" control="bizarrerotatevalue"/>
+           <hbox align="center">
+            <menulist id="bizarrerotatevalue" prefstring="bizarre.rotateValue">
+             <menupopup>
+              <menuitem label="90" value="90"/>
+              <menuitem label="45" value="45"/>
+              <menuitem label="30" value="30"/>
+              <menuitem label="15" value="15"/>
+              <menuitem label="10" value="10"/>
+             </menupopup>
+            </menulist>
+            <label id="bizarrerotatevaluelabelafter" value="°"/>
+           </hbox>
+           <spacer flex="1"/>
+           <spacer flex="1"/>
+          </row>
+         </rows>
+        </grid>
+       </hbox>
+      </vbox>
+     </groupbox>
+     <groupbox align="start">
+      <caption label="&bizarre.options.singlezoom.label;"/>
+      <grid flex="1">
+       <columns>
+        <column/>
+        <column/>
+        <column/>
+       </columns>
+       <rows>
+        <row align="center">
+         <label style="width: 130px" value="&bizarre.options.defaultzoom.label;" control="bizarrezoomvalue"/>
+         <menulist id="bizarrezoomvalue" prefstring="bizarre.zoomvalue">
+          <menupopup>
+           <menuitem label="400" value="400"/>
+           <menuitem label="300" value="300"/>
+           <menuitem label="200" value="200"/>
+           <menuitem label="175" value="175"/>
+           <menuitem label="150" value="150"/>
+           <menuitem label="125" value="125"/>
+           <menuitem label="110" value="110"/>
+          </menupopup>
+         </menulist>
+         <label value="%"/>
+        </row>
+       </rows>
+      </grid>
+      <checkbox id="bizarreautocenter" label="&bizarre.options.autocenter.label;" prefstring="bizarre.autocenter"/>
+     </groupbox>
+     <groupbox align="start">
+      <caption label="&bizarre.options.misc.label;"/>
+      <checkbox id="bizarreshowstatus" label="&bizarre.options.showStatus.label;" prefstring="bizarre.showStatus"/>
+     </groupbox>
+    </vbox>
+   </tabpanel>
+   <tabpanel orient="vertical">
+    <label id="bizarrecontextdescription" value="&bizarre.options.contextdescription.label;"/>
+    <spacer class="line" flex="1"/>
+    <hbox flex="1">
+     <vbox flex="1"/>
+     <vbox>
+      <hbox flex="1"/>
+      <box id="mainmenu" class="menu-right">
+       <menuitem label="..." class="dummy"/>
+       <menuseparator/>
+       <menuitem id="context-viewimage"
+                 class="dummy"
+                 label="&bizarre.options.menudummy.view.label;"
+                 accesskey="&bizarre.options.menudummy.view.accesskey;"/>
+       <menuitem id="context-copyimage-contents"
+                 class="dummy"
+                 label="&bizarre.options.menudummy.contents.label;"
+                 accesskey="&bizarre.options.menudummy.contents.accesskey;"/>
+       <menuitem id="context-copyimage"
+                 class="dummy"
+                 label="&bizarre.options.menudummy.image.label;"
+                 accesskey="&bizarre.options.menudummy.image.accesskey;"/>
+       <checkbox id="context-zoom-zin"
+                 label="&bizarre.menu.context.increase.label;"
+                 oncommand="setOption(this);"
+                 accesskey="&bizarre.menu.context.increase.accesskey;"/>
+       <checkbox id="context-zoom-zreset"
+                 label="&bizarre.menu.context.reset.label;"
+                 oncommand="setOption(this);"
+                 accesskey="&bizarre.menu.context.reset.accesskey;"/>
+       <checkbox id="context-zoom-zout"
+                 label="&bizarre.menu.context.decrease.label;"
+                 oncommand="setOption(this);"
+                 accesskey="&bizarre.menu.context.decrease.accesskey;"/>
+       <checkbox id="context-zoom-zcustom" label="&bizarre.menu.context.customzoom.label;" oncommand="setOption(this);"/>
+       <checkbox id="context-zoom-dcustom" label="&bizarre.menu.context.customdim.label;" oncommand="setOption(this);"/>
+       <checkbox id="context-zoom-fit" label="&bizarre.menu.context.imagefit.label;" oncommand="setOption(this);"/>
+       <checkbox id="context-zoom-fitwidth" label="&bizarre.menu.context.imagefitwidth.label;" oncommand="setOption(this);"/>
+       <hbox>
+        <vbox flex="1">
+         <checkbox id="context-zoomsub"
+                   label="&bizarre.menu.context.zoomimage.label;"
+                   accesskey="&bizarre.menu.context.zoomimage.accesskey;"
+                   oncommand="toggleSubMenu();"/>
+        </vbox>
+        <vbox>
+         <image class="right-arrow"/>
+        </vbox>
+       </hbox>
+       <menuseparator/>
+       <menuitem id="context-saveimage"
+                 class="dummy"
+                 label="&bizarre.options.menudummy.save.label;"
+                 accesskey="&bizarre.options.menudummy.save.accesskey;"/>
+       <menuitem label="..." class="dummy"/>
+      </box>
+      <hbox flex="1"/>
+     </vbox>
+     <vbox>
+      <box id="submenu">
+       <checkbox id="zoomsub-zin"
+                 label="&bizarre.menu.context.increase.label;"
+                 oncommand="setOption(this);"
+                 accesskey="&bizarre.menu.context.increase.accesskey;"/>
+       <checkbox id="zoomsub-zreset"
+                 label="&bizarre.menu.context.reset.label;"
+                 oncommand="setOption(this);"
+                 accesskey="&bizarre.menu.context.reset.accesskey;"/>
+       <checkbox id="zoomsub-zout"
+                 label="&bizarre.menu.context.decrease.label;"
+                 oncommand="setOption(this);"
+                 accesskey="&bizarre.menu.context.decrease.accesskey;"/>
+       <menuseparator/>
+       <checkbox id="zoomsub-zcustom"
+                 label="&bizarre.menu.context.customzoom.label;"
+                 oncommand="setOption(this);"/>
+       <checkbox id="zoomsub-dcustom"
+                 label="&bizarre.menu.context.customdim.label;"
+                 oncommand="setOption(this);"/>
+       <menuseparator/>
+       <checkbox id="zoomsub-fit"
+                 label="&bizarre.menu.context.imagefit.label;"
+                 oncommand="setOption(this);"/>
+       <checkbox id="zoomsub-fitwidth"
+                 label="&bizarre.menu.context.imagefitwidth.label;"
+                 oncommand="setOption(this);"/>
 
-    <script type="application/x-javascript" src="chrome://bizarre/content/options.js"/>
-
-
-    <stringbundleset id="stringbundleset">
-        <stringbundle id="bundle_BIZARRE" src="chrome://bizarre/locale/BIZARRE.properties"/>
-    </stringbundleset>
-
-    <tabbox id="wf_tabbox">
-        <tabs>
-            <tab id="mainTab" label="&bizarre.options.tabs.main.label;"/>
-            <tab id="zoomTab" label="&bizarre.options.tabs.zoomcontext.label;"/>
-            <tab id="rotateTab" label="&bizarre.options.tabs.rotatecontext.label;"/>
-        </tabs>
-        <tabpanels flex="1">
-            <tabpanel orient="vertical" flex="1">
-                <vbox flex="1">
-                    <groupbox align="start">
-                        <caption>
-                            <checkbox id="bizarreusemouseoptions" label="&bizarre.options.usemouse.label;"
-                                      prefstring="bizarre.usescroll"
-                                      oncommand="setDisableAllChildren(document.getElementById('mouseoptions'), !this.checked);"/>
-                        </caption>
-                        <vbox flex="1" id="mouseoptions">
-                            <hbox flex="1" align="center">
-                                <label id="bizarremouseaccessbutton" value="&bizarre.options.mouseaccess.label1;"
-                                       control="bizarremouseaccess"/>
-                                <menulist id="bizarremouseaccess" prefstring="bizarre.triggerbutton">
-                                    <menupopup>
-                                        <menuitem label="&bizarre.options.lmb.label;" value="1"/>
-                                        <menuitem label="&bizarre.options.mmb.label;" value="2"/>
-                                        <menuitem label="&bizarre.options.rmb.label;" value="3"/>
-                                    </menupopup>
-                                </menulist>
-                                <label id="bizarremouseaccessbutton" value="&bizarre.options.mouseaccess.label2;"
-                                       control="bizarremouseaccess"/>
-                            </hbox>
-                            <hbox flex="1">
-                                <grid flex="1">
-                                    <columns>
-                                        <column/>
-                                        <column/>
-                                        <column/>
-                                        <column/>
-                                    </columns>
-                                    <rows>
-                                        <row align="center" flex="1">
-                                            <label id="bizarreimagefitbuttonlable" value="&bizarre.options.imagefit.label;"
-                                                   control="bizarreimagefitbutton"/>
-                                            <hbox align="center">
-                                                <menulist id="bizarreimagefitbutton"
-                                                          prefstring="bizarre.imagefitbutton">
-                                                    <menupopup>
-                                                        <menuitem label="&bizarre.options.none.label;" value="0"/>
-                                                        <menuitem label="&bizarre.options.lmb.label;" value="1"/>
-                                                        <menuitem label="&bizarre.options.mmb.label;" value="2"/>
-                                                        <menuitem label="&bizarre.options.rmb.label;" value="3"/>
-                                                    </menupopup>
-                                                </menulist>
-                                            </hbox>
-                                            <spacer style="min-width: 15px" flex="1"/>
-                                            <hbox align="center" flex="1">
-                                                <checkbox id="bizarretogglefitreset"
-                                                          label="&bizarre.options.togglefitreset.label;"
-                                                          prefstring="bizarre.toggleFitReset"/>
-                                            </hbox>
-                                        </row>
-                                        <row align="center" flex="1">
-                                            <label id="bizarreimageresetbuttonlable"
-                                                   value="&bizarre.options.imagereset.label;"
-                                                   control="bizarreimageresetbutton"/>
-                                            <menulist id="bizarreimageresetbutton"
-                                                      prefstring="bizarre.imageresetbutton">
-                                                <menupopup>
-                                                    <menuitem label="&bizarre.options.none.label;" value="0"/>
-                                                    <menuitem label="&bizarre.options.lmb.label;" value="1"/>
-                                                    <menuitem label="&bizarre.options.mmb.label;" value="2"/>
-                                                    <menuitem label="&bizarre.options.rmb.label;" value="3"/>
-                                                </menupopup>
-                                            </menulist>
-                                            <spacer flex="1"/>
-                                            <spacer flex="1"/>
-                                        </row>
-                                        <row align="center" flex="1">
-                                            <label id="bizarrescrollvaluelabelbefore"
-                                                   value="&bizarre.options.defaultscroll.label;"
-                                                   control="bizarrescrollvalue"/>
-                                            <hbox align="center">
-                                                <menulist id="bizarrescrollvalue" prefstring="bizarre.scrollvalue">
-                                                    <menupopup>
-                                                        <menuitem label="100" value="100"/>
-                                                        <menuitem label="75" value="75"/>
-                                                        <menuitem label="50" value="50"/>
-                                                        <menuitem label="25" value="25"/>
-                                                        <menuitem label="10" value="10"/>
-                                                        <menuitem label="7" value="7"/>
-                                                        <menuitem label="5" value="5"/>
-                                                        <menuitem label="4" value="4"/>
-                                                        <menuitem label="3" value="3"/>
-                                                        <menuitem label="2" value="2"/>
-                                                        <menuitem label="1" value="1"/>
-                                                    </menupopup>
-                                                </menulist>
-                                                <label id="bizarrescrollvaluelabelafter" value="%"/>
-                                            </hbox>
-                                            <spacer style="min-width: 15px" flex="1"/>
-                                            <hbox align="center" flex="1">
-                                                <checkbox id="bizarrereversescroll"
-                                                          label="&bizarre.options.reversescroll.label;"
-                                                          prefstring="bizarre.reversescrollzoom"/>
-                                            </hbox>
-                                        </row>
-                                        <row align="center" flex="1">
-                                            <label id="bizarrescrollmodelabelbefore" value="&bizarre.options.scrollmode.label;" control="bizarrescrollmode"/>
-                                            <menulist id="bizarrescrollmode" prefstring="bizarre.scrollmode">
-                                                <menupopup>
-                                                    <menuitem label="&bizarre.options.scrollrelative.label;" value="0"/>
-                                                    <menuitem label="&bizarre.options.scrollabsolute.label;" value="1"/>
-                                                </menupopup>
-                                            </menulist>
-                                            <spacer flex="1" />
-                                            <spacer flex="1" />
-                                        </row>
-                                        <row align="center" flex="1">
-                                            <label id="bizarrerotatekeyslabelbefore" value="&bizarre.options.rotatekeys.label;" control="bizarrerotatekeys"/>
-                                            <menulist id="bizarrerotatekeys" prefstring="bizarre.rotateKeys">
-                                                <menupopup>
-                                                    <menuitem label="&bizarre.options.none.label;" value="0"/>
-                                                    <menuitem label="Ctrl" value="1"/>
-                                                    <menuitem label="Alt" value="2"/>
-                                                    <menuitem label="Shift" value="4"/>
-                                                    <menuitem label="Ctrl+Alt" value="3"/>
-                                                    <menuitem label="Ctrl+Shift" value="5"/>
-                                                    <menuitem label="Alt+Shift" value="6"/>
-                                                    <menuitem label="Ctrl+Alt+Shift" value="7"/>
-                                                </menupopup>
-                                            </menulist>
-                                            <spacer flex="1" />
-                                            <spacer flex="1" />
-                                        </row>
-                                        <row align="center" flex="1">
-                                            <label id="bizarrerotatevaluelabelbefore"
-                                                   value="&bizarre.options.defaultrotate.label;"
-                                                   control="bizarrerotatevalue"/>
-                                            <hbox align="center">
-                                                <menulist id="bizarrerotatevalue" prefstring="bizarre.rotateValue">
-                                                    <menupopup>
-                                                        <menuitem label="90" value="90"/>
-                                                        <menuitem label="45" value="45"/>
-                                                        <menuitem label="30" value="30"/>
-                                                        <menuitem label="15" value="15"/>
-                                                        <menuitem label="10" value="10"/>
-                                                    </menupopup>
-                                                </menulist>
-                                                <label id="bizarrerotatevaluelabelafter" value="°"/>
-                                            </hbox>
-                                            <spacer flex="1"/>
-                                            <spacer flex="1" />
-                                        </row>
-                                    </rows>
-                                </grid>
-                            </hbox>
-                        </vbox>
-                    </groupbox>
-
-                    <groupbox align="start">
-                        <caption label="&bizarre.options.singlezoom.label;"/>
-                        <grid flex="1">
-                            <columns>
-                                <column/>
-                                <column/>
-                                <column/>
-                            </columns>
-                            <rows>
-                                <row align="center">
-                                    <label style="width: 130px" value="&bizarre.options.defaultzoom.label;"
-                                           control="bizarrezoomvalue"/>
-                                    <menulist id="bizarrezoomvalue" prefstring="bizarre.zoomvalue">
-                                        <menupopup>
-                                            <menuitem label="400" value="400"/>
-                                            <menuitem label="300" value="300"/>
-                                            <menuitem label="200" value="200"/>
-                                            <menuitem label="175" value="175"/>
-                                            <menuitem label="150" value="150"/>
-                                            <menuitem label="125" value="125"/>
-                                            <menuitem label="110" value="110"/>
-                                        </menupopup>
-                                    </menulist>
-                                    <label value="%"/>
-                                </row>
-                            </rows>
-                        </grid>
-                        <checkbox id="bizarreautocenter" label="&bizarre.options.autocenter.label;"
-                                  prefstring="bizarre.autocenter"/>
-                    </groupbox>
-                    <groupbox align="start">
-                        <caption label="&bizarre.options.misc.label;"/>
-                        <checkbox id="bizarreshowstatus" label="&bizarre.options.showStatus.label;"
-                                  prefstring="bizarre.showStatus"/>
-                    </groupbox>
-
-                </vbox>
-            </tabpanel>
-            <tabpanel orient="vertical">
-                <label id="bizarrecontextdescription" value="&bizarre.options.contextdescription.label;"/>
-                <spacer class="line" flex="1" />
-                <hbox flex="1">
-                    <vbox flex="1"/>
-                    <vbox>
-                        <hbox flex="1"/>
-                        <box id="mainmenu" class="menu-right">
-                            <menuitem label="..."
-                                      class="dummy"/>
-                            <menuseparator/>
-                            <menuitem id="context-viewimage"
-                                      class="dummy"
-                                      label="&bizarre.options.menudummy.view.label;"
-                                      accesskey="&bizarre.options.menudummy.view.accesskey;"/>
-                            <menuitem id="context-copyimage-contents"
-                                      class="dummy"
-                                      label="&bizarre.options.menudummy.contents.label;"
-                                      accesskey="&bizarre.options.menudummy.contents.accesskey;"/>
-                            <menuitem id="context-copyimage"
-                                      class="dummy"
-                                      label="&bizarre.options.menudummy.image.label;"
-                                      accesskey="&bizarre.options.menudummy.image.accesskey;"/>
-                            <checkbox id="context-zoom-zin"
-                                      label="&bizarre.menu.context.increase.label;"
-                                      oncommand="setOption(this);"
-                                      accesskey="&bizarre.menu.context.increase.accesskey;"
-                                    />
-                            <checkbox id="context-zoom-zreset"
-                                      label="&bizarre.menu.context.reset.label;"
-                                      oncommand="setOption(this);"
-                                      accesskey="&bizarre.menu.context.reset.accesskey;"
-                                    />
-                            <checkbox id="context-zoom-zout"
-                                      label="&bizarre.menu.context.decrease.label;"
-                                      oncommand="setOption(this);"
-                                      accesskey="&bizarre.menu.context.decrease.accesskey;"
-                                    />
-                            <checkbox id="context-zoom-zcustom"
-                                      label="&bizarre.menu.context.customzoom.label;"
-                                      oncommand="setOption(this);"
-                                    />
-                            <checkbox id="context-zoom-dcustom"
-                                      label="&bizarre.menu.context.customdim.label;"
-                                      oncommand="setOption(this);"
-                                    />
-                            <checkbox id="context-zoom-fit"
-                                      label="&bizarre.menu.context.imagefit.label;"
-                                      oncommand="setOption(this);"
-                                    />
-                            <checkbox id="context-zoom-fitwidth"
-                                      label="&bizarre.menu.context.imagefitwidth.label;"
-                                      oncommand="setOption(this);"
-                                    />
-                            <hbox>
-                                <vbox flex="1">
-                                    <checkbox id="context-zoomsub"
-                                              label="&bizarre.menu.context.zoomimage.label;"
-                                              accesskey="&bizarre.menu.context.zoomimage.accesskey;"
-                                              oncommand="toggleSubMenu();"
-                                            />
-                                </vbox>
-                                <vbox>
-                                    <image class="right-arrow"/>
-                                </vbox>
-                            </hbox>
-                            <menuseparator/>
-                            <menuitem id="context-saveimage"
-                                      class="dummy"
-                                      label="&bizarre.options.menudummy.save.label;"
-                                      accesskey="&bizarre.options.menudummy.save.accesskey;"/>
-                            <menuitem label="..."
-                                      class="dummy"/>
-                        </box>
-                        <hbox flex="1"/>
-                    </vbox>
-                    <vbox>
-                        <box id="submenu">
-                            <checkbox id="zoomsub-zin"
-                                      label="&bizarre.menu.context.increase.label;"
-                                      oncommand="setOption(this);"
-                                      accesskey="&bizarre.menu.context.increase.accesskey;"
-                                    />
-                            <checkbox id="zoomsub-zreset"
-                                      label="&bizarre.menu.context.reset.label;"
-                                      oncommand="setOption(this);"
-                                      accesskey="&bizarre.menu.context.reset.accesskey;"
-                                    />
-                            <checkbox id="zoomsub-zout"
-                                      label="&bizarre.menu.context.decrease.label;"
-                                      oncommand="setOption(this);"
-                                      accesskey="&bizarre.menu.context.decrease.accesskey;"
-                                    />
-                            <menuseparator/>
-                            <checkbox id="zoomsub-zcustom"
-                                      label="&bizarre.menu.context.customzoom.label;"
-                                      oncommand="setOption(this);"
-                                    />
-                            <checkbox id="zoomsub-dcustom"
-                                      label="&bizarre.menu.context.customdim.label;"
-                                      oncommand="setOption(this);"
-                                    />
-                            <menuseparator/>
-                            <checkbox id="zoomsub-fit"
-                                      label="&bizarre.menu.context.imagefit.label;"
-                                      oncommand="setOption(this);"
-                                    />
-                            <checkbox id="zoomsub-fitwidth"
-                                      label="&bizarre.menu.context.imagefitwidth.label;"
-                                      oncommand="setOption(this);"
-                                    />
-
-                            <menuseparator/>
-                            <menuitem id="zoomsub-z400"
-                                      class="dummy"
-                                      label="400%"
-                                      onclick="togglePercentages();"
-                                    />
-                            <menuitem id="zoomsub-z200"
-                                      label="200%"
-                                      class="dummy"
-                                      onclick="togglePercentages();"
-                                    />
-                            <menuitem id="zoomsub-z150"
-                                      label="150%"
-                                      class="dummy"
-                                      onclick="togglePercentages();"
-                                    />
-                            <menuitem id="zoomsub-z125"
-                                      label="125%"
-                                      class="dummy"
-                                      onclick="togglePercentages();"
-                                    />
-                            <menuseparator/>
-                            <checkbox id="zoomsub-z100"
-                                      label="100%"
-                                      oncommand="setOption(this);"
-                                    />
-                            <menuseparator/>
-                            <menuitem id="zoomsub-z75"
-                                      label="75%"
-                                      class="dummy"
-                                      onclick="togglePercentages();"
-                                    />
-                            <menuitem id="zoomsub-z50"
-                                      label="50%"
-                                      class="dummy"
-                                      onclick="togglePercentages();"
-                                    />
-                            <menuitem id="zoomsub-z25"
-                                      label="25%"
-                                      class="dummy"
-                                      onclick="togglePercentages();"
-                                    />
-                            <menuitem id="zoomsub-z10"
-                                      label="10%"
-                                      class="dummy"
-                                      onclick="togglePercentages();"
-                                    />
-                        </box>
-                    </vbox>
-                    <vbox flex="1"/>
-                </hbox>
-                <spacer flex="1" />
-            </tabpanel>
-            <tabpanel orient="vertical">
-                <label id="bizarrecontextdescription" value="&bizarre.options.contextdescription.label;"/>
-                <spacer class="line" flex="1" />
-                <hbox flex="1">
-                    <vbox flex="1"/>
-                    <vbox>
-                        <hbox flex="1"/>
-                        <box id="mainmenu">
-                            <menuitem label="..."
-                                      class="dummy"/>
-                            <menuseparator/>
-                            <menuitem id="context-viewimage"
-                                      class="dummy"
-                                      label="&bizarre.options.menudummy.view.label;"
-                                      accesskey="&bizarre.options.menudummy.view.accesskey;"/>
-                            <menuitem id="context-copyimage-contents"
-                                      class="dummy"
-                                      label="&bizarre.options.menudummy.contents.label;"
-                                      accesskey="&bizarre.options.menudummy.contents.accesskey;"/>
-                            <menuitem id="context-copyimage"
-                                      class="dummy"
-                                      label="&bizarre.options.menudummy.image.label;"
-                                      accesskey="&bizarre.options.menudummy.image.accesskey;"/>
-                            <checkbox id="context-zoom-rotate-right"
-                                      label="&bizarre.menu.context.imagerotateright.label;"
-                                      oncommand="setOption(this);"
-                                      prefstring="bizarre.mmRotateRight"
-                                      hidden="true"
-                                    />
-                            <checkbox id="context-zoom-rotate-left"
-                                      label="&bizarre.menu.context.imagerotateleft.label;"
-                                      oncommand="setOption(this);"
-                                      prefstring="bizarre.mmRotateLeft"
-                                      hidden="true"
-                                    />
-                            <checkbox id="context-zoom-rotate-180"
-                                      label="&bizarre.menu.context.imagerotate180.label;"
-                                      oncommand="setOption(this);"
-                                      prefstring="bizarre.mmRotate180"
-                                      hidden="true"
-                                    />
-                            <checkbox id="context-zoom-rotate-reset"
-                                      label="&bizarre.menu.context.imagerotatereset.label;"
-                                      oncommand="setOption(this);"
-                                      prefstring="bizarre.mmRotateReset"
-                                      hidden="true"
-                                    />
-                            <hbox>
-                                <vbox flex="1">
-                                    <checkbox id="context-rotatesub"
-                                              label="&bizarre.menu.context.rotateimage.label;"
-                                              accesskey="&bizarre.menu.context.rotateimage.label;"
-                                              oncommand="toggleRotateMenu();"
-                                            />
-                                </vbox>
-                                <vbox>
-                                    <image class="right-arrow"/>
-                                </vbox>
-                            </hbox>
-                            <menuseparator/>
-                            <menuitem id="context-saveimage"
-                                      class="dummy"
-                                      label="&bizarre.options.menudummy.save.label;"
-                                      accesskey="&bizarre.options.menudummy.save.accesskey;"/>
-                            <menuitem label="..."
-                                      class="dummy"/>
-                        </box>
-                        <hbox flex="1"/>
-                    </vbox>
-                    <vbox>
-                        <hbox flex="2"/>
-                        <box id="subrotatemenu">
-                            <checkbox id="zoomsub-rotate-right"
-                                      label="&bizarre.menu.context.imagerotateright.label;"
-                                      accesskey="&bizarre.menu.context.rotate.right.accesskey;"
-                                      oncommand="setOption(this);"
-                                      prefstring="bizarre.smRotateRight"
-                                      hidden="true"
-                                    />
-                            <checkbox id="zoomsub-rotate-left"
-                                      label="&bizarre.menu.context.imagerotateleft.label;"
-                                      accesskey="&bizarre.menu.context.rotate.left.accesskey;"
-                                      oncommand="setOption(this);"
-                                      prefstring="bizarre.smRotateLeft"
-                                      hidden="true"
-                                    />
-                            <checkbox id="zoomsub-rotate-180"
-                                      label="&bizarre.menu.context.imagerotate180.label;"
-                                      accesskey="&bizarre.menu.context.rotate.180.accesskey;"
-                                      oncommand="setOption(this);"
-                                      prefstring="bizarre.smRotate180"
-                                      hidden="true"
-                                    />
-                            <checkbox id="zoomsub-rotate-reset"
-                                      label="&bizarre.menu.context.imagerotatereset.label;"
-                                      accesskey="&bizarre.menu.context.rotate.reset.accesskey;"
-                                      oncommand="setOption(this);"
-                                      prefstring="bizarre.smRotateReset"
-                                      hidden="true"
-                                    />
-                        </box>
-                        <hbox flex="1"/>
-                    </vbox>
-                    <vbox flex="1"/>
-                </hbox>
-                <spacer flex="1" />
-            </tabpanel>
-        </tabpanels>
-    </tabbox>
+       <menuseparator/>
+       <menuitem id="zoomsub-z400"
+                 class="dummy"
+                 label="400%"
+                 onclick="togglePercentages();"/>
+       <menuitem id="zoomsub-z200"
+                 label="200%"
+                 class="dummy"
+                 onclick="togglePercentages();"/>
+       <menuitem id="zoomsub-z150"
+                 label="150%"
+                 class="dummy"
+                 onclick="togglePercentages();"/>
+       <menuitem id="zoomsub-z125"
+                 label="125%"
+                 class="dummy"
+                 onclick="togglePercentages();"/>
+       <menuseparator/>
+       <checkbox id="zoomsub-z100"
+                 label="100%"
+                 oncommand="setOption(this);"/>
+       <menuseparator/>
+       <menuitem id="zoomsub-z75"
+                 label="75%"
+                 class="dummy"
+                 onclick="togglePercentages();"/>
+       <menuitem id="zoomsub-z50"
+                 label="50%"
+                 class="dummy"
+                 onclick="togglePercentages();"/>
+       <menuitem id="zoomsub-z25"
+                 label="25%"
+                 class="dummy"
+                 onclick="togglePercentages();"/>
+       <menuitem id="zoomsub-z10"
+                 label="10%"
+                 class="dummy"
+                 onclick="togglePercentages();"/>
+      </box>
+     </vbox>
+     <vbox flex="1"/>
+    </hbox>
+    <spacer flex="1"/>
+   </tabpanel>
+   <tabpanel orient="vertical">
+    <label id="bizarrecontextdescription" value="&bizarre.options.contextdescription.label;"/>
+    <spacer class="line" flex="1"/>
+    <hbox flex="1">
+     <vbox flex="1"/>
+     <vbox>
+      <hbox flex="1"/>
+      <box id="mainmenu">
+       <menuitem label="..." class="dummy"/>
+       <menuseparator/>
+       <menuitem id="context-viewimage"
+                 class="dummy"
+                 label="&bizarre.options.menudummy.view.label;"
+                 accesskey="&bizarre.options.menudummy.view.accesskey;"/>
+       <menuitem id="context-copyimage-contents"
+                 class="dummy"
+                 label="&bizarre.options.menudummy.contents.label;"
+                 accesskey="&bizarre.options.menudummy.contents.accesskey;"/>
+       <menuitem id="context-copyimage"
+                 class="dummy"
+                 label="&bizarre.options.menudummy.image.label;"
+                 accesskey="&bizarre.options.menudummy.image.accesskey;"/>
+       <checkbox id="context-zoom-rotate-right"
+                 label="&bizarre.menu.context.imagerotateright.label;"
+                 oncommand="setOption(this);"
+                 prefstring="bizarre.mmRotateRight"
+                 hidden="true"/>
+       <checkbox id="context-zoom-rotate-left"
+                 label="&bizarre.menu.context.imagerotateleft.label;"
+                 oncommand="setOption(this);"
+                 prefstring="bizarre.mmRotateLeft"
+                 hidden="true"/>
+       <checkbox id="context-zoom-rotate-180"
+                 label="&bizarre.menu.context.imagerotate180.label;"
+                 oncommand="setOption(this);"
+                 prefstring="bizarre.mmRotate180"
+                 hidden="true"/>
+       <checkbox id="context-zoom-rotate-reset"
+                 label="&bizarre.menu.context.imagerotatereset.label;"
+                 oncommand="setOption(this);"
+                 prefstring="bizarre.mmRotateReset"
+                 hidden="true"/>
+       <hbox>
+        <vbox flex="1">
+         <checkbox id="context-rotatesub"
+                   label="&bizarre.menu.context.rotateimage.label;"
+                   accesskey="&bizarre.menu.context.rotateimage.label;"
+                   oncommand="toggleRotateMenu();"/>
+        </vbox>
+        <vbox>
+         <image class="right-arrow"/>
+        </vbox>
+       </hbox>
+       <menuseparator/>
+       <menuitem id="context-saveimage"
+                 class="dummy"
+                 label="&bizarre.options.menudummy.save.label;"
+                 accesskey="&bizarre.options.menudummy.save.accesskey;"/>
+       <menuitem label="..." class="dummy"/>
+      </box>
+      <hbox flex="1"/>
+     </vbox>
+     <vbox>
+      <hbox flex="2"/>
+      <box id="subrotatemenu">
+       <checkbox id="zoomsub-rotate-right"
+                 label="&bizarre.menu.context.imagerotateright.label;"
+                 accesskey="&bizarre.menu.context.rotate.right.accesskey;"
+                 oncommand="setOption(this);"
+                 prefstring="bizarre.smRotateRight"
+                 hidden="true"/>
+       <checkbox id="zoomsub-rotate-left"
+                 label="&bizarre.menu.context.imagerotateleft.label;"
+                 accesskey="&bizarre.menu.context.rotate.left.accesskey;"
+                 oncommand="setOption(this);"
+                 prefstring="bizarre.smRotateLeft"
+                 hidden="true"/>
+       <checkbox id="zoomsub-rotate-180"
+                 label="&bizarre.menu.context.imagerotate180.label;"
+                 accesskey="&bizarre.menu.context.rotate.180.accesskey;"
+                 oncommand="setOption(this);"
+                 prefstring="bizarre.smRotate180"
+                 hidden="true"/>
+       <checkbox id="zoomsub-rotate-reset"
+                 label="&bizarre.menu.context.imagerotatereset.label;"
+                 accesskey="&bizarre.menu.context.rotate.reset.accesskey;"
+                 oncommand="setOption(this);"
+                 prefstring="bizarre.smRotateReset"
+                 hidden="true"/>
+      </box>
+      <hbox flex="1"/>
+     </vbox>
+     <vbox flex="1"/>
+    </hbox>
+    <spacer flex="1"/>
+   </tabpanel>
+  </tabpanels>
+ </tabbox>
 </dialog>

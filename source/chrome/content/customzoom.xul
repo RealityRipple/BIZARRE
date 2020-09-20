@@ -22,24 +22,19 @@
 
 ***** END LICENSE BLOCK ***** -->
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-
 <!DOCTYPE window SYSTEM "chrome://bizarre/locale/BIZARRE.dtd">
-
-
 <dialog buttons="accept, cancel"
         id="bizarre-customzoom-dialog"
         ondialogaccept="bizarre_customZoom()"
         onload="bizarre_loadCustomZoom()"
         title="&bizarre.customzoom.title;"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-
-    <script type="application/x-javascript" src="chrome://bizarre/content/dialogs.js"/>
-
-    <vbox flex="1">
-        <hbox>
-            <label value="&bizarre.customzoom.label;"/>
-            <textbox id="customZoom" size="2" onkeypress="return validateKeyPress(event);"/>
-            <label value="%"/>
-        </hbox>
-    </vbox>
+ <script src="chrome://bizarre/content/dialogs.js"/>
+ <vbox flex="1">
+  <hbox>
+   <label value="&bizarre.customzoom.label;"/>
+   <textbox id="customZoom" size="2" onkeypress="return validateKeyPress(event);"/>
+   <label value="%"/>
+  </hbox>
+ </vbox>
 </dialog>

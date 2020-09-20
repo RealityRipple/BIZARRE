@@ -24,102 +24,95 @@ var gDimRatio = 0.0;
 var gDimWidth;
 var gDimHeight;
 var gDimAspect;
-
-// returns true if it was a numeric key press and false if it was not
-function validateKeyPress(e) {
-  switch (parseInt(e.which,10)) {
-    case 0:
-      //misc
-      return true;
-    case 8:
-      //backspace
-      return true;
-    case 46:
-      // Delete
-      return true;
-    default:
-      var key = String.fromCharCode(parseInt(e.which, 10));
-      return pIsNumeric(key);
-  }
+function validateKeyPress(e)
+{
+ switch (parseInt(e.which,10)) {
+  case 0:
+   return true;
+  case 8:
+   return true;
+  case 46:
+   return true;
+  default:
+   let key = String.fromCharCode(parseInt(e.which, 10));
+   return pIsNumeric(key);
+ }
 }
-
-// Checks whether sText is an integer
-
-
-function pIsNumeric(sText) {
-  var ValidChars = "0123456789";
-  var IsNumber = true;
-  var Char;
-
-  for (var i = 0; i < sText.length && IsNumber === true; i++) {
-    Char = sText.charAt(i);
-    if (ValidChars.indexOf(Char) === -1) {
-      IsNumber = false;
-    }
-  }
-  return IsNumber;
+function pIsNumeric(sText)
+{
+ let ValidChars = '0123456789';
+ let IsNumber = true;
+ for (var i = 0; i < sText.length && IsNumber === true; i++)
+ {
+  let Char = sText.charAt(i);
+  if (ValidChars.indexOf(Char) === -1)
+   IsNumber = false;
+ }
+ return IsNumber;
 }
-
-function widthInput() {
-  if (gDimAspect.checked) {
-    if (pIsNumeric(gDimWidth.value) && (gDimWidth.value !== "")) {
-      gDimHeight.value = parseInt((parseInt(gDimWidth.value,10) / gDimRatio) + 0.5, 10);
-    } else {
-      gDimHeight.value = "";
-    }
-  }
+function widthInput()
+{
+ if (gDimAspect.checked)
+ {
+  if (pIsNumeric(gDimWidth.value) && (gDimWidth.value !== ''))
+   gDimHeight.value = parseInt((parseInt(gDimWidth.value,10) / gDimRatio) + 0.5, 10);
+  else
+   gDimHeight.value = '';
+ }
 }
-
-function heightInput() {
-  if (gDimAspect.checked) {
-    if (pIsNumeric(gDimHeight.value) && gDimHeight.value !== "") {
-      gDimWidth.value = parseInt((parseInt(gDimHeight.value,10) * gDimRatio) + 0.5,10);
-    } else {
-      gDimWidth.value = "";
-    }
-  }
+function heightInput()
+{
+ if (gDimAspect.checked)
+ {
+  if (pIsNumeric(gDimHeight.value) && gDimHeight.value !== '')
+    gDimWidth.value = parseInt((parseInt(gDimHeight.value,10) * gDimRatio) + 0.5,10);
+  else
+    gDimWidth.value = '';
+ }
 }
-
-function checkInput() {
-  if (!gDimAspect.checked) {
-    if (pIsNumeric(gDimWidth.value) && gDimWidth.value !== "") {
-      gDimHeight.value = parseInt((parseInt(gDimWidth.value,10) / gDimRatio) + 0.5,10);
-    } else {
-      gDimHeight.value = "";
-    }
-  }
+function checkInput()
+{
+ if (!gDimAspect.checked)
+ {
+  if (pIsNumeric(gDimWidth.value) && gDimWidth.value !== '')
+   gDimHeight.value = parseInt((parseInt(gDimWidth.value,10) / gDimRatio) + 0.5,10);
+  else
+   gDimHeight.value = '';
+ }
 }
-
-function bizarre_customZoom() {
-  var zoomValue = document.getElementById("customZoom").value;
-  if (pIsNumeric(zoomValue)) {
-    var izoImage = window.arguments[1];
-    izoImage.setZoom(zoomValue);
-  }
+function bizarre_customZoom()
+{
+ let zoomValue = document.getElementById('customZoom').value;
+ if (pIsNumeric(zoomValue))
+ {
+  let izoImage = window.arguments[1];
+  izoImage.setZoom(zoomValue);
+ }
 }
-
-function bizarre_loadCustomZoom() {
-  var zoomValueBox = document.getElementById("customZoom");
-  var izoImage = window.arguments[1];
-  zoomValueBox.value = izoImage.zoomFactor();
+function bizarre_loadCustomZoom()
+{
+ let zoomValueBox = document.getElementById('customZoom');
+ let izoImage = window.arguments[1];
+ zoomValueBox.value = izoImage.zoomFactor();
 }
-
-function bizarre_customDim() {
-  var dimWidth = document.getElementById("dimWidth").value;
-  var dimHeight = document.getElementById("dimHeight").value;
-  if (pIsNumeric(dimWidth) && pIsNumeric(dimHeight)) {
-    var izoImage = window.arguments[0];
-    izoImage.setDimension(dimWidth, dimHeight);
-  }
+function bizarre_customDim()
+{
+ let dimWidth = document.getElementById('dimWidth').value;
+ let dimHeight = document.getElementById('dimHeight').value;
+ if (pIsNumeric(dimWidth) && pIsNumeric(dimHeight))
+ {
+   let izoImage = window.arguments[0];
+   izoImage.setDimension(dimWidth, dimHeight);
+ }
 }
-
-function bizarre_loadCustomDim() {
-  gDimWidth = document.getElementById("dimWidth");
-  gDimHeight = document.getElementById("dimHeight");
-  gDimAspect = document.getElementById("dimAspect");
-  var izoImage = window.arguments[0];
-  gDimWidth.value = izoImage.getWidth();
-  gDimHeight.value = izoImage.getHeight();
-  gDimRatio = izoImage.getWidth() / izoImage.getHeight();
-  gDimAspect.checked = true;
+function bizarre_loadCustomDim()
+{
+ gDimWidth = document.getElementById('dimWidth');
+ gDimHeight = document.getElementById('dimHeight');
+ gDimAspect = document.getElementById('dimAspect');
+ let izoImage = window.arguments[0];
+ gDimWidth.value = izoImage.getWidth();
+ gDimHeight.value = izoImage.getHeight();
+ gDimRatio = izoImage.getWidth() / izoImage.getHeight();
+ gDimAspect.checked = true;
 }
