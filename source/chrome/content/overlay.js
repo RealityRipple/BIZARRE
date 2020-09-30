@@ -100,9 +100,22 @@ var bizarre =
   oizImage.rotate(180);
   bizarre._tmpImg = oizImage;
  },
+ izFlipH: function()
+ {
+  let oizImage = new zarImage(document.popupNode);
+  oizImage.rotate(undefined, 'h');
+  bizarre._tmpImg = oizImage;
+ },
+ izFlipV: function()
+ {
+  let oizImage = new zarImage(document.popupNode);
+  oizImage.rotate(undefined, 'v');
+  bizarre._tmpImg = oizImage;
+ },
  izRotateReset: function()
  {
   let oizImage = new zarImage(document.popupNode);
+  oizImage.resetFlip();
   oizImage.rotate(0 - oizImage.getAngle());
   bizarre._tmpImg = oizImage;
  },
@@ -133,7 +146,20 @@ var bizarre =
   let locale = document.getElementById('bizarre.stringbundle');
   let statusTextFld = document.getElementById('statusbar-display');
   let tmpStatus = 'Image Zoom: ' + oizImage.zoomFactor() + '% | ' + locale.getString('widthLabel') + ': ' + oizImage.getWidth() + 'px | ' + locale.getString('heightLabel') + ': ' + oizImage.getHeight() + 'px';
-  tmpStatus = tmpStatus + ' | ' + locale.getString('rotateLabel') + ': ' + oizImage.getAngle() + '\u00B0';
+  let sFlip = '';
+  switch (oizImage.getFlip())
+  {
+   case 'H+V':
+    sFlip = ' (Flipped Horizontally and Vertically)'
+    break;
+   case 'H':
+    sFlip = ' (Flipped Horizontally)'
+    break;
+   case 'V':
+    sFlip = ' (Flipped Vertically)'
+    break;
+  }
+  tmpStatus = tmpStatus + ' | ' + locale.getString('rotateLabel') + ': ' + oizImage.getAngle() + '\u00B0' + sFlip;
   statusTextFld.label = tmpStatus;
  },
  callBackStatus: function()
@@ -183,6 +209,8 @@ var bizarre =
  },
  izOnMouseClick: function(evt)
  {
+  if (evt.originalTarget === null)
+   return;
   let targetName = evt.originalTarget.tagName.toLowerCase();
   if (evt.which === bizarre._Prefs.getIntPref('triggerbutton'))
   {
@@ -224,7 +252,10 @@ var bizarre =
     let imgReset = new zarImage(evt.originalTarget);
     let rotateKeys = bizarre._Prefs.getIntPref('rotateKeys');
     if (rotateKeys && bizarre._modifierKeys(evt) === rotateKeys)
+    {
+     imgReset.resetFlip();
      imgReset.rotate(0 - imgReset.getAngle());
+    }
     else
     {
      if (bizarre._Prefs.getBoolPref('toggleFitReset') && imgReset.zoomFactor() === 100)
@@ -327,8 +358,8 @@ var bizarre =
  {
   if (gContextMenu === null)
    return;
-  let menuItems = new Array('context-zoom-zin', 'context-zoom-zout', 'context-zoom-zreset', 'context-zoom-zcustom', 'context-zoom-dcustom', 'context-zoom-fit', 'context-zoom-fitwidth', 'context-zoom-rotate-right', 'context-zoom-rotate-left', 'context-zoom-rotate-180', 'context-zoom-rotate-reset', 'zoomsub-zin', 'zoomsub-zout', 'zoomsub-zreset', 'rotatesub-rotate-right', 'rotatesub-rotate-left', 'rotatesub-rotate-180', 'rotatesub-rotate-reset', 'zoomsub-zcustom', 'zoomsub-dcustom', 'zoomsub-fit', 'zoomsub-fitwidth', 'zoomsub-z400', 'zoomsub-z200', 'zoomsub-z150', 'zoomsub-z125', 'zoomsub-z100', 'zoomsub-z75', 'zoomsub-z50', 'zoomsub-z25', 'zoomsub-z10');
-  let optionItems = new Array('mmZoomIO', 'mmZoomIO', 'mmReset', 'mmCustomZoom', 'mmCustomDim', 'mmFitWindow', 'mmFitWidth', 'mmRotateRight', 'mmRotateLeft', 'mmRotate180', 'mmRotateReset', 'smZoomIO', 'smZoomIO', 'smReset', 'smRotateRight', 'smRotateLeft', 'smRotate180', 'smRotateReset', 'smCustomZoom', 'smCustomDim', 'smFitWindow', 'smFitWidth', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts');
+  let menuItems = new Array('context-zoom-zin', 'context-zoom-zout', 'context-zoom-zreset', 'context-zoom-zcustom', 'context-zoom-dcustom', 'context-zoom-fit', 'context-zoom-fitwidth', 'context-zoom-rotate-right', 'context-zoom-rotate-left', 'context-zoom-rotate-180', 'context-zoom-flip-h', 'context-zoom-flip-v', 'context-zoom-rotate-reset', 'zoomsub-zin', 'zoomsub-zout', 'zoomsub-zreset', 'rotatesub-rotate-right', 'rotatesub-rotate-left', 'rotatesub-rotate-180', 'rotatesub-flip-h', 'rotatesub-flip-v', 'rotatesub-rotate-reset', 'zoomsub-zcustom', 'zoomsub-dcustom', 'zoomsub-fit', 'zoomsub-fitwidth', 'zoomsub-z400', 'zoomsub-z200', 'zoomsub-z150', 'zoomsub-z125', 'zoomsub-z100', 'zoomsub-z75', 'zoomsub-z50', 'zoomsub-z25', 'zoomsub-z10');
+  let optionItems = new Array('mmZoomIO', 'mmZoomIO', 'mmReset', 'mmCustomZoom', 'mmCustomDim', 'mmFitWindow', 'mmFitWidth', 'mmRotateRight', 'mmRotateLeft', 'mmRotate180', 'mmFlipH', 'mmFlipV', 'mmRotateReset', 'smZoomIO', 'smZoomIO', 'smReset', 'smRotateRight', 'smRotateLeft', 'smRotate180', 'smFlipH', 'smFlipV', 'smRotateReset', 'smCustomZoom', 'smCustomDim', 'smFitWindow', 'smFitWidth', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts');
   let oizImage = null;
   if (gContextMenu.onImage || gContextMenu.onCanvas)
    oizImage = new zarImage(document.popupNode);
@@ -400,11 +431,15 @@ function zarImage(oImage)
    pImage.zoomFactor = 100;
    pImage.autoFitBefore = 0;
    pImage.angle = 0;
+   pImage.hFlip = false;
+   pImage.vFlip = false;
   }
   enabled = true;
  }
  this.getWidth = getWidth;
  this.getAngle = getAngle;
+ this.getFlip = getFlip;
+ this.resetFlip = resetFlip;
  this.getHeight = getHeight;
  this.setZoom = setZoom;
  this.setDimension = setDimension;
@@ -424,6 +459,21 @@ function zarImage(oImage)
  function getAngle()
  {
   return pImage.angle;
+ }
+ function getFlip()
+ {
+  if (pImage.hFlip === true && pImage.vFlip === true)
+   return 'H+V';
+  if (pImage.hFlip === true)
+   return 'H';
+  if (pImage.vFlip === true)
+   return 'V';
+  return '';
+ }
+ function resetFlip()
+ {
+  pImage.hFlip = false;
+  pImage.vFlip = false;
  }
  function setZoom(factor)
  {
@@ -458,7 +508,7 @@ function zarImage(oImage)
    pImage.style.height = (origHeight * factor) + getDimUnit(pImage.style.height);
   }
  }
- function rotate(degrees)
+ function rotate(degrees, direction)
  {
   if (new Date().getTime() - bizarre.rotateTime < 200)
    return;
@@ -476,10 +526,19 @@ function zarImage(oImage)
    };
   }
   let origData = pImage.originalData;
+  if (typeof degrees === 'undefined')
+   degrees = 0;
   if (degrees < 0)
    degrees = (pImage.angle + 360 + (degrees % 360)) % 360;
   else
    degrees = (pImage.angle + degrees) % 360;
+  if (typeof direction !== 'undefined')
+  {
+   if (direction === 'h')
+    pImage.hFlip = !pImage.hFlip;
+   else
+    pImage.vFlip = !pImage.vFlip;
+  }
   let theta;
   if (degrees >= 0)
    theta = (Math.PI * degrees) / 180;
@@ -496,6 +555,21 @@ function zarImage(oImage)
   {
    let ctx = canvas.getContext('2d');
    ctx.save();
+   if (pImage.hFlip === true && pImage.vFlip === true)
+   {
+    ctx.translate(canvas.width, canvas.height);
+    ctx.scale(-1, -1);
+   }
+   else if (pImage.hFlip === true)
+   {
+    ctx.translate(canvas.width, 0);
+    ctx.scale(-1, 1);
+   }
+   else if (pImage.vFlip === true)
+   {
+    ctx.translate(0, canvas.height);
+    ctx.scale(1, -1);
+   }
    if (theta <= Math.PI / 2)
     ctx.translate(Math.sin(theta) * canvas.oImage.naturalHeight, 0);
    else if (theta <= Math.PI)

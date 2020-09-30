@@ -64,5 +64,9 @@
 <!ENTITY bizarre.menu.context.rotate.left.accesskey "i">
 <!ENTITY bizarre.menu.context.imagerotate180.label "Rotar 180°">
 <!ENTITY bizarre.menu.context.rotate.180.accesskey "1">
+<!ENTITY bizarre.menu.context.imagefliph.label "Flip Horizontal">
+<!ENTITY bizarre.menu.context.flip.h.accesskey "H">
+<!ENTITY bizarre.menu.context.imageflipv.label "Flip Vertical">
+<!ENTITY bizarre.menu.context.flip.v.accesskey "V">
 <!ENTITY bizarre.menu.context.imagerotatereset.label "Deshacer rotación">
 <!ENTITY bizarre.menu.context.rotate.reset.accesskey "h">
