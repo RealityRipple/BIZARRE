@@ -34,17 +34,17 @@ function validateKeyPress(e)
   case 46:
    return true;
   default:
-   let key = String.fromCharCode(parseInt(e.which, 10));
+   var key = String.fromCharCode(parseInt(e.which, 10));
    return pIsNumeric(key);
  }
 }
 function pIsNumeric(sText)
 {
- let ValidChars = '0123456789';
- let IsNumber = true;
+ var ValidChars = '0123456789';
+ var IsNumber = true;
  for (var i = 0; i < sText.length && IsNumber === true; i++)
  {
-  let Char = sText.charAt(i);
+  var Char = sText.charAt(i);
   if (ValidChars.indexOf(Char) === -1)
    IsNumber = false;
  }
@@ -82,26 +82,26 @@ function checkInput()
 }
 function bizarre_customZoom()
 {
- let zoomValue = document.getElementById('customZoom').value;
+ var zoomValue = document.getElementById('customZoom').value;
  if (pIsNumeric(zoomValue))
  {
-  let izoImage = window.arguments[1];
+  var izoImage = window.arguments[1];
   izoImage.setZoom(zoomValue);
  }
 }
 function bizarre_loadCustomZoom()
 {
- let zoomValueBox = document.getElementById('customZoom');
- let izoImage = window.arguments[1];
+ var zoomValueBox = document.getElementById('customZoom');
+ var izoImage = window.arguments[1];
  zoomValueBox.value = izoImage.zoomFactor();
 }
 function bizarre_customDim()
 {
- let dimWidth = document.getElementById('dimWidth').value;
- let dimHeight = document.getElementById('dimHeight').value;
+ var dimWidth = document.getElementById('dimWidth').value;
+ var dimHeight = document.getElementById('dimHeight').value;
  if (pIsNumeric(dimWidth) && pIsNumeric(dimHeight))
  {
-   let izoImage = window.arguments[0];
+   var izoImage = window.arguments[0];
    izoImage.setDimension(dimWidth, dimHeight);
  }
 }
@@ -110,7 +110,7 @@ function bizarre_loadCustomDim()
  gDimWidth = document.getElementById('dimWidth');
  gDimHeight = document.getElementById('dimHeight');
  gDimAspect = document.getElementById('dimAspect');
- let izoImage = window.arguments[0];
+ var izoImage = window.arguments[0];
  gDimWidth.value = izoImage.getWidth();
  gDimHeight.value = izoImage.getHeight();
  gDimRatio = izoImage.getWidth() / izoImage.getHeight();

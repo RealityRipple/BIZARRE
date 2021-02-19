@@ -42,79 +42,79 @@ var bizarre =
  },
  izShowCustomZoom: function()
  {
-  let oizImage = new zarImage(document.popupNode);
+  var oizImage = new zarImage(document.popupNode);
   openDialog('chrome://bizarre/content/customzoom.xul', '', 'chrome,modal,centerscreen', 'Image', oizImage);
   bizarre._reportStatus(oizImage);
  },
  izShowCustomDim: function()
  {
-  let oizImage = new zarImage(document.popupNode);
+  var oizImage = new zarImage(document.popupNode);
   openDialog('chrome://bizarre/content/customdim.xul', '', 'chrome,modal,centerscreen', oizImage);
   bizarre._reportStatus(oizImage);
  },
  izImageFit: function()
  {
-  let oizImage = new zarImage(document.popupNode);
+  var oizImage = new zarImage(document.popupNode);
   oizImage.fit(bizarre._Prefs.getBoolPref('autocenter'));
   bizarre._reportStatus(oizImage);
  },
  izFitWidth: function()
  {
-  let oizImage = new zarImage(document.popupNode);
+  var oizImage = new zarImage(document.popupNode);
   oizImage.fit(bizarre._Prefs.getBoolPref('autocenter'), true);
   bizarre._reportStatus(oizImage);
  },
  izZoomIn: function()
  {
-  let oizImage = new zarImage(document.popupNode);
+  var oizImage = new zarImage(document.popupNode);
   oizImage.zoom(bizarre._Prefs.getIntPref('zoomvalue') / 100);
   bizarre._reportStatus(oizImage);
  },
  izZoomOut: function()
  {
-  let oizImage = new zarImage(document.popupNode);
+  var oizImage = new zarImage(document.popupNode);
   oizImage.zoom(100 / bizarre._Prefs.getIntPref('zoomvalue'));
   bizarre._reportStatus(oizImage);
  },
  izSetZoom: function(zFactor)
  {
-  let oizImage = new zarImage(document.popupNode);
+  var oizImage = new zarImage(document.popupNode);
   oizImage.setZoom(zFactor);
   bizarre._reportStatus(oizImage);
  },
  izRotateRight: function()
  {
-  let oizImage = new zarImage(document.popupNode);
+  var oizImage = new zarImage(document.popupNode);
   oizImage.rotate(90);
   bizarre._tmpImg = oizImage;
  },
  izRotateLeft: function()
  {
-  let oizImage = new zarImage(document.popupNode);
+  var oizImage = new zarImage(document.popupNode);
   oizImage.rotate(-90);
   bizarre._tmpImg = oizImage;
  },
  izRotate180: function()
  {
-  let oizImage = new zarImage(document.popupNode);
+  var oizImage = new zarImage(document.popupNode);
   oizImage.rotate(180);
   bizarre._tmpImg = oizImage;
  },
  izFlipH: function()
  {
-  let oizImage = new zarImage(document.popupNode);
+  var oizImage = new zarImage(document.popupNode);
   oizImage.rotate(undefined, 'h');
   bizarre._tmpImg = oizImage;
  },
  izFlipV: function()
  {
-  let oizImage = new zarImage(document.popupNode);
+  var oizImage = new zarImage(document.popupNode);
   oizImage.rotate(undefined, 'v');
   bizarre._tmpImg = oizImage;
  },
  izRotateReset: function()
  {
-  let oizImage = new zarImage(document.popupNode);
+  var oizImage = new zarImage(document.popupNode);
   oizImage.resetFlip();
   oizImage.rotate(0 - oizImage.getAngle());
   bizarre._tmpImg = oizImage;
@@ -139,24 +139,24 @@ var bizarre =
   window.removeEventListener('wheel', bizarre.scrollImage, true);
   window.removeEventListener('mouseup', bizarre.izOnMouseUp, true);
  },
- _reportStatus(oizImage)
+ _reportStatus: function(oizImage)
  {
   if (!bizarre._Prefs.getBoolPref('showStatus'))
    return;
-  let locale = document.getElementById('bizarre.stringbundle');
-  let statusTextFld = document.getElementById('statusbar-display');
-  let tmpStatus = 'Image Zoom: ' + oizImage.zoomFactor() + '% | ' + locale.getString('widthLabel') + ': ' + oizImage.getWidth() + 'px | ' + locale.getString('heightLabel') + ': ' + oizImage.getHeight() + 'px';
-  let sFlip = '';
+  var locale = document.getElementById('bizarre.stringbundle');
+  var statusTextFld = document.getElementById('statusbar-display');
+  var tmpStatus = 'Image Zoom: ' + oizImage.zoomFactor() + '% | ' + locale.getString('widthLabel') + ': ' + oizImage.getWidth() + 'px | ' + locale.getString('heightLabel') + ': ' + oizImage.getHeight() + 'px';
+  var sFlip = '';
   switch (oizImage.getFlip())
   {
    case 'H+V':
-    sFlip = ' (Flipped Horizontally and Vertically)'
+    sFlip = ' (Flipped Horizontally and Vertically)';
     break;
    case 'H':
-    sFlip = ' (Flipped Horizontally)'
+    sFlip = ' (Flipped Horizontally)';
     break;
    case 'V':
-    sFlip = ' (Flipped Vertically)'
+    sFlip = ' (Flipped Vertically)';
     break;
   }
   tmpStatus = tmpStatus + ' | ' + locale.getString('rotateLabel') + ': ' + oizImage.getAngle() + '\u00B0' + sFlip;
@@ -182,7 +182,7 @@ var bizarre =
  },
  izOnMouseDown: function(evt)
  {
-  let targetName = evt.originalTarget.tagName.toLowerCase();
+  var targetName = evt.originalTarget.tagName.toLowerCase();
   if ((targetName === 'img' || targetName === 'canvas') && (bizarre._scrollZooming) && ((evt.which === bizarre._Prefs.getIntPref('imageresetbutton')) || (evt.which === bizarre._Prefs.getIntPref('imagefitbutton')) || (evt.which === bizarre._Prefs.getIntPref('triggerbutton'))))
   {
    evt.preventDefault();
@@ -211,7 +211,7 @@ var bizarre =
  {
   if (evt.originalTarget === null)
    return;
-  let targetName = evt.originalTarget.tagName.toLowerCase();
+  var targetName = evt.originalTarget.tagName.toLowerCase();
   if (evt.which === bizarre._Prefs.getIntPref('triggerbutton'))
   {
    if (bizarre._haveZoomed)
@@ -249,8 +249,8 @@ var bizarre =
     evt.preventDefault();
     evt.stopPropagation();
     bizarre._haveZoomed = true;
-    let imgReset = new zarImage(evt.originalTarget);
-    let rotateKeys = bizarre._Prefs.getIntPref('rotateKeys');
+    var imgReset = new zarImage(evt.originalTarget);
+    var rotateKeys = bizarre._Prefs.getIntPref('rotateKeys');
     if (rotateKeys && bizarre._modifierKeys(evt) === rotateKeys)
     {
      imgReset.resetFlip();
@@ -264,7 +264,7 @@ var bizarre =
       imgReset.setZoom(100);
      else if(targetName === 'img')
      {
-      let img = evt.originalTarget;
+      var img = evt.originalTarget;
       imgReset.setDimension(img.naturalWidth, img.naturalHeight);
      }
     }
@@ -274,7 +274,7 @@ var bizarre =
     evt.preventDefault();
     evt.stopPropagation();
     bizarre._haveZoomed = true;
-    let imgFit = new zarImage(evt.originalTarget);
+    var imgFit = new zarImage(evt.originalTarget);
     if (bizarre._Prefs.getBoolPref('toggleFitReset') && imgFit.isFitted())
      imgFit.setZoom(100);
     else
@@ -288,7 +288,7 @@ var bizarre =
   if (!((bizarre._scrollZooming) && (bizarre._curImg) && (bizarre._Prefs.getBoolPref('usescroll'))))
    return;
   evt.preventDefault();
-  let scrollAmount;
+  var scrollAmount;
   if (Math.abs(evt.deltaY) > Math.abs(evt.deltaX))
    scrollAmount = evt.deltaY;
   else
@@ -301,21 +301,21 @@ var bizarre =
  },
  scrollImage: function(wheelIncrement, evt)
  {
-  let imgToScroll = bizarre._curImg;
+  var imgToScroll = bizarre._curImg;
   if (imgToScroll === null)
   {
    bizarre._cancelScrollZoom();
    return;
   }
   bizarre._haveZoomed = true;
-  let oizImage = new zarImage(imgToScroll);
-  let rotateKeys = bizarre._Prefs.getIntPref('rotateKeys');
+  var oizImage = new zarImage(imgToScroll);
+  var rotateKeys = bizarre._Prefs.getIntPref('rotateKeys');
   if (rotateKeys && bizarre._modifierKeys(evt) === rotateKeys)
   {
    oizImage.rotate(bizarre._Prefs.getIntPref('rotateValue') * (wheelIncrement > 0 ? 1 : -1));
    return;
   }
-  let zoomFactor;
+  var zoomFactor;
   if (bizarre._Prefs.getIntPref('scrollmode') === 0)
   {
    if (((wheelIncrement < 0) && !bizarre._Prefs.getBoolPref('reversescrollzoom')) || ((wheelIncrement > 0) && bizarre._Prefs.getBoolPref('reversescrollzoom')))
@@ -336,7 +336,8 @@ var bizarre =
  },
  _insertSeparator: function(list, position)
  {
-  for (let i = position - 1; i >= 0; i--)
+  var i;
+  for (i = position - 1; i >= 0; i--)
   {
    if(list[i].hidden)
     continue;
@@ -344,7 +345,7 @@ var bizarre =
     return false;
    break;
   }
-  for (let i = position + 1; i < list.length; i++)
+  for (i = position + 1; i < list.length; i++)
   {
    if(list[i].hidden)
     continue;
@@ -358,34 +359,35 @@ var bizarre =
  {
   if (gContextMenu === null)
    return;
-  let menuItems = new Array('context-zoom-zin', 'context-zoom-zout', 'context-zoom-zreset', 'context-zoom-zcustom', 'context-zoom-dcustom', 'context-zoom-fit', 'context-zoom-fitwidth', 'context-zoom-rotate-right', 'context-zoom-rotate-left', 'context-zoom-rotate-180', 'context-zoom-flip-h', 'context-zoom-flip-v', 'context-zoom-rotate-reset', 'zoomsub-zin', 'zoomsub-zout', 'zoomsub-zreset', 'rotatesub-rotate-right', 'rotatesub-rotate-left', 'rotatesub-rotate-180', 'rotatesub-flip-h', 'rotatesub-flip-v', 'rotatesub-rotate-reset', 'zoomsub-zcustom', 'zoomsub-dcustom', 'zoomsub-fit', 'zoomsub-fitwidth', 'zoomsub-z400', 'zoomsub-z200', 'zoomsub-z150', 'zoomsub-z125', 'zoomsub-z100', 'zoomsub-z75', 'zoomsub-z50', 'zoomsub-z25', 'zoomsub-z10');
-  let optionItems = new Array('mmZoomIO', 'mmZoomIO', 'mmReset', 'mmCustomZoom', 'mmCustomDim', 'mmFitWindow', 'mmFitWidth', 'mmRotateRight', 'mmRotateLeft', 'mmRotate180', 'mmFlipH', 'mmFlipV', 'mmRotateReset', 'smZoomIO', 'smZoomIO', 'smReset', 'smRotateRight', 'smRotateLeft', 'smRotate180', 'smFlipH', 'smFlipV', 'smRotateReset', 'smCustomZoom', 'smCustomDim', 'smFitWindow', 'smFitWidth', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts');
-  let oizImage = null;
+  var menuItems = new Array('context-zoom-zin', 'context-zoom-zout', 'context-zoom-zreset', 'context-zoom-zcustom', 'context-zoom-dcustom', 'context-zoom-fit', 'context-zoom-fitwidth', 'context-zoom-rotate-right', 'context-zoom-rotate-left', 'context-zoom-rotate-180', 'context-zoom-flip-h', 'context-zoom-flip-v', 'context-zoom-rotate-reset', 'zoomsub-zin', 'zoomsub-zout', 'zoomsub-zreset', 'rotatesub-rotate-right', 'rotatesub-rotate-left', 'rotatesub-rotate-180', 'rotatesub-flip-h', 'rotatesub-flip-v', 'rotatesub-rotate-reset', 'zoomsub-zcustom', 'zoomsub-dcustom', 'zoomsub-fit', 'zoomsub-fitwidth', 'zoomsub-z400', 'zoomsub-z200', 'zoomsub-z150', 'zoomsub-z125', 'zoomsub-z100', 'zoomsub-z75', 'zoomsub-z50', 'zoomsub-z25', 'zoomsub-z10');
+  var optionItems = new Array('mmZoomIO', 'mmZoomIO', 'mmReset', 'mmCustomZoom', 'mmCustomDim', 'mmFitWindow', 'mmFitWidth', 'mmRotateRight', 'mmRotateLeft', 'mmRotate180', 'mmFlipH', 'mmFlipV', 'mmRotateReset', 'smZoomIO', 'smZoomIO', 'smReset', 'smRotateRight', 'smRotateLeft', 'smRotate180', 'smFlipH', 'smFlipV', 'smRotateReset', 'smCustomZoom', 'smCustomDim', 'smFitWindow', 'smFitWidth', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts');
+  var oizImage = null;
   if (gContextMenu.onImage || gContextMenu.onCanvas)
    oizImage = new zarImage(document.popupNode);
-  for (let i = 0; i < menuItems.length; i++)
+  var i;
+  for (i = 0; i < menuItems.length; i++)
   {
    document.getElementById(menuItems[i]).setAttribute('hidden', ((!gContextMenu.onImage && !gContextMenu.onCanvas) || !bizarre._Prefs.getBoolPref(optionItems[i])).toString());
   }
-  let subPopUp = document.getElementById('zoompopup');
-  let subItems = subPopUp.getElementsByTagName('*');
-  for (let i = 0; i < subItems.length; i++)
+  var subPopUp = document.getElementById('zoompopup');
+  var subItems = subPopUp.getElementsByTagName('*');
+  for (i = 0; i < subItems.length; i++)
   {
    if (subItems[i].tagName === 'menuseparator')
     subItems[i].setAttribute('hidden', (!bizarre._insertSeparator(subItems, i)).toString());
   }
   if (subPopUp.getElementsByAttribute('hidden', false).length > 0)
   {
-   let mnuZoom = document.getElementById('context-zoomsub');
+   var mnuZoom = document.getElementById('context-zoomsub');
    mnuZoom.setAttribute('label', bizarre._getContextSubMenuLabel().replace(/%zoom%/, oizImage.zoomFactor()));
    mnuZoom.setAttribute('hidden', 'false');
   }
   else
    document.getElementById('context-zoomsub').hidden = true;
-  let rotatePopUp = document.getElementById('rotatepopup');
+  var rotatePopUp = document.getElementById('rotatepopup');
   if (rotatePopUp.getElementsByAttribute('hidden', false).length > 0)
   {
-   let mnuRotate = document.getElementById('context-rotatesub');
+   var mnuRotate = document.getElementById('context-rotatesub');
    mnuRotate.setAttribute('label', bizarre._getContextRotateMenuLabel().replace(/%rotate%/, +oizImage.getAngle()));
    mnuRotate.setAttribute('hidden', 'false');
   }
@@ -396,8 +398,8 @@ var bizarre =
 
 function zarImage(oImage)
 {
- let pImage = oImage;
- let enabled = false;
+ var pImage = oImage;
+ var enabled = false;
  if ((pImage.naturalWidth !== 0) || (pImage.naturalHeight !== 0) || (pImage.style.width !== '') || (pImage.style.height !== '') || ((pImage.getAttribute('width')) && (pImage.getAttribute('height'))))
  {
   if (!(pImage.originalPxWidth) || (!pImage.style.width && !pImage.style.height))
@@ -499,12 +501,12 @@ function zarImage(oImage)
   pImage.autoFitBefore = 0;
   if (pImage.style.width)
   {
-   let origWidth = getDimInt(pImage.style.width);
+   var origWidth = getDimInt(pImage.style.width);
    pImage.style.width = (origWidth * factor) + getDimUnit(pImage.style.width);
   }
   if (pImage.style.height)
   {
-   let origHeight = getDimInt(pImage.style.height);
+   var origHeight = getDimInt(pImage.style.height);
    pImage.style.height = (origHeight * factor) + getDimUnit(pImage.style.height);
   }
  }
@@ -525,7 +527,7 @@ function zarImage(oImage)
     originalHeight: pImage.originalHeight
    };
   }
-  let origData = pImage.originalData;
+  var origData = pImage.originalData;
   if (typeof degrees === 'undefined')
    degrees = 0;
   if (degrees < 0)
@@ -539,21 +541,21 @@ function zarImage(oImage)
    else
     pImage.vFlip = !pImage.vFlip;
   }
-  let theta;
+  var theta;
   if (degrees >= 0)
    theta = (Math.PI * degrees) / 180;
   else
    theta = (Math.PI * (360 + degrees)) / 180;
-  let costheta = Math.abs(Math.cos(theta));
-  let sintheta = Math.abs(Math.sin(theta));
-  let canvas = pImage.ownerDocument.createElement('canvas');
+  var costheta = Math.abs(Math.cos(theta));
+  var sintheta = Math.abs(Math.sin(theta));
+  var canvas = pImage.ownerDocument.createElement('canvas');
   canvas.width = costheta * origData.naturalWidth + sintheta * origData.naturalHeight;
   canvas.height = costheta * origData.naturalHeight + sintheta * origData.naturalWidth;
   canvas.oImage = new Image();
   canvas.oImage.src = origData.src;
   canvas.oImage.onload = function()
   {
-   let ctx = canvas.getContext('2d');
+   var ctx = canvas.getContext('2d');
    ctx.save();
    if (pImage.hFlip === true && pImage.vFlip === true)
    {
@@ -582,9 +584,9 @@ function zarImage(oImage)
    pImage.originalPxHeight = costheta * origData.originalPxHeight + sintheta * origData.originalPxWidth;
    pImage.originalWidth = costheta * origData.originalWidth + sintheta * origData.originalHeight;
    pImage.originalHeight = costheta * origData.originalHeight + sintheta * origData.originalWidth;
-   let t0 = Math.PI * pImage.angle / 180;
-   let natWidthT0 = Math.abs(Math.cos(t0)) * origData.naturalWidth + Math.abs(Math.sin(t0)) * origData.naturalHeight;
-   let natHeightT0 = Math.abs(Math.cos(t0)) * origData.naturalHeight + Math.abs(Math.sin(t0)) * origData.naturalWidth;
+   var t0 = Math.PI * pImage.angle / 180;
+   var natWidthT0 = Math.abs(Math.cos(t0)) * origData.naturalWidth + Math.abs(Math.sin(t0)) * origData.naturalHeight;
+   var natHeightT0 = Math.abs(Math.cos(t0)) * origData.naturalHeight + Math.abs(Math.sin(t0)) * origData.naturalWidth;
    pImage.style.width = (getDimInt(pImage.style.width) * canvas.width / natWidthT0) + getDimUnit(pImage.style.width);
    pImage.style.height = (getDimInt(pImage.style.height) * canvas.height / natHeightT0) + getDimUnit(pImage.style.height);
    pImage.angle = degrees;
@@ -598,12 +600,12 @@ function zarImage(oImage)
  }
  function isFitted()
  {
-  let imageDiff;
-  let bScreen = new zarScreen(pImage);
-  let screenHeight = bScreen.getHeight();
-  let screenWidth = bScreen.getWidth();
-  let screenDim = screenWidth / screenHeight;
-  let imageDim = pImage.width / pImage.height;
+  var imageDiff;
+  var bScreen = new zarScreen(pImage);
+  var screenHeight = bScreen.getHeight();
+  var screenWidth = bScreen.getWidth();
+  var screenDim = screenWidth / screenHeight;
+  var imageDim = pImage.width / pImage.height;
   if (screenDim < imageDim)
    imageDiff = Math.abs(screenWidth - pImage.width);
   else
@@ -614,11 +616,11 @@ function zarImage(oImage)
  {
   if (!enabled)
    return;
-  let bScreen = new zarScreen(pImage);
-  let screenHeight = bScreen.getHeight();
-  let screenWidth = bScreen.getWidth();
-  let screenDim = screenWidth / screenHeight;
-  let imageDim = pImage.width / pImage.height;
+  var bScreen = new zarScreen(pImage);
+  var screenHeight = bScreen.getHeight();
+  var screenWidth = bScreen.getWidth();
+  var screenDim = screenWidth / screenHeight;
+  var imageDim = pImage.width / pImage.height;
   if (screenDim < imageDim || widthOnly)
    setDimension(screenWidth, parseInt(screenWidth / imageDim + 0.5, 10));
   else
@@ -631,9 +633,9 @@ function zarImage(oImage)
    setDimension(parseInt(screenHeight * imageDim + 0.5,10), screenHeight);
   if (!autoScroll)
    return;
-  let iTop = 0;
-  let iLeft = 0;
-  let cNode = pImage;
+  var iTop = 0;
+  var iLeft = 0;
+  var cNode = pImage;
   while (cNode.tagName.toUpperCase() !== 'BODY')
   {
    iLeft += cNode.offsetLeft;
@@ -662,11 +664,11 @@ function zarImage(oImage)
  }
  function getDimUnit(sText)
  {
-  let ValidChars = '0123456789.';
-  let ret = '';
-  for (let i = 0; i < sText.length; i++)
+  var ValidChars = '0123456789.';
+  var ret = '';
+  for (var i = 0; i < sText.length; i++)
   {
-   let chr = sText.charAt(i);
+   var chr = sText.charAt(i);
    if (ValidChars.indexOf(chr) === -1)
     ret += chr;
   }
@@ -674,11 +676,11 @@ function zarImage(oImage)
  }
  function getDimInt(sText)
  {
-  let ValidChars = '0123456789.';
-  let ret = '';
-  for (let i = 0; i < sText.length; i++)
+  var ValidChars = '0123456789.';
+  var ret = '';
+  for (var i = 0; i < sText.length; i++)
   {
-   let chr = sText.charAt(i);
+   var chr = sText.charAt(i);
    if (ValidChars.indexOf(chr) >= 0)
     ret += chr;
   }

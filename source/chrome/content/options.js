@@ -22,11 +22,11 @@
 
 function OptionCache()
 {
- let optionNames = [];
- let optionValues = [];
+ var optionNames = [];
+ var optionValues = [];
  function setOption(optionName, optionValue)
  {
-  for (let i = 0; i < optionNames.length; i++)
+  for (var i = 0; i < optionNames.length; i++)
   {
    if (optionNames[i] === optionName)
    {
@@ -42,7 +42,7 @@ function OptionCache()
  this.length = length;
  function getOption(optionName)
  {
-  for (let i = 0; i < optionNames.length; i++)
+  for (var i = 0; i < optionNames.length; i++)
   {
    if (optionNames[i] === optionName)
     return optionValues[i];
@@ -54,16 +54,16 @@ function OptionCache()
   return optionNames.length;
  }
 }
-let menuItems = new Array('context-zoom-zin', 'context-zoom-zout', 'context-zoom-zreset', 'context-zoom-zcustom', 'context-zoom-dcustom', 'context-zoom-fit', 'context-zoom-fitwidth', 'context-zoom-rotate-right', 'context-zoom-rotate-left', 'context-zoom-rotate-180', 'context-zoom-flip-h', 'context-zoom-flip-v', 'context-zoom-rotate-reset', 'zoomsub-zin', 'zoomsub-zout', 'zoomsub-zreset', 'zoomsub-rotate-right', 'zoomsub-rotate-left', 'zoomsub-rotate-180', 'zoomsub-flip-h', 'zoomsub-flip-v', 'zoomsub-rotate-reset', 'zoomsub-zcustom', 'zoomsub-dcustom', 'zoomsub-fit', 'zoomsub-fitwidth', 'zoomsub-z400', 'zoomsub-z200', 'zoomsub-z150', 'zoomsub-z125', 'zoomsub-z100', 'zoomsub-z75', 'zoomsub-z50', 'zoomsub-z25', 'zoomsub-z10');
-let optionItems = new Array('mmZoomIO', 'mmZoomIO', 'mmReset', 'mmCustomZoom', 'mmCustomDim', 'mmFitWindow', 'mmFitWidth', 'mmRotateRight', 'mmRotateLeft', 'mmRotate180', 'mmFlipH', 'mmFlipV', 'mmRotateReset', 'smZoomIO', 'smZoomIO', 'smReset', 'smRotateRight', 'smRotateLeft', 'smRotate180', 'smFlipH', 'smFlipV', 'smRotateReset', 'smCustomZoom', 'smCustomDim', 'smFitWindow', 'smFitWidth', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts');
-let menuOptions = new OptionCache();
-let nsIPrefServiceObj = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefService);
-let nsIPrefBranchObj = nsIPrefServiceObj.getBranch('extensions.bizarre.');
+var menuItems = new Array('context-zoom-zin', 'context-zoom-zout', 'context-zoom-zreset', 'context-zoom-zcustom', 'context-zoom-dcustom', 'context-zoom-fit', 'context-zoom-fitwidth', 'context-zoom-rotate-right', 'context-zoom-rotate-left', 'context-zoom-rotate-180', 'context-zoom-flip-h', 'context-zoom-flip-v', 'context-zoom-rotate-reset', 'zoomsub-zin', 'zoomsub-zout', 'zoomsub-zreset', 'zoomsub-rotate-right', 'zoomsub-rotate-left', 'zoomsub-rotate-180', 'zoomsub-flip-h', 'zoomsub-flip-v', 'zoomsub-rotate-reset', 'zoomsub-zcustom', 'zoomsub-dcustom', 'zoomsub-fit', 'zoomsub-fitwidth', 'zoomsub-z400', 'zoomsub-z200', 'zoomsub-z150', 'zoomsub-z125', 'zoomsub-z100', 'zoomsub-z75', 'zoomsub-z50', 'zoomsub-z25', 'zoomsub-z10');
+var optionItems = new Array('mmZoomIO', 'mmZoomIO', 'mmReset', 'mmCustomZoom', 'mmCustomDim', 'mmFitWindow', 'mmFitWidth', 'mmRotateRight', 'mmRotateLeft', 'mmRotate180', 'mmFlipH', 'mmFlipV', 'mmRotateReset', 'smZoomIO', 'smZoomIO', 'smReset', 'smRotateRight', 'smRotateLeft', 'smRotate180', 'smFlipH', 'smFlipV', 'smRotateReset', 'smCustomZoom', 'smCustomDim', 'smFitWindow', 'smFitWidth', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts', 'smZoomPcts');
+var menuOptions = new OptionCache();
+var nsIPrefServiceObj = Components.classes['@mozilla.org/preferences-service;1'].getService(Components.interfaces.nsIPrefService);
+var nsIPrefBranchObj = nsIPrefServiceObj.getBranch('extensions.bizarre.');
 function bizarre_saveOptions()
 {
  if (!validateOptions())
   return false;
- for (let i = 0; i < menuItems.length; i++)
+ for (var i = 0; i < menuItems.length; i++)
  {
   if (document.getElementById(menuItems[i]).tagName.toLowerCase() === 'checkbox')
    nsIPrefBranchObj.setBoolPref(optionItems[i], menuOptions.getOption(optionItems[i]));
@@ -95,8 +95,8 @@ function validateOptions()
 function bizarre_initializeOptions()
 {
  document.getElementById('bizarreusemouseoptions').checked = nsIPrefBranchObj.getBoolPref('usescroll');
- let scroll = nsIPrefBranchObj.getIntPref('scrollvalue');
- let scrollValueBox = document.getElementById('bizarrescrollvalue');
+ var scroll = nsIPrefBranchObj.getIntPref('scrollvalue');
+ var scrollValueBox = document.getElementById('bizarrescrollvalue');
  scrollValueBox.selectedItem = scrollValueBox.getElementsByAttribute('value', scroll)[0];
  scroll = nsIPrefBranchObj.getIntPref('scrollmode');
  scrollValueBox = document.getElementById('bizarrescrollmode');
@@ -116,14 +116,14 @@ function bizarre_initializeOptions()
  scroll = nsIPrefBranchObj.getIntPref('rotateValue');
  scrollValueBox = document.getElementById('bizarrerotatevalue');
  scrollValueBox.selectedItem = scrollValueBox.getElementsByAttribute('value', scroll)[0];
- let zoom = nsIPrefBranchObj.getIntPref('zoomvalue');
- let zoomValueBox = document.getElementById('bizarrezoomvalue');
+ var zoom = nsIPrefBranchObj.getIntPref('zoomvalue');
+ var zoomValueBox = document.getElementById('bizarrezoomvalue');
  zoomValueBox.selectedItem = zoomValueBox.getElementsByAttribute('value', zoom)[0];
  document.getElementById('bizarreautocenter').checked = nsIPrefBranchObj.getBoolPref('autocenter');
  document.getElementById('bizarreshowstatus').checked = nsIPrefBranchObj.getBoolPref('showStatus');
  document.getElementById('bizarrereversescroll').checked = nsIPrefBranchObj.getBoolPref('reversescrollzoom');
  document.getElementById('bizarretogglefitreset').checked = nsIPrefBranchObj.getBoolPref('toggleFitReset');
- for (let i = 0; i < menuItems.length; i++)
+ for (var i = 0; i < menuItems.length; i++)
  {
   menuOptions.setOption(optionItems[i], nsIPrefBranchObj.getBoolPref(optionItems[i]));
   document.getElementById(menuItems[i]).setAttribute('hidden', 'false');
@@ -133,7 +133,7 @@ function bizarre_initializeOptions()
 }
 function setBIZARREMenu()
 {
- for (let i = 0; i < menuItems.length; i++)
+ for (var i = 0; i < menuItems.length; i++)
  {
   if (document.getElementById(menuItems[i]) === null)
    alert(menuItems[i]);
@@ -144,7 +144,7 @@ function setBIZARREMenu()
 }
 function setPreference(izCheck)
 {
- for (let i = 0; i < menuItems.length; i++)
+ for (var i = 0; i < menuItems.length; i++)
  {
   if (izCheck.id === menuItems[i]) 
   {
@@ -160,7 +160,7 @@ function setOption(izCheck)
 }
 function setDisableAllChildren(xulElement, disabled)
 {
- for (let i = 0; i < xulElement.childNodes.length; i++)
+ for (var i = 0; i < xulElement.childNodes.length; i++)
  {
   xulElement.childNodes[i].disabled = disabled;
   setDisableAllChildren(xulElement.childNodes[i], disabled);
@@ -168,8 +168,8 @@ function setDisableAllChildren(xulElement, disabled)
 }
 function toggleSubMenu()
 {
- let checkboxes = document.getElementById('submenu').getElementsByTagName('checkbox');
- for (let i = 0; i < checkboxes.length; i++)
+ var checkboxes = document.getElementById('submenu').getElementsByTagName('checkbox');
+ for (var i = 0; i < checkboxes.length; i++)
  {
   checkboxes[i].checked = document.getElementById('context-zoomsub').checked;
   setPreference(checkboxes[i]);
@@ -178,8 +178,8 @@ function toggleSubMenu()
 }
 function toggleRotateMenu()
 {
- let checkboxes = document.getElementById('subrotatemenu').getElementsByTagName('checkbox');
- for (let i = 0; i < checkboxes.length; i++)
+ var checkboxes = document.getElementById('subrotatemenu').getElementsByTagName('checkbox');
+ for (var i = 0; i < checkboxes.length; i++)
  {
   checkboxes[i].checked = document.getElementById('context-rotatesub').checked;
   setPreference(checkboxes[i]);
@@ -188,7 +188,7 @@ function toggleRotateMenu()
 }
 function togglePercentages()
 {
- let pctOption = document.getElementById('zoomsub-z100');
+ var pctOption = document.getElementById('zoomsub-z100');
  pctOption.checked = !pctOption.checked;
  setOption(pctOption);
 }
