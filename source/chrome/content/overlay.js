@@ -182,6 +182,8 @@ var bizarre =
  },
  izOnMouseDown: function(evt)
  {
+  if (evt.originalTarget.tagName === undefined)
+   return;
   var targetName = evt.originalTarget.tagName.toLowerCase();
   if ((targetName === 'img' || targetName === 'canvas') && (bizarre._scrollZooming) && ((evt.which === bizarre._Prefs.getIntPref('imageresetbutton')) || (evt.which === bizarre._Prefs.getIntPref('imagefitbutton')) || (evt.which === bizarre._Prefs.getIntPref('triggerbutton'))))
   {
