@@ -3,7 +3,7 @@
  <Description about="urn:mozilla:install-manifest">
   <em:id>{2CBD61D2-B553-57C0-B615-9244208C419E}</em:id>
   <em:name>BIZARRE</em:name>
-  <em:version>1.2</em:version>
+  <em:version>1.3</em:version>
   <em:type>2</em:type>
   <em:description>Adds zoom functionality for images</em:description>
   <em:creator>RealityRipple</em:creator>
