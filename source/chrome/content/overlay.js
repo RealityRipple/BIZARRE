@@ -501,6 +501,7 @@ function zarImage(oImage)
    return;
   pImage.zoomFactor = pImage.zoomFactor * factor;
   pImage.autoFitBefore = 0;
+  pImage.style.marginTop = '';
   if (pImage.style.width)
   {
    var origWidth = getDimInt(pImage.style.width);
@@ -511,6 +512,12 @@ function zarImage(oImage)
    var origHeight = getDimInt(pImage.style.height);
    pImage.style.height = (origHeight * factor) + getDimUnit(pImage.style.height);
   }
+  pImage.style.maxWidth = 'none';
+  pImage.style.maxHeight = 'none';
+  if(pImage.y < 0 || pImage.offsetTop < 0)
+   pImage.style.marginTop = '0';
+  else
+   pImage.style.marginTop = '';
  }
  function rotate(degrees, direction)
  {
@@ -655,6 +662,7 @@ function zarImage(oImage)
  }
  function pZoomAbs()
  {
+  pImage.style.marginTop = '';
   if (pImage.originalWidth)
    pImage.style.width = (pImage.originalWidth * (pImage.zoomFactor / 100)) + pImage.originalWidthUnit;
   else
@@ -663,6 +671,12 @@ function zarImage(oImage)
    pImage.style.height = (pImage.originalHeight * (pImage.zoomFactor / 100)) + pImage.originalHeightUnit;
   else
    pImage.style.height = '';
+  pImage.style.maxWidth = 'none';
+  pImage.style.maxHeight = 'none';
+  if (pImage.y < 0 || pImage.offsetTop < 0)
+   pImage.style.marginTop = '0';
+  else
+   pImage.style.marginTop = '';
  }
  function getDimUnit(sText)
  {
